@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+
+.instapic {
+    width: 612;
+    height: 612;
+}
+
+/* resize images */
+.instapic img {
+    width: auto;
+    height: auto;
+}
+
+img {
+   width:auto
+   height:auto
+   }
