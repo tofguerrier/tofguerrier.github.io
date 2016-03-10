@@ -1,11 +1,26 @@
 body {
-    background-color: lightblue;
-}
+    background-color: grey;
+    color: black;
+    margin-left: 10px;
+    text-align: justify;
+    }
 
 h1 {
-    color: navy;
+    color: black;
     margin-left: 20px;
+    text-align: left;
 }
+
+h2 {
+    color: black;
+    margin-left: 30px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+
+
 
 
 .instapic {
