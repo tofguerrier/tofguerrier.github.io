@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    background-image="https://farm7.staticflickr.com/6044/6875872536_0b6d9e25f8_h.jpg"
+    background-image: url("https://farm7.staticflickr.com/6044/6875872536_0b6d9e25f8_h.jpg");
     color: black;
     margin-left: 20px;
     text-align: justify;
