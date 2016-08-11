@@ -66,6 +66,18 @@ p {
     height: auto;
 }
 
+ul {
+    list-style-type: circle;
+    color: black;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 100%;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
 img {
    width:auto
    height:auto
