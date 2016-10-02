@@ -6,8 +6,8 @@
 </description>
     <link>https://tofguerrier.github.io/</link>
     <atom:link href="https://tofguerrier.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Sep 2016 07:12:13 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Sep 2016 07:12:13 +0100</lastBuildDate>
+    <pubDate>Sun, 02 Oct 2016 18:59:15 +0100</pubDate>
+    <lastBuildDate>Sun, 02 Oct 2016 18:59:15 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -110,7 +110,91 @@
     
       <item>
         <title>Using google trends</title>
-        <description>&lt;div style=&quot;text-align: justify;&quot;&gt;Every time a story broke in the Irish newspaper, you can read &quot;The eyes of the world are upon us&quot;, especially if the the story reflects badly on the Irish nation. I often think that Irish have an over-inflated impression of how other countries look at us, and the reality is that actually people in other countries have others stories ( local or nor ) to worry instead of caring about the Emerald Island.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;So I had a look at&amp;nbsp;&lt;a href=&quot;https://www.google.ie/trends/&quot; target=&quot;_blank&quot; title=&quot;Google Trends&quot;&gt;Google Trends&lt;/a&gt;, relative to the latest &quot;big&quot; story, aka the cancellation of Garth Brooks concert in Dublin.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;The site allow you to see what words are looked for in the google search engine, and display how many time specific words were used. The trends were used famously for the google flu detection. You can specify a time range, but also specific countries ( or cities ) , and compare different words.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;So here we go. I used three words: &lt;strong&gt;Garth Brooks&lt;/strong&gt;, &lt;strong&gt;Croke Park&lt;/strong&gt; and &lt;strong&gt;Guinness&lt;/strong&gt;. The last word is a sort of control, to gauge Irish interest across the world. Of course the choice of words can be improved, but i wanted a first initial taste.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;So here the results for the last 30 days from Ireland:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://tofstatistics.files.wordpress.com/2014/07/ireland_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img alt=&quot;Ireland&quot; class=&quot;wp-image-14 size-full&quot; src=&quot;http://tofstatistics.files.wordpress.com/2014/07/ireland_30d_1.png&quot; height=&quot;424&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;&lt;div style=&quot;font-size: medium; text-align: center;&quot;&gt;Google Trends Ireland 30 days, Garth Brooks, Croke Park, Guinnes.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;As the news broke, you can see the spikes in search terms, especially relatively to the control word.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;But what about the rest of the world, certainly the USA must be watching this story:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://tofstatistics.files.wordpress.com/2014/07/usa_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img alt=&quot;USA Trend&quot; class=&quot;wp-image-13 size-full&quot; src=&quot;http://tofstatistics.files.wordpress.com/2014/07/usa_30d_1.png&quot; height=&quot;452&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: small; text-align: justify;&quot;&gt;Google Trends from USA&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Well not really, there is a small bump, but not that high...&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Looking at other countries, &amp;nbsp;France, Germany... &amp;nbsp;it seems outside Ireland people are quite indifferent about that story....&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://tofstatistics.files.wordpress.com/2014/07/germany_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img alt=&quot;German TRends&quot; class=&quot;wp-image-12 size-full&quot; src=&quot;http://tofstatistics.files.wordpress.com/2014/07/germany_30d_1.png&quot; height=&quot;455&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: small; text-align: justify;&quot;&gt;Google Trends from Germany 30 days&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://tofstatistics.files.wordpress.com/2014/07/france_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter wp-image-11 size-full&quot; src=&quot;http://tofstatistics.files.wordpress.com/2014/07/france_30d_1.png&quot; height=&quot;433&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;x&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;A couple of comments on the graphs generated by Google Trends, there is no y-axis label.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;Numbers represent search interest relative to the highest point on the chart.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;This doesn&#39;t convey absolute search volume.&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;From Google help:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&quot;The numbers on the graph reflect how many searches have been done for a particular term, relative to the total number of searches done on Google over time. They don&#39;t represent absolute search volume numbers, because the data is normalized and presented on a scale from 0-100. Each point on the graph is divided by the highest point, or 100. When we don&#39;t have enough data, 0 is shown.&quot;&lt;/div&gt;</description>
+        <description>&lt;div style=&quot;text-align: justify;&quot;&gt;
+  Every time a story broke in the Irish newspaper, you can read &quot;The eyes of the world are upon us&quot;, especially if the the story reflects badly on the Irish nation. I often think that Irish have an over-inflated impression of how other countries look at us, and the reality is that actually people in other countries have others stories ( local or nor ) to worry instead of caring about the Emerald Island.
+&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;
+&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;So I had a look at&amp;nbsp;&lt;a href=&quot;https://www.google.ie/trends/&quot; target=&quot;_blank&quot; title=&quot;Google Trends&quot;&gt;Google Trends&lt;/a&gt;, relative to the latest &quot;big&quot; story, aka the cancellation of Garth Brooks concert in Dublin.&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;The site allow you to see what words are looked for in the google search engine, and display how many time specific words were used. The trends were used famously for the google flu detection. You can specify a time range, but also specific countries ( or cities ) , and compare different words.&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;So here we go. I used three words: &lt;strong&gt;Garth Brooks&lt;/strong&gt;, &lt;strong&gt;Croke Park&lt;/strong&gt; and &lt;strong&gt;Guinness&lt;/strong&gt;. The last word is a sort of control, to gauge Irish interest across the world. Of course the choice of words can be improved, but i wanted a first initial taste.&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;So here the results for the last 30 days from Ireland:&lt;/div&gt;
+&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center;&quot;&gt;
+        &lt;a href=&quot;https://tofguerrier.github.io/img/ireland_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;
+          &lt;img alt=&quot;Ireland&quot; class=&quot;wp-image-14 size-full&quot; src=&quot;https://tofguerrier.github.io/img/ireland_30d_1.png&quot; height=&quot;424&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;
+        &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;
+        &lt;div style=&quot;font-size: medium; text-align: center;&quot;&gt;Google Trends Ireland 30 days, Garth Brooks, Croke Park, Guinnes.&lt;/div&gt;
+        &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+      &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;As the news broke, you can see the spikes in search terms, especially relatively to the control word.&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;But what about the rest of the world, certainly the USA must be watching this story:&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+      &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+
+      &lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;
+        &lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;
+          &lt;a href=&quot;https://tofguerrier.github.io/img/usa_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;
+            &lt;img alt=&quot;USA Trend&quot; class=&quot;wp-image-13 size-full&quot; src=&quot;https://tofguerrier.github.io/img/usa_30d_1.png&quot; height=&quot;452&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: small; text-align: justify;&quot;&gt;Google Trends from USA&lt;/span&gt;
+            &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;Well not really, there is a small bump, but not that high...&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;Looking at other countries, &amp;nbsp;France, Germany... &amp;nbsp;it seems outside Ireland people are quite indifferent about that story....&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+            &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+
+            &lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;
+                  &lt;a href=&quot;https://tofguerrier.github.io/img/germany_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;
+                    &lt;img alt=&quot;German TRends&quot; class=&quot;wp-image-12 size-full&quot; src=&quot;https://tofguerrier.github.io/img/germany_30d_1.png&quot; height=&quot;455&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;
+                      &lt;span style=&quot;font-size: small; text-align: justify;&quot;&gt;Google Trends from Germany 30 days&lt;/span&gt;
+                    &lt;/td&gt;&lt;/tr&gt;
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;
+                  &lt;tbody&gt;
+                    &lt;tr&gt;
+                      &lt;td style=&quot;text-align: center;&quot;&gt;
+                        &quot;https://tofguerrier.github.io/assets/screenshot.jpg)
+                        &lt;a href=&quot;https://tofguerrier.github.io/img/france_30d_1.png&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;
+                  &lt;img alt=&quot;&quot; class=&quot;aligncenter wp-image-11 size-full&quot; src=&quot;https://tofguerrier.github.io/img/france_30d_1.png&quot; height=&quot;433&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;x&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+                &lt;/table&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;A couple of comments on the graphs generated by Google Trends, there is no y-axis label.&lt;/div&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;Numbers represent search interest relative to the highest point on the chart.&amp;nbsp;&lt;/div&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;This doesn&#39;t convey absolute search volume.&lt;/div&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br /&gt;&lt;/div&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;From Google help:&lt;/div&gt;
+                &lt;div style=&quot;text-align: justify;&quot;&gt;&quot;The numbers on the graph reflect how many searches have been done for a particular term, relative to the total number of searches done on Google over time. They don&#39;t represent absolute search volume numbers, because the data is normalized and presented on a scale from 0-100. Each point on the graph is divided by the highest point, or 100. When we don&#39;t have enough data, 0 is shown.&quot;&lt;/div&gt;
+</description>
         <pubDate>Mon, 07 Jul 2014 18:08:00 +0100</pubDate>
         <link>https://tofguerrier.github.io/2014/07/07/using-google-trends.html</link>
         <guid isPermaLink="true">https://tofguerrier.github.io/2014/07/07/using-google-trends.html</guid>
