@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Christophe website</title>
-    <description>This site contains some information about me, and a blog on data analysis and other random thoughts. All this is generated with Jekyll ; the blog has been initially migrated from wordpress and blogspot.
+    <description>This site contains some information about me, and a blog on data analysis and other random thoughts. All this is generated with Jekyll.
 </description>
     <link>https://tofguerrier.github.io/</link>
     <atom:link href="https://tofguerrier.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Feb 2017 23:20:48 +0000</pubDate>
-    <lastBuildDate>Thu, 23 Feb 2017 23:20:48 +0000</lastBuildDate>
+    <pubDate>Fri, 10 Mar 2017 11:41:00 +0000</pubDate>
+    <lastBuildDate>Fri, 10 Mar 2017 11:41:00 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
