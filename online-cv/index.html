@@ -8,15 +8,20 @@
 <link rel="icon" href="/img/favicon.ico">
 <link rel="stylesheet" href="/css/main.css">
 <body>
-<h1> UNDER CONSTRUCTION </h1>
 <div class="cv-menu">
   <!-- Career Profile -->
 <header>
   <div class="top-menu">
-  <span><a href="#profile">Profile</a></span>
-  <span><a href="#timeline">Experiences</a></span>
-  <span><a href="#portfolio">Portfolio</a></span>
-  <span><a href="#contact">Contact</a></span>
+      <img src="/img/banner_1_cv.png" alt="Banner" style="width:100%;height:90px;">
+      <div style="center">
+        <center>
+          <span style='color=white;margin-right:1.25em'><a href="#profile">About</a></span>
+          <span style='color=white;margin-right:1.25em'><a href="#timeline">Experience</a></span>
+          <span style='color=white;margin-right:1.25em'><a href="#skills">Skill</a></span>
+          <span style='color=white;margin-right:1.25em'><a href="#portfolio">Portfolio</a></span>
+          <span><a href="#contact">Contact</a></span>
+        </center>
+    </div>
   </div>
 </header>
 
@@ -24,7 +29,7 @@
 
 <div class="cv-section">
   <!-- Career Profile -->
-<h2 id="profile"><strong>Christophe Guerrier</strong></h2>
+<h2 id="profile" class="anchor"><strong>Christophe Guerrier</strong></h2>
 <div class="container">
   <!--
       <div class="row">
@@ -37,21 +42,22 @@
         <div class="col-sm-3">
           <a href="#"> <img class="cv-img-circle" src="/img/linked-profile.jpg" alt="Christophe" ></a>
         </div>
-      </div>
   -->
+  <!--
+  <div class="row">
+<img src="/img/banner_1_cv.png" alt="Banner" style="width:100%;height:90px;">
+  </div>
+-->
       <div class="row">
         <p>
           I have 17 years as Microelectronic Engineer, specialized in physical implementation of Integrated Circuits, covering pure analog layout (RF to mixed signals) and digital implementation (multi-millions gates design with clock going up to 2Ghz).
-        </p>
-        <p>
+        </br>
 During my career, I have contributed to the development of several chips using nodes from 0.5um down to 14nm ; and worked with cross-continental and multicultural teams under tight schedules.
-        </p>
-        <p>
+        </br>
 I have consistently up-skilled myself, seeking opportunities to learn and develop myself. exploring new areas, like moving from pure Analog to Digital Design.
 I have some experience in Project Management. I am fast learner, a much appreciated team contributor.
 My various roles required me to effectively communicate across multi-functional teams, show rigorous work and methodology and being able to work autonomously.
-        </p>
-        <p>
+        </br>
 I undertook a Higher Diploma in Statistics to sharpen my data analysis abilities.
 In the future, I would like to merge my knowledge of IC design with my statistical knowledge.
         </p>
@@ -63,7 +69,7 @@ In the future, I would like to merge my knowledge of IC design with my statistic
 <div class="cv-section">
   <!-- Experiences and Education -->
 <!-- The Timeline -->
-<h2 id="timeline">Experience and Education</h2>
+<h2 id="timeline" class="anchor">Experience and Education</h2>
 
 <ul class="timeline">
 
@@ -161,7 +167,7 @@ In the future, I would like to merge my knowledge of IC design with my statistic
 
 <div class="cv-section">
   <!-- Skills -->
-<h2>Skills &amp; Proficiency</h2>
+<h2 id="skills" class="anchor">Skills &amp; Proficiency</h2>
 
 <!--
 <p>Analog Layout using Cadence Virtuoso (XL)</p>
@@ -331,7 +337,7 @@ In the future, I would like to merge my knowledge of IC design with my statistic
   <!-- Projects -->
 
 <!-- lorem ipsum text -->
-<h2 id="portfolio">Portfolio</h2>
+<h2 id="portfolio" class="anchor">Portfolio</h2>
 <p>
   Projects I worked on.
 </p>
@@ -373,37 +379,38 @@ In the future, I would like to merge my knowledge of IC design with my statistic
 
 <div class="cv-section">
   <!-- contact -->
-<h2 id="contact">Contact</h2>
+<h2 id="contact" class="anchor">Contact</h2>
+
+<table>
+  <colgroup>
+    <col span="3">
+    <col >
+  </colgroup>
+  <tr><td>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="christopheguerrier">
+      <a class="LI-simple-link" href='https://ie.linkedin.com/in/christopheguerrier?trk=profile-badge'>Christophe Guerrier</a>
+    </div>
+  </td>
+    <td>
+      <iframe src="https://githubbadge.appspot.com/tofguerrier" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+    </td>
+
+  <td>
+
+  </td>
+</tr>
+</table>
 
 </div>
 
-
 </body>
 <!-- Javascript for fix menu -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"</script>
+<script type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+   </script>
 <script type="text/javascript">
-$(function() {
-  var top = $('#top-menu').offset().top - parseFloat($('#top-menu').css('marginTop').replace(/auto/, 0));
-  var footTop = $('#footer').offset().top - parseFloat($('#footer').css('marginTop').replace(/auto/, 0));
-
-  var maxY = footTop - $('#top-menu').outerHeight();
-
-  $(window).scroll(function(evt) {
-    var y = $(this).scrollTop();
-    if (y > top) {
-      if (y < maxY) {
-        $('#top-menu').addClass('fixed').removeAttr('style');
-      } else {
-        $('#top-menu').removeClass('fixed').css({
-          position: 'absolute',
-          top: (maxY - top) + 'px'
-        });
-      }
-    } else {
-      $('#top-menu').removeClass('fixed');
-    }
-  });
-});
+// done in CSS instead - no javascript
 
 </script>
 <!-- animated bar -->
@@ -418,10 +425,18 @@ jQuery(document).ready(function(){
 
 </script>
 <!-- bootstrap  -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.cs"</script>
-<!-- Latex mathJax -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous">
+</script>
+<!-- Latex mathJax
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+MathJax CDN shutting down on April 30, 2017.
+Alternatives available.
+-->
 <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    >
 </script>
 
 <script>
