@@ -188,6 +188,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
+          <p id="quote">Facts are stubborn, but statistics are more pliable. Mark Twain</p>
         <!--  <li>Christophe website</li>  -->
         <!--  <li><a href="mailto:guerrier.christophe@gmail.com">guerrier.christophe@gmail.com</a></li>  -->
         </ul>
@@ -222,6 +223,35 @@
   </div>
 
 </footer>
+
+<script type="text/javascript">
+function genQuote() {
+  var lq = quotes.length;
+  var randNum = Math.floor(Math.random() * lq) + 1;
+  document.getElementById('quote').innerHTML = quotes[randNum];
+}
+
+//quote array
+var quotes = [
+"When your rage is choking you, it is best to say nothing.</br>Octavia E.Butler",
+"the people who are crazy enough to think they can change the world are the ones who do.</br>Steve Jobs",
+"If you always put limit on everything you do, physical or anything else.</br>It will spread into your work and into your life.There are no limits.There are only plateaus, and you must not stay there, you must go beyond them.</br>Bruce Lee",
+"Don't cry because it's over, smile because it happened.</br<Dr Seuss",
+"There are years that ask questions and years that answer.</br>Zora Neale Hurston",
+"The only thing that is constant is change.</br>Heraclitus",
+"Facts are stubborn, but statistics are more pliable.</br>Mark Twain",
+"It is sometimes an appropriate response to reality to go insane.</br>Philip K.Dick",
+"Reality is that which, when you stop believing in it, doesn't go away.</br>Philip K.Dick",
+"Love doesn't just sit there, like a stone, it has to be made, like bread; remade all the time, made new.</br>Ursula K LeGuin",
+"A trap is only a trap if you don't know about it. If you know about it, it's a challenge.</br>China Miéville",
+"Necessité fait gens méprend Et faim saillir le loup du bois.</br>Francois Villon",
+"We are only as strong as we are united, as weak as we are divided.</br>J.K. Rowling, Harry Potter and the Goblet of Fire",
+"That which is dreamed cannot be grasped, but work towards it, day after day, and you will find it in your hands.</br>Little Witch Academia"
+];
+
+genQuote();
+
+</script>
 
     
 <script>
