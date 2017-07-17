@@ -6,9 +6,21 @@
 </description>
     <link>https://tofguerrier.github.io/</link>
     <atom:link href="https://tofguerrier.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Jul 2017 22:53:39 +0100</pubDate>
-    <lastBuildDate>Thu, 13 Jul 2017 22:53:39 +0100</lastBuildDate>
+    <pubDate>Sat, 15 Jul 2017 20:19:55 +0100</pubDate>
+    <lastBuildDate>Sat, 15 Jul 2017 20:19:55 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Reboot</title>
+        <description>&lt;p&gt;Time to reboot this blog….
+After 2 years without new posts, time to dig myself again in data analysis.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Jul 2017 00:00:00 +0100</pubDate>
+        <link>https://tofguerrier.github.io/2017/07/15/reboot.html</link>
+        <guid isPermaLink="true">https://tofguerrier.github.io/2017/07/15/reboot.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dragon curve</title>
@@ -228,21 +240,6 @@
         <guid isPermaLink="true">https://tofguerrier.github.io/2013/10/07/explaining-statistics-with-dance.html</guid>
         
         <category>variance</category>
-        
-        <category>Statistics</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>In the thick of R....</title>
-        <description>&lt;div style=&quot;margin:0 0 10px;padding:0;font-size:.8em;line-height:1.6em;&quot;&gt;&lt;a title=&quot;Day 262 - RRRRR&quot; href=&quot;http://www.flickr.com/photos/tof2006/9821764463/&quot;&gt;&lt;img alt=&quot;Day 262 - RRRRR by TOF2006&quot; src=&quot;http://farm3.staticflickr.com/2823/9821764463_06b45704b3.jpg&quot; /&gt;&lt;/a&gt;&lt;br/&gt;&lt;span style=&quot;margin:0;&quot;&gt;&lt;a href=&quot;http://www.flickr.com/photos/tof2006/9821764463/&quot;&gt;Day 262 - RRRRR&lt;/a&gt;, a photo by &lt;a href=&quot;http://www.flickr.com/photos/tof2006/&quot;&gt;TOF2006&lt;/a&gt; on Flickr.&lt;/span&gt;&lt;/div&gt;&lt;br/&gt;So here it is I have started a long overdue Msc in Statistics at UCD.&lt;br/&gt;&lt;br/&gt;More to follow ;)
-</description>
-        <pubDate>Sat, 21 Sep 2013 10:00:00 +0100</pubDate>
-        <link>https://tofguerrier.github.io/2013/09/21/in-thick-of-r.html</link>
-        <guid isPermaLink="true">https://tofguerrier.github.io/2013/09/21/in-thick-of-r.html</guid>
-        
-        <category>R</category>
         
         <category>Statistics</category>
         
