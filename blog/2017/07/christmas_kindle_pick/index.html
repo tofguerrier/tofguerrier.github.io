@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dragon curve</title>
-  <meta name="description" content="I discover this easily way to share code via trinket.io.   ">
+  <title>A simple way to draw for Christmas Kindle</title>
+  <meta name="description" content="A much simpler Christmas kindle draw by simple permutation (sample).">
 
   <link rel="icon" href="/img/favicon.ico">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://tofguerrier.github.io/2015/05/22/dragon-curve.html">
+  <link rel="canonical" href="https://tofguerrier.github.io/blog/2017/07/christmas_kindle_pick/">
   <link rel="alternate" type="application/rss+xml" title="Christophe website" href="https://tofguerrier.github.io/feed.xml">
 </head>
 
@@ -81,25 +81,169 @@
       <div class="wrapper">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Dragon curve</h1>
+    <h1 class="post-title" itemprop="name headline">A simple way to draw for Christmas Kindle</h1>
     <p class="post-meta">
-      <time datetime="2015-05-22T22:52:00+01:00" itemprop="datePublished">May 22, 2015</time>
-      
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Christophe Guerrier</span>
-      </span>
+      <time datetime="2017-07-19T00:00:00+01:00" itemprop="datePublished">Jul 19, 2017</time>
       
     </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    I discover this easily way to share code via <a href="https://trinket.io/">trinket.io</a>.   <iframe allowfullscreen="" frameborder="0" height="400" marginheight="0" marginwidth="0" src="https://trinket.io/embed/python/2a9ca0d4a4" width="100%"></iframe>
+    <p>A much simpler Christmas kindle draw by simple permutation (sample).</p>
+
+<p><strong><em>Idea : Keep it simple</em></strong></p>
+
+<h1 id="r-code">R Code</h1>
+
+<p>Using R this gives the following</p>
+
+<div class="language-R highlighter-rouge"><pre class="highlight"><code><span class="n">simple_secret_santa</span><span class="w"> </span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">names</span><span class="p">){</span><span class="w">
+   </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">names</span><span class="p">)</span><span class="w">
+   </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sample</span><span class="p">(</span><span class="n">names</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">replace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+   </span><span class="n">final</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="nf">rep</span><span class="p">(</span><span class="s1">'give to'</span><span class="p">,</span><span class="n">n</span><span class="p">),</span><span class="nf">c</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="m">2</span><span class="o">:</span><span class="n">n</span><span class="p">],</span><span class="n">s</span><span class="p">[</span><span class="m">1</span><span class="p">]))</span><span class="w">
+   </span><span class="n">final</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+<p>It guarantees that nobody gives to himself, and it also prevent circular gifting - ie A give to B and B give to A (except if there is only 2 persons).</p>
+
+<p>And we can use it simply like this:</p>
+
+<div class="language-R highlighter-rouge"><pre class="highlight"><code><span class="n">names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'Robert'</span><span class="p">,</span><span class="s1">'Anna'</span><span class="p">,</span><span class="s1">'Louis'</span><span class="p">,</span><span class="s1">'Joseph'</span><span class="p">,</span><span class="s1">'Mary'</span><span class="p">,</span><span class="s1">'Antoine'</span><span class="p">,</span><span class="s1">'Alex'</span><span class="p">)</span><span class="w">
+</span><span class="n">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span><span class="w">
+</span></code></pre>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>‘give to’</th>
+      <th>Person</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>‘Robert’</td>
+      <td>‘give to’</td>
+      <td>‘Louis’</td>
+    </tr>
+    <tr>
+      <td>‘Louis’</td>
+      <td>‘give to’</td>
+      <td>‘Joseph’</td>
+    </tr>
+    <tr>
+      <td>‘Joseph’</td>
+      <td>‘give to’</td>
+      <td>‘Anna’</td>
+    </tr>
+    <tr>
+      <td>‘Anna’</td>
+      <td>‘give to’</td>
+      <td>‘Antoine’</td>
+    </tr>
+    <tr>
+      <td>‘Antoine’</td>
+      <td>‘give to’</td>
+      <td>‘Mary’</td>
+    </tr>
+    <tr>
+      <td>‘Mary’</td>
+      <td>‘give to’</td>
+      <td>‘Robert’</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="python-code">Python code</h1>
+<p>The same code in python gives</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+  <span class="n">s</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">names</span><span class="p">,</span><span class="n">k</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+      <span class="n">to</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">to</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">"   "</span><span class="o">+</span><span class="n">name</span> <span class="o">+</span> <span class="s">' gives to '</span> <span class="o">+</span> <span class="n">to</span>
+</code></pre>
+</div>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">names</span> <span class="o">=</span> <span class="p">(</span><span class="s">'Robert'</span><span class="p">,</span><span class="s">'Anna'</span><span class="p">,</span><span class="s">'Louis'</span><span class="p">,</span><span class="s">'Joseph'</span><span class="p">,</span><span class="s">'Mary'</span><span class="p">,</span><span class="s">'Antoine'</span><span class="p">,</span><span class="s">'Alex'</span><span class="p">)</span>
+<span class="n">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>Which gives us:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Alex</td>
+      <td>gives to</td>
+      <td>Anna</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Anna</td>
+      <td>gives to</td>
+      <td>Mary</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mary</td>
+      <td>gives to</td>
+      <td>Robert</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Robert</td>
+      <td>gives to</td>
+      <td>Antoine</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Antoine</td>
+      <td>gives to</td>
+      <td>Louis</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Louis</td>
+      <td>gives to</td>
+      <td>Joseph</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Joseph</td>
+      <td>gives to</td>
+      <td>Alex</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li>
+    <p><a href="https://thepracticalr.wordpress.com/2016/12/07/secret-santa-picker-2-using-r/">SECRET SANTA PICKER USING R</a></p>
+  </li>
+  <li>
+    <p><a href="https://thepracticalr.wordpress.com/2015/12/12/secret-santa-picker-using-r/">SECRET SANTA PICKER USING R 2</a></p>
+  </li>
+</ul>
 
   </div>
 
   <p class="post-meta">
   
-     Tag:
+     Tags:
+        
+<a href="/blog/tags/#r">R</a>
         
 <a href="/blog/tags/#python">Python</a>
         
@@ -118,8 +262,8 @@
     <div id="disqus_thread"></div>
         <script>
         var disqus_config = function () {
-        this.page.url = "http://tofguerrier.github.io/2015/05/22/dragon-curve.html"; // <--- use canonical URL
-        this.page.identifier = "/2015/05/22/dragon-curve";
+        this.page.url = "http://tofguerrier.github.io/blog/2017/07/christmas_kindle_pick/"; // <--- use canonical URL
+        this.page.identifier = "/blog/2017/07/christmas_kindle_pick";
         };
 
     (function() { // DON'T EDIT BELOW THIS LINE
