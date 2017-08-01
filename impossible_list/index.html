@@ -91,7 +91,7 @@
 
 <p>This impossible list, is more than a bucket list, even if at times it can feels like it, it is a way to challenge to myself, to push me outside my comfort-zone.</p>
 
-<p>This list is and will be under constant construction and revision (thanks git), last updated on  24/07/2017</p>
+<p>This list is and will be under constant construction and revision (thanks git), last updated on  01/08/2017</p>
 
 <h1 id="current-focuses">Current Focuses:</h1>
 <p>See <a href="/now.html">the now page</a> for my main focus and priorities.</p>
@@ -172,9 +172,12 @@ path {
 <!-- load the d3.js library -->
 <script src="http://d3js.org/d3.v3.min.js"></script>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+ </script>
+
 <script type="text/javascript">
 // Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 20, bottom: 30, left: 50},
+var margin = {top: 30, right: 20, bottom: 60, left: 100},
     width = 600 - margin.left - margin.right,
     height = 270 - margin.top - margin.bottom;
 
@@ -198,7 +201,8 @@ var valueline = d3.svg.line()
     .y(function(d) { return y(d.weight); });
 
 // Adds the svg canvas
-var svg = d3.select("#wgraph")
+var svg = d3.select("#wchart")
+    // code for appending svg
     .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -210,12 +214,11 @@ var svg = d3.select("#wgraph")
 d3.csv("/data/weight.csv", function(error, data) {
     data.forEach(function(d) {
         d.date = parseDate(d.date);
-        d.weight = +d.weight;
-        //console.log(d.date);
+      });
 
     // Scale the range of the data
     x.domain(d3.extent(data, function(d) { return d.date; }));
-    y.domain([0, d3.max(data, function(d) { return d.weight; })]);
+    y.domain([70, 1.1 * d3.max(data, function(d) { return d.weight; })]);
 
     // Add the valueline path.
     svg.append("path")
@@ -226,15 +229,38 @@ d3.csv("/data/weight.csv", function(error, data) {
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+        .call(xAxis)
+        .selectAll("text")
+           .style("text-anchor", "end")
+           .attr("dx", "-.8em")
+           .attr("dy", ".15em")
+           .attr("transform", function(d) {
+               return "rotate(-65)"
+               });
 
     // Add the Y Axis
     svg.append("g")
         .attr("class", "y axis")
         .call(yAxis);
 
+        // now add titles to the axes
+  svg.append("text")
+      .attr("transform",
+            "translate(" + (width/2) + " ," +
+                           (height + margin.top + 30) + ")")
+      .style("text-anchor", "middle")
+      .text("Date");
+
+  // text label for the y axis
+  svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Weight");
+
       });
-});
 
 </script>
 
@@ -286,6 +312,7 @@ d3.csv("/data/weight.csv", function(error, data) {
       <li>2nd kyu</li>
     </ul>
   </li>
+  <li>Movement training</li>
   <li>Learn Parkour
     <ul>
       <li>Learn standing backflips</li>
@@ -300,6 +327,13 @@ d3.csv("/data/weight.csv", function(error, data) {
   <li>Improve flexibility</li>
   <li>Reduce High Blood Pressure</li>
   <li>Meditate</li>
+  <li>Learn to Surf properly</li>
+  <li>Learn to Roller-Skate properly</li>
+  <li>HÉBERT’S FITNESS ASSESSMENT
+    <ul>
+      <li>favor resilience and speed over pure physical strength.</li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="hill-walking">Hill Walking:</h2>
@@ -504,7 +538,7 @@ current status:
 <p>Break-down by year</p>
 
 <ul>
-  <li>2017: Target 24 - current status <a href="https://www.goodreads.com/user_challenges/7614464">14</a></li>
+  <li>2017: Target 24 - current status <a href="https://www.goodreads.com/user_challenges/7614464">15</a></li>
   <li>2016: Read 19 books (Target was 40)</li>
   <li>2015: Read 17 books (Target was 25)</li>
   <li>2014: Read 25 books</li>
@@ -594,7 +628,7 @@ var quotes = [
 
 $( document ).ready(function() {
   genQuote();
-}
+});
 
 </script>
 
