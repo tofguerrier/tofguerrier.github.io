@@ -206,6 +206,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .sk-medium { width: 70%; }
 
+.sk-medium-low { width: 50%; }
+
 .sk-low { width: 10%; }
 
 .sk-stats { background-color: CornflowerBlue; }
