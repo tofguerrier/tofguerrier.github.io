@@ -6,8 +6,8 @@
 </description>
     <link>https://tofguerrier.github.io/</link>
     <atom:link href="https://tofguerrier.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Sep 2017 11:38:02 +0100</pubDate>
-    <lastBuildDate>Wed, 13 Sep 2017 11:38:02 +0100</lastBuildDate>
+    <pubDate>Mon, 18 Sep 2017 19:39:02 +0100</pubDate>
+    <lastBuildDate>Mon, 18 Sep 2017 19:39:02 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -194,6 +194,16 @@
         <title>Reboot</title>
         <description>&lt;p&gt;Time to reboot this blog….
 After 2 years without new posts, time to dig myself again in data analysis.&lt;/p&gt;
+
+&lt;p&gt;I have also decided to widen the range of topics, so this blog will now explore various projects and ideas.
+It will cover my interests:
+- statistics and probability
+- data analytics and Machine Learning
+- Integrated circuit design and physical implementation
+- programming, algorithms and python
+- economics
+- data visualisation
+- and more as I will be guided by my inspiration.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Jul 2017 00:00:00 +0100</pubDate>
         <link>https://tofguerrier.github.io/blog/2017/07/reboot/</link>
