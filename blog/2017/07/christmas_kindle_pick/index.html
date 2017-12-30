@@ -71,6 +71,8 @@
         
           
         
+          
+        
       </div>
     </nav>
 
@@ -99,22 +101,20 @@
 
 <p>Using R this gives the following</p>
 
-<div class="language-R highlighter-rouge"><pre class="highlight"><code><span class="n">simple_secret_santa</span><span class="w"> </span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">names</span><span class="p">){</span><span class="w">
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">simple_secret_santa</span><span class="w"> </span><span class="o">&lt;-</span><span class="k">function</span><span class="p">(</span><span class="n">names</span><span class="p">){</span><span class="w">
    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">names</span><span class="p">)</span><span class="w">
    </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sample</span><span class="p">(</span><span class="n">names</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">replace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
    </span><span class="n">final</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="nf">rep</span><span class="p">(</span><span class="s1">'give to'</span><span class="p">,</span><span class="n">n</span><span class="p">),</span><span class="nf">c</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="m">2</span><span class="o">:</span><span class="n">n</span><span class="p">],</span><span class="n">s</span><span class="p">[</span><span class="m">1</span><span class="p">]))</span><span class="w">
    </span><span class="n">final</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+</span></code></pre></div></div>
 <p>It guarantees that nobody gives to himself, and it also prevent circular gifting - ie A give to B and B give to A (except if there is only 2 persons).</p>
 
 <p>And we can use it simply like this:</p>
 
-<div class="language-R highlighter-rouge"><pre class="highlight"><code><span class="n">names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'Robert'</span><span class="p">,</span><span class="s1">'Anna'</span><span class="p">,</span><span class="s1">'Louis'</span><span class="p">,</span><span class="s1">'Joseph'</span><span class="p">,</span><span class="s1">'Mary'</span><span class="p">,</span><span class="s1">'Antoine'</span><span class="p">,</span><span class="s1">'Alex'</span><span class="p">)</span><span class="w">
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'Robert'</span><span class="p">,</span><span class="s1">'Anna'</span><span class="p">,</span><span class="s1">'Louis'</span><span class="p">,</span><span class="s1">'Joseph'</span><span class="p">,</span><span class="s1">'Mary'</span><span class="p">,</span><span class="s1">'Antoine'</span><span class="p">,</span><span class="s1">'Alex'</span><span class="p">)</span><span class="w">
 </span><span class="n">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span><span class="w">
-</span></code></pre>
-</div>
+</span></code></pre></div></div>
 
 <table>
   <thead>
@@ -161,7 +161,7 @@
 <h1 id="python-code">Python code</h1>
 <p>The same code in python gives</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="k">def</span> <span class="nf">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
   <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
@@ -172,13 +172,11 @@
     <span class="k">else</span><span class="p">:</span>
       <span class="n">to</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
     <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">"   "</span><span class="o">+</span><span class="n">name</span> <span class="o">+</span> <span class="s">' gives to '</span> <span class="o">+</span> <span class="n">to</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">names</span> <span class="o">=</span> <span class="p">(</span><span class="s">'Robert'</span><span class="p">,</span><span class="s">'Anna'</span><span class="p">,</span><span class="s">'Louis'</span><span class="p">,</span><span class="s">'Joseph'</span><span class="p">,</span><span class="s">'Mary'</span><span class="p">,</span><span class="s">'Antoine'</span><span class="p">,</span><span class="s">'Alex'</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">names</span> <span class="o">=</span> <span class="p">(</span><span class="s">'Robert'</span><span class="p">,</span><span class="s">'Anna'</span><span class="p">,</span><span class="s">'Louis'</span><span class="p">,</span><span class="s">'Joseph'</span><span class="p">,</span><span class="s">'Mary'</span><span class="p">,</span><span class="s">'Antoine'</span><span class="p">,</span><span class="s">'Alex'</span><span class="p">)</span>
 <span class="n">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>Which gives us:</p>
 
 <table>
