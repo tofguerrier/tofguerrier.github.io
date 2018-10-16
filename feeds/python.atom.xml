@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe website - Python</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2017-07-19T00:00:00+01:00</updated><entry><title>A simple way to draw for Christmas Kindle</title><link href="/a-simple-way-to-draw-for-christmas-kindle.html" rel="alternate"></link><published>2017-07-19T00:00:00+01:00</published><updated>2017-07-19T00:00:00+01:00</updated><author><name>Christophe Guerrier</name></author><id>tag:None,2017-07-19:/a-simple-way-to-draw-for-christmas-kindle.html</id><summary type="html">&lt;p&gt;A christmas kindle way to draw with R or Python&lt;/p&gt;</summary><content type="html">&lt;p&gt;A much simpler Christmas kindle draw by simple permutation (sample).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Idea : Keep it simple&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;R Code&lt;/h1&gt;
+&lt;p&gt;Using R this gives the following&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;simple_secret_santa &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt;&lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;names&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+   n &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;length&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   s &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="kp"&gt;sample&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;names&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="p"&gt;,&lt;/span&gt; replace &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;FALSE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   final &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="kp"&gt;cbind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;s&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kp"&gt;rep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;give to&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;n&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="kt"&gt;c&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;s&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;n&lt;span class="p"&gt;],&lt;/span&gt;s&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]))&lt;/span&gt;
+   final
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It guarantees that nobody gives to himself, and it also prevent circular gifting - ie A give to B and B give to A (except if there is only 2 persons).&lt;/p&gt;
+&lt;p&gt;And we can use it simply like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;names &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="kt"&gt;c&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Robert&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Anna&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Louis&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Joseph&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Mary&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Antoine&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Alex&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+simple_secret_santa&lt;span class="p"&gt;(&lt;/span&gt;names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kp"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Person&lt;/th&gt;
+&lt;th&gt;'give to'&lt;/th&gt;
+&lt;th&gt;Person&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;'Robert'&lt;/td&gt;
+&lt;td&gt;'give to'&lt;/td&gt;
+&lt;td&gt;'Louis'&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;'Louis'&lt;/td&gt;
+&lt;td&gt;'give to'&lt;/td&gt;
+&lt;td&gt;'Joseph'&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;'Joseph'&lt;/td&gt;
+&lt;td&gt;'give to'&lt;/td&gt;
+&lt;td&gt;'Anna'&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;'Anna'&lt;/td&gt;
+&lt;td&gt;'give to'&lt;/td&gt;
+&lt;td&gt;'Antoine'&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;'Antoine'&lt;/td&gt;
+&lt;td&gt;'give to'&lt;/td&gt;
+&lt;td&gt;'Mary'&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;'Mary'&lt;/td&gt;
+&lt;td&gt;'give to'&lt;/td&gt;
+&lt;td&gt;'Robert'&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;Python code&lt;/h1&gt;
+&lt;p&gt;The same code in python gives&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;simple_secret_santa&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+  &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sample&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;   &amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39; gives to &amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Robert&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Anna&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Louis&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Joseph&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Mary&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Antoine&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Alex&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;simple_secret_santa&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Which gives us:&lt;/p&gt;
+&lt;p&gt;|1|Alex|gives to|Anna|
+|2|Anna|gives to|Mary|
+|3|Mary|gives to|Robert|
+|4|Robert|gives to|Antoine|
+|5|Antoine|gives to|Louis|
+|6|Louis|gives to|Joseph|
+|7|Joseph|gives to|Alex|&lt;/p&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://thepracticalr.wordpress.com/2016/12/07/secret-santa-picker-2-using-r/"&gt;SECRET SANTA PICKER USING R&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://thepracticalr.wordpress.com/2015/12/12/secret-santa-picker-using-r/"&gt;SECRET SANTA PICKER USING R 2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="R"></category><category term="Python"></category></entry><entry><title>Dragon Curve</title><link href="/dragon-curve.html" rel="alternate"></link><published>2015-05-22T07:28:00+01:00</published><updated>2015-05-22T07:28:00+01:00</updated><author><name>Christophe Guerrier</name></author><id>tag:None,2015-05-22:/dragon-curve.html</id><summary type="html">Python trinket to share code.</summary><content type="html">
+I discover this easily way to share code via &lt;a href="https://trinket.io/"&gt;trinket.io&lt;/a&gt;.   &lt;iframe allowfullscreen="" frameborder="0" height="400" marginheight="0" marginwidth="0" src="https://trinket.io/embed/python/2a9ca0d4a4" width="100%"&gt;&lt;/iframe&gt;
+
+</content><category term="Python"></category></entry><entry><title>Random thoughts from Pycon Dublin</title><link href="/random-thoughts-from-pycon-dublin.html" rel="alternate"></link><published>2014-10-13T07:00:00+01:00</published><updated>2014-10-13T07:00:00+01:00</updated><author><name>Christophe Guerrier</name></author><id>tag:None,2014-10-13:/random-thoughts-from-pycon-dublin.html</id><summary type="html">&lt;p&gt;Pycon 2014&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over the weekend I attended my first Pycon in Dublin, Ireland. 
+It is organised by the wonderful crowd of &lt;a href="http://python.ie/"&gt;Python Ireland&lt;/a&gt;, I would actually recommend that you go to one of their monthly meetups if you have any interest in the Python language.
+&lt;a href="https://farm4.staticflickr.com/3953/15326249998_055d89afd3.jpg&amp;quot;"&gt;!day 2 Main stage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I was not sure what to expect, but the experience turned out to be truly enjoyable, and I finished up the weekend, my head full of ideas to investigate with python.&lt;/p&gt;
+&lt;p&gt;Here's my favourite highlights of the weekend, in no particular order.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ian Ozsvald &lt;a href="https://twitter.com/ianozsvald"&gt;@ianozsvald&lt;/a&gt;
+&lt;em&gt;The Real Unsolved Problems in Data Science&lt;/em&gt; You can read it there:&lt;a href="http://ianozsvald.com/2014/10/11/my-keynote-at-pyconireland-2014-the-real-unsolved-problems-in-data-science/"&gt;http://ianozsvald.com/2014/10/11/my-keynote-at-pyconireland-2014-the-real-unsolved-problems-in-data-science/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A lightning talk by &lt;a href="https://twitter.com/saoili&amp;quot;"&gt;@saoili&lt;/a&gt; about getting into python jobs, which comfort me in my current chosen path.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See her lightning talk &lt;a href="http://t.co/xTvf1Y2k4e"&gt;slides&lt;/a&gt;.
+- On the same lightning talk show, a very entertaining demonstration of failing at data science (Homeless cloud by an engineer from rehabstudios, I forgot the name), but also a silent presentation by &lt;a href="href=" title="https://twitter.com/dontusethiscode"&gt;@dontusethiscode&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rachel Willmer &lt;a href="https://twitter.com/rwillmer"&gt;@rwillmer&lt;/a&gt; in her keynote: &lt;em&gt;A Tech Person's Adventures in Startup&lt;/em&gt;, gave me some inspiration and food for thoughts on creating your own company.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I realize that Python was widely used in the financial industry (something I did not know before ) thanks to Dr. Yves J. Hilpisch &lt;a href="https://twitter.com/dyjh"&gt;@dyjh&lt;/a&gt; keynote : &lt;em&gt;Python and the Financial Industry&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally a very cool demonstration, inside iPython notebook on how to build an earth centered universe by Brandon Rhodes &lt;a href="https://twitter.com/brandon_rhodes"&gt;@brandon_rhodes&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overall fun, exciting and energizing conference, I will probably be back next year, more engaged.&lt;/p&gt;</content><category term="Ireland"></category><category term="Python"></category></entry><entry><title>In the thick of R....</title><link href="/in-the-thick-of-r.html" rel="alternate"></link><published>2013-09-21T01:00:00+01:00</published><updated>2013-09-21T01:00:00+01:00</updated><author><name>Christophe Guerrier</name></author><id>tag:None,2013-09-21:/in-the-thick-of-r.html</id><summary type="html">&lt;p&gt;In the thick of R&lt;/p&gt;</summary><content type="html">&lt;p&gt;So here it is I have started a long overdue Msc in Statistics at UCD.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="RRRRR Day 262 by TOF2006" src="http://farm3.staticflickr.com/2823/9821764463_06b45704b3.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;More to follow ;)&lt;/p&gt;</content><category term="R"></category><category term="Statistics"></category></entry></feed>
