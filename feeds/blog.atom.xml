@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe website - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2018-10-18T00:00:00+01:00</updated><entry><title>How I work</title><link href="/how-i-work.html" rel="alternate"></link><published>2018-10-18T00:00:00+01:00</published><updated>2018-10-18T00:00:00+01:00</updated><author><name>Christophe Guerrier</name></author><id>tag:None,2018-10-18:/how-i-work.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; ‎Physical Digital Implementation Engineer at &lt;a href="https://www.s3semi.com/"&gt;S3 semiconductors&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Sony Experia (Android 8.0)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current personal computer:&lt;/em&gt; MacBook Pro (old 2012)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Work Computer:&lt;/em&gt;
+Windows 10 laptop, No machine to unix workstation (vpn) and Grid engine …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; ‎Physical Digital Implementation Engineer at &lt;a href="https://www.s3semi.com/"&gt;S3 semiconductors&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Sony Experia (Android 8.0)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current personal computer:&lt;/em&gt; MacBook Pro (old 2012)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Work Computer:&lt;/em&gt;
+Windows 10 laptop, No machine to unix workstation (vpn) and Grid engine to submit various tools jobs.&lt;/p&gt;
+&lt;h2&gt;First of all, tell me a little about your background and how you got to where you are today.&lt;/h2&gt;
+&lt;p&gt;Studied Physics in Clermont-Ferrand, France, followed on by a master in Microelectronics which I finished with a work placement in small company in Grenoble (Dolphin Integration). After that I decided to go abroad, and landed in Ireland on the west coast, there I transferred from Analog Layout to digital Physical Implementation. I work in Integrated Circuit design for a couple of companies, alternating between my two areas of expertise: analog and digital physical implementation, until I join my current employer.&lt;/p&gt;
+&lt;h2&gt;How do you organise your day:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;walk to work:&lt;/li&gt;
+&lt;li&gt;chat about goat/moon with my kid on the way.&lt;/li&gt;
+&lt;li&gt;drop my kid to childminder&lt;/li&gt;
+&lt;li&gt;listen to some podcast on the way.&lt;/li&gt;
+&lt;li&gt;Once at my desk:&lt;/li&gt;
+&lt;li&gt;list tasks for the day&lt;/li&gt;
+&lt;li&gt;check email&lt;/li&gt;
+&lt;li&gt;first pass at KanbanFlow to track tasks.&lt;/li&gt;
+&lt;li&gt;list priorities / sort and review tasks.&lt;/li&gt;
+&lt;li&gt;email replies&lt;/li&gt;
+&lt;li&gt;start on first tasks and move on.&lt;/li&gt;
+&lt;li&gt;usually start with analysing results from overnight runs / review logs and reports&lt;/li&gt;
+&lt;li&gt;if possible parallelise tasks (for example kicking off a run/ so in the meantime i can do another review/scripting/manual edit/read documentations)&lt;/li&gt;
+&lt;li&gt;loop over&lt;/li&gt;
+&lt;li&gt;use KabanFlow to track progress.&lt;/li&gt;
+&lt;li&gt;multiple breaks (lunch/coffee) so i don't spend all day sit at my desk, I actually need to stand up and move every so often.&lt;/li&gt;
+&lt;li&gt;10 minutes before end of the day:&lt;/li&gt;
+&lt;li&gt;review tasks status.&lt;/li&gt;
+&lt;li&gt;email progress and issues found.&lt;/li&gt;
+&lt;li&gt;list additional tasks for following day.&lt;/li&gt;
+&lt;li&gt;walk home:&lt;/li&gt;
+&lt;li&gt;listening to some more podcast.&lt;/li&gt;
+&lt;li&gt;pickup my kid from childminder on the way back.&lt;/li&gt;
+&lt;li&gt;enquire about the kid activities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What apps, software, or tools can’t you live without? Why?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook - draft paper /&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Apps/Software:
+- Google Keep for quick capture on my phone.
+- chrome extension: KanbanFlow
+- vi (Atom in vi mode at home)&lt;/p&gt;
+&lt;h2&gt;What’s your workspace setup like ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In the office i have dual screen, with one always on the linux workstation connection, and the other alternating between Chrome(online documentation),outlook(email) and Onenote.
+Beside this I have my earphone, and a notebook open.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What’s your best time-saving shortcut or life hack?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduce and Prioritize and focus on only one single task at a time for 10 minutes. Basically blocked focused session. Took me a long time to get it, and I still fall behind sometimes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Besides your phone and computer, what gadget or tool can’t you live without and why?&lt;/h2&gt;
+&lt;p&gt;A notebook and pen.&lt;/p&gt;
+&lt;h2&gt;What do you listen to while you work?&lt;/h2&gt;
+&lt;p&gt;Depending on the tasks:
+- mostly podcasts (Freakonomics, Planet Money, Rationally Speaking, ....)
+- if needing more concentration online radio:
+  - BBC 6 recommends
+  - FIP
+  - France Inter Transmission&lt;/p&gt;
+&lt;h2&gt;What are you currently reading ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The Glass Book of Dream Eaters&lt;/li&gt;
+&lt;li&gt;Le Rivage des Syrtes by Julien Gracq&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What everyday thing are you better at than everyone else? What’s your secret?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Most other engineer are (much) better than me on very specific tasks/areas, but I have a broad array of knowledge in IC design, more fox than hedgehog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How do you recharge? What do you do to forget about work?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Getting better at this through the years, I only need a simple walk in nature.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What’s your sleep routine like? Are you a night owl or early-riser?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to bed around 9PM-10PM and read a book. I am more of an early-riser, I feel much better when I can wake up and start the day early. I usually slump in the afternoon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What’s the best advice you’ve ever received ?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;One received recently: voice your unhappiness about stuff at work.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Work"></category></entry><entry><title>In the thick of Python</title><link href="/in-the-thick-of-python.html" rel="alternate"></link><published>2014-09-30T06:39:00-07:00</published><updated>2014-09-30T06:39:00-07:00</updated><author><name>Christophe Guerrier</name></author><id>tag:None,2014-09-30:/in-the-thick-of-python.html</id><summary type="html">&lt;p&gt;New post coming soon....
+&lt;img alt="In the thick of python coding" src="http://1.bp.blogspot.com/-uhLEfiEydXo/VWAwBSfpVoI/AAAAAAAAEDg/Gv5ZG3NSlNY/s1600/inthehickofpython.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;New post coming soon....
+&lt;img alt="In the thick of python coding" src="http://1.bp.blogspot.com/-uhLEfiEydXo/VWAwBSfpVoI/AAAAAAAAEDg/Gv5ZG3NSlNY/s1600/inthehickofpython.png"&gt;&lt;/p&gt;</content><category term="Python"></category></entry><entry><title>Reading list</title><link href="/reading-list.html" rel="alternate"></link><published>2014-07-09T00:00:00+01:00</published><updated>2014-07-09T00:00:00+01:00</updated><author><name>Christophe Guerrier</name></author><id>tag:None,2014-07-09:/reading-list.html</id><summary type="html">&lt;p&gt;The number of Books on data science and visualisation have bloomed in recent years, see below a list of my recent favourites&lt;/p&gt;
+&lt;h2&gt;Mathematics history:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/10672848-the-theory-that-would-not-die"&gt;Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy&lt;/a&gt; by Sharon …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;The number of Books on data science and visualisation have bloomed in recent years, see below a list of my recent favourites&lt;/p&gt;
+&lt;h2&gt;Mathematics history:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/10672848-the-theory-that-would-not-die"&gt;Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy&lt;/a&gt; by Sharon Bertsch McGrayne
+Fascinating stories about the often forgotten and yet always resuscitated Bayes theorem, and quite insightful in how mathematics and science can also be a fierce battle between people holding different views.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/15865525-th-or-me-vivant"&gt;Théorème vivant&lt;/a&gt; by Cédric Villani
+ This book confirmed to me, I would never have the knack to become an academic.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/17986418-naked-statistics"&gt;Naked Statistics: Stripping the Dread from the Data&lt;/a&gt; by Charles Wheelan.
+ Simple and entertaining introduction to statistical concept, I should have read that long ago, before going back to university.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/44882.Code"&gt;Code: The Hidden Language of Computer Hardware and Software&lt;/a&gt; by Charles Petzold
+ I found this book very accessible, and I like the way it started from the very basic without using electronic to go on to explain how our computer ( dominating our world ) works. The last chapters were a bit disappointing I have to say, probably a bit outdated, but I would recommend it to anybody who actually want to understand electronic hardware.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/7249817-information-is-beautiful"&gt;Information is Beautiful&lt;/a&gt; by David McCandless&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Economics:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/1202.Freakonomics"&gt;Freakonomics: A Rogue Economist Explores the Hidden Side of Everything&lt;/a&gt; by Steven D. Levitt, Stephen J. Dubner.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/6402364-superfreakonomics"&gt;SuperFreakonomics: Global Cooling, Patriotic Prostitutes And Why Suicide Bombers Should Buy Life Insurance&lt;/a&gt;  by Steven D. Levitt, Stephen J. Dubner.
+I simply love anything those guys do, ,either in podcast format or in book.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/70420.The_Undercover_Economist"&gt;The Undercover Economist&lt;/a&gt;  by Tim Harford.
+In the same vain, quite good at explaining basic economics concept and how they can apply to everybody daily life.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Data Science:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/13588394-the-signal-and-the-noise"&gt;The Signal and the Noise: The Art and Science of Prediction&lt;/a&gt;  by Nate Silver.
+Another bayesian book, you probably heard of Nate Silver, the book is not without default, but yet still a must read.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.goodreads.com/book/show/17847037-untangling-the-web"&gt;Untangling the Web: What the internet is doing to you&lt;/a&gt; by Aleks Krotoski.
+To understand how the web is changing our life, magnifying our humans traits.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Reference books:&lt;/h2&gt;
+&lt;p&gt;I probably use those two books every other day to get examples of graphs, or ideas of coding.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.goodreads.com/book/show/11054622-visualize-this"&gt;Visualize This&lt;/a&gt; by Nathan Yau.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.goodreads.com/book/show/11746626-the-art-of-r-programming"&gt;The Art of R Programming: A Tour of Statistical Software&lt;/a&gt; by Norman Matloff.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="book"></category><category term="Data Science"></category><category term="Statistics"></category></entry></feed>

@@ -54,12 +54,14 @@
 <p>The requested item could not be located. Perhaps you might want to check
 the <a href="/archives.html">Archives</a>?</p>
 <p><em>Facts are stubborn, but statistics are more pliable. Mark Twain</em></p>
-<p>function genQuote() {
+<script type="text/javascript">
+function genQuote() {
   var lq = quotes.length;
   var randNum = Math.floor(Math.random() * lq) + 1;
   document.getElementById('quote').innerHTML = quotes[randNum];
-}</p>
-<p>//quote array
+}
+
+//quote array
 var quotes = [
 "Strength does not come from winning. Your struggles develop your strengths </br> Arnold Schwarzenegger",
 "Experience is simply the name we give our mistakes. </br> Oscar Wilde",
@@ -99,10 +101,12 @@ var quotes = [
 "Experience is what you get when you didn't get what you wanted. And experience is often the most valuable thing you have to offer.</br>Randy Pausch",
 "The miracle is this - the more we share, the more we have.</br>Leonard Nimoy",
 "There's a world of difference between insisting on someone's doing something and establishing an atmosphere in which that person can grow into wanting to do it.</br>Fred Rogers"
-];</p>
-<p>$( document ).ready(function() {
+];
+
+$( document ).ready(function() {
   genQuote();
-});</p>
+});
+</script>
     </div>
   </article>
     </div>
