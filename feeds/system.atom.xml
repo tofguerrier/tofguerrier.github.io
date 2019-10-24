@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website - system</title><link href="http://tofguerrier.github.io/" rel="alternate"></link><link href="http://tofguerrier.github.io/feeds/system.atom.xml" rel="self"></link><id>http://tofguerrier.github.io/</id><updated>2019-05-23T01:20:00+01:00</updated><entry><title>How I work</title><link href="http://tofguerrier.github.io/how-i-work.html" rel="alternate"></link><published>2019-05-23T01:20:00+01:00</published><updated>2019-05-23T01:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-05-23:/how-i-work.html</id><summary type="html">&lt;p&gt;How I work in may 2019&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; ‎Lead Physical Digital Implementation Engineer at Adesto/S3 semiconductors&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Sony Experia (Android 8.0)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current personal computer:&lt;/em&gt; MacBook Pro (old 2012)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Work Computer:&lt;/em&gt; Windows 10 laptop, No machine to unix workstation (vpn) and Grid engine to submit various tools jobs.&lt;/p&gt;
+&lt;p&gt;A little about my background and how I got to where I am today.
+Studied Physics in Clermont-Ferrand, France, followed on by a master in Microelectronics which I finished with a work placement in small company in Grenoble (Dolphin Integration). After that I decided to go abroad, and landed in Ireland on the west coast, there I transferred from Analog Layout to digital Physical Implementation. I work in Integrated Circuit design for a couple of companies, alternating between my two areas of expertise: analog and digital physical implementation, until I join my current employer.&lt;/p&gt;
+&lt;h2&gt;How do I organise my day&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;walk/Luas to work.&lt;/li&gt;
+&lt;li&gt;~~chat about goat/moon with my kid on the way to creche.~~&lt;/li&gt;
+&lt;li&gt;Read in the Luas preferrably book.&lt;/li&gt;
+&lt;li&gt;Once at my desk:&lt;/li&gt;
+&lt;li&gt;list/review tasks and priorities for the day on my work notebook.&lt;/li&gt;
+&lt;li&gt;check email/Jira tickets and email replies&lt;/li&gt;
+&lt;li&gt;start on first task of the day and move on.&lt;/li&gt;
+&lt;li&gt;usually start with analysing results from overnight runs / review logs and reports&lt;/li&gt;
+&lt;li&gt;loop over&lt;/li&gt;
+&lt;li&gt;multiple breaks (lunch/coffee) so i don't spend all day sit at my desk, I actually need to stand up and move every so often.&lt;/li&gt;
+&lt;li&gt;10 minutes before end of the day:&lt;/li&gt;
+&lt;li&gt;review tasks status, write next day task in notebook.&lt;/li&gt;
+&lt;li&gt;email progress and issues found.&lt;/li&gt;
+&lt;li&gt;list additional tasks for following day.&lt;/li&gt;
+&lt;li&gt;luas/walk home:&lt;/li&gt;
+&lt;li&gt;~~pickup kid from creche on the way back.~~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Appps, software, or tools I use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook - draft paper.&lt;/li&gt;
+&lt;li&gt;Apps/Software: &lt;ul&gt;
+&lt;li&gt;Google Keep for quick capture on my phone. &lt;/li&gt;
+&lt;li&gt;vi/gvim still for me the best editor. NotePad++ on Windows, and been slowly converted to MS Visual Code on Mac.&lt;/li&gt;
+&lt;li&gt;Python whenever I can.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My workspace setup&lt;/h2&gt;
+&lt;p&gt;In the office i have dual screen, with one always on the linux workstation connection, and the other alternating between Chrome(online documentation),outlook(email) and Onenote. Beside this I have my earphone, and a notebook open.&lt;/p&gt;
+&lt;h2&gt;My best time-saving shortcut&lt;/h2&gt;
+&lt;p&gt;Reduce and Prioritize and focus on only one single task at a time for 10 minutes. Basically blocked focused session. Took me a long time to get it, and I still fall behind sometimes.
+Besides your phone and computer, what gadget or tool can’t you live without and why?
+A notebook and pen.&lt;/p&gt;
+&lt;h2&gt;Listening habits while at work&lt;/h2&gt;
+&lt;p&gt;Depending on the tasks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mostly podcasts (Freakonomics, Planet Money, Rationally Speaking, ....) &lt;/li&gt;
+&lt;li&gt;if needing more concentration: &lt;ul&gt;
+&lt;li&gt;Online Radio: BBC 6 recommends  especially Mary Ann Hobbes.&lt;/li&gt;
+&lt;li&gt;Jazz Playlist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My Key Strength&lt;/h2&gt;
+&lt;p&gt;Most other engineer are (much) better than me on very specific tasks/areas, but I have a broad array of knowledge in IC design, more fox than hedgehog.&lt;/p&gt;
+&lt;h2&gt;Relaxing and recharging&lt;/h2&gt;
+&lt;p&gt;Getting better at this through the years, I only need a simple walk in nature.
+What’s your sleep routine like? Are you a night owl or early-riser?
+Go to bed around 9PM-10PM and read a book. I am more of an early-riser, I feel much better when I can wake up and start the day early. I usually slump in the afternoon.&lt;/p&gt;
+&lt;h2&gt;Best advice I have ever received&lt;/h2&gt;
+&lt;p&gt;One received recently: voice your unhappiness about stuff at work, don't wait until you reach meltdown to ask for help or voice your concern and issues.&lt;/p&gt;</content><category term="system"></category><category term="work"></category></entry></feed>
