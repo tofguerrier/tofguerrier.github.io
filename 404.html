@@ -19,7 +19,7 @@
   <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
         href="http://tofguerrier.github.io/feeds/all.atom.xml">
   
-  <meta name="description" content="OUPS this page does not exist?? The requested item could not be located. Perhaps you might want to check the Archives Facts are stubborn, but statistics are more pliable. Mark Twain {% include '_quote-generator.html' %}">
+  <meta name="description" content="OUPS this page does not exist?? The requested item could not be located. Perhaps you might want to check the Archives Facts are stubborn, but statistics are more pliable. Mark Twain Facts are stubborn, but statistics are more pliable. Mark Twain --> function genQuote() { var lq = quotes.length; var randNum = Math.floor(Math.random() * lq) + 1; document.getElementById('quote').innerHTML = quotes …">
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -64,7 +64,64 @@
 <p>The requested item could not be located. Perhaps you might want to check
 the  <a href="archives.html">Archives</a></p>
 <p><em>Facts are stubborn, but statistics are more pliable. Mark Twain</em></p>
-<p>{% include '_quote-generator.html' %}</p>
+<!--
+  <p><em>Facts are stubborn, but statistics are more pliable. Mark Twain</em></p>
+-->
+
+<script type="text/javascript">
+function genQuote() {
+  var lq = quotes.length;
+  var randNum = Math.floor(Math.random() * lq) + 1;
+  document.getElementById('quote').innerHTML = quotes[randNum];
+}
+
+//quote array
+var quotes = [
+"Strength does not come from winning. Your struggles develop your strengths </br> Arnold Schwarzenegger",
+"Experience is simply the name we give our mistakes. </br> Oscar Wilde",
+"The world breaks everyone and afterward many are strong at the broken places. </br> Ernest Hemingway",
+"A smooth sea never made a skillful sailor </br> Franklin D Roosevelt",
+"Good judgment comes from experience, and a lot of that comes from bad judgment. </br> Will Rogers",
+"I would rather have questions that can’t be answered than answers that can’t be questioned. </br> Richard Feynman",
+"I have no special talents. I am only passionately curious. </br> Albert Einstein",
+"Anyone who stops learning is old </br> Henry Ford",
+"Continuous effort, not strength or intelligence, is the key to unlocking our potential.</br> Winston Churchill",",
+"Start where you are. Use what you have. Do what you can.</br> Arthur Ashe",",
+"Patience is the mother of all virtues and the godmother of madness.</br> Carlos Ruiz Zafón, Marina",
+"When your rage is choking you, it is best to say nothing.</br>Octavia E.Butler",
+"the people who are crazy enough to think they can change the world are the ones who do.</br>Steve Jobs",
+"If you always put limit on everything you do, physical or anything else.</br>It will spread into your work and into your life.There are no limits.There are only plateaus, and you must not stay there, you must go beyond them.</br>Bruce Lee",
+"Don't cry because it's over, smile because it happened.</br<Dr Seuss",
+"There are years that ask questions and years that answer.</br>Zora Neale Hurston",
+"The only thing that is constant is change.</br>Heraclitus",
+"Facts are stubborn, but statistics are more pliable.</br>Mark Twain",
+"It is sometimes an appropriate response to reality to go insane.</br>Philip K.Dick",
+"Reality is that which, when you stop believing in it, doesn't go away.</br>Philip K.Dick",
+"Love doesn't just sit there, like a stone, it has to be made, like bread; remade all the time, made new.</br>Ursula K LeGuin",
+"A trap is only a trap if you don't know about it. If you know about it, it's a challenge.</br>China Miéville",
+"Necessité fait gens méprend Et faim saillir le loup du bois.</br>Francois Villon",
+"We are only as strong as we are united, as weak as we are divided.</br>J.K. Rowling",
+"The saving of time and the conquest of leisure have no meaning if we are not moved by the laugh of a child at play.</br>Simone de Beauvoir",
+"That which is dreamed cannot be grasped, but work towards it, day after day, and you will find it in your hands.</br>Little Witch Academia",
+"It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.</br>J.K. Rowling",
+"It was true that I didn’t have much ambition, but there ought to be a place for people without ambition, I mean a better place than the one usually reserved. How in the hell could a man enjoy being awakened at 6:30 a.m. by an alarm clock, leap out of bed, dress, force-feed, shit, piss, brush teeth and hair, and fight traffic to get to a place where essentially you made lots of money for somebody else and were asked to be grateful for the opportunity to do so?</br>Charles Bukowsky",
+"There are years that ask questions and years that answer.</br>Zora Neale Hurston",
+"The Only Thing That Is Constant Is Change.</br>Heraclitus",
+"Reading is escape, and the opposite of escape; it's a way to make contact with reality after a day of making things up, and it's a way of making contact with someone else's imagination after a day that's all too real.</br>Nora Ephron",
+"For if there is a sin against life, it consists perhaps not so much in despairing of life as in hoping for another life and in eluding the implacable grandeur of this life.</br>Albert Camus",
+"When your rage is choking you, it is best to say nothing.</br>Octavia E. Butler",
+"The brick walls are there for a reason. The brick walls are not there to keep us out. The brick walls are there to give us a chance to show how badly we want something. Because the brick walls are there to stop the people who don’t want it badly enough. They’re there to stop the other people.</br>Randy Pausch",
+"When it comes to men who are romantically interested in you, it’s really simple. Just ignore everything they say and only pay attention to what they do.</br>Randy Pausch",
+"Experience is what you get when you didn't get what you wanted. And experience is often the most valuable thing you have to offer.</br>Randy Pausch",
+"The miracle is this - the more we share, the more we have.</br>Leonard Nimoy",
+"There's a world of difference between insisting on someone's doing something and establishing an atmosphere in which that person can grow into wanting to do it.</br>Fred Rogers"
+];
+
+$( document ).ready(function() {
+  genQuote();
+});
+
+</script>
     </div>
   </article>
     </div>
