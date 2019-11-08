@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website - random</title><link href="/" rel="alternate"></link><link href="/feeds/random.atom.xml" rel="self"></link><id>/</id><updated>2019-11-07T00:00:00+00:00</updated><entry><title>Completing Panini albums.</title><link href="/panini_album.html" rel="alternate"></link><published>2019-11-07T00:00:00+00:00</published><updated>2019-11-07T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:None,2019-11-07:/panini_album.html</id><summary type="html">&lt;p&gt;How many packet do you need to complete a panini stickers album ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website - random</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/random.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2019-11-07T00:00:00+00:00</updated><entry><title>Completing Panini albums.</title><link href="https://tofguerrier.github.io/panini_album.html" rel="alternate"></link><published>2019-11-07T00:00:00+00:00</published><updated>2019-11-07T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-07:/panini_album.html</id><summary type="html">&lt;p&gt;How many packet do you need to complete a panini stickers album ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1677,7 +1677,7 @@ h6:hover .anchor-link {
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Python"></category></entry><entry><title>A simple way to draw for Christmas Kindle</title><link href="/xmas_kindle_draw.html" rel="alternate"></link><published>2018-12-24T00:05:00+00:00</published><updated>2018-12-24T00:05:00+00:00</updated><author><name>Christophe</name></author><id>tag:None,2018-12-24:/xmas_kindle_draw.html</id><summary type="html">&lt;p&gt;A much simpler Christmas kindle draw by simple permutation (sample).&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A simple way to draw for Christmas Kindle&lt;/h1&gt;
+</content><category term="Python"></category></entry><entry><title>A simple way to draw for Christmas Kindle</title><link href="https://tofguerrier.github.io/xmas_kindle_draw.html" rel="alternate"></link><published>2018-12-24T00:05:00+00:00</published><updated>2018-12-24T00:05:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2018-12-24:/xmas_kindle_draw.html</id><summary type="html">&lt;p&gt;A much simpler Christmas kindle draw by simple permutation (sample).&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A simple way to draw for Christmas Kindle&lt;/h1&gt;
 &lt;p&gt;A much simpler Christmas kindle draw by simple permutation (sample).&lt;/p&gt;
 &lt;p&gt;Main Idea : Keep it simple&lt;/p&gt;
 &lt;h2&gt;R Code&lt;/h2&gt;
