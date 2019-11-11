@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/all.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2019-11-10T00:00:00+00:00</updated><entry><title>On prime birdthdays.</title><link href="https://tofguerrier.github.io/prime_birthday.html" rel="alternate"></link><published>2019-11-10T00:00:00+00:00</published><updated>2019-11-10T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-10:/prime_birthday.html</id><summary type="html">&lt;p&gt;How many prime birthday will you have ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/all.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2019-11-10T00:00:00+00:00</updated><entry><title>On prime birthdays.</title><link href="https://tofguerrier.github.io/prime_birthday.html" rel="alternate"></link><published>2019-11-10T00:00:00+00:00</published><updated>2019-11-10T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-10:/prime_birthday.html</id><summary type="html">&lt;p&gt;How many prime birthday will you have ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1151,7 +1151,7 @@ h6:hover .anchor-link {
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="find-your-prime-and-double-prime-birdthday"&gt;find your prime and double prime birdthday&lt;a class="anchor-link" href="#find-your-prime-and-double-prime-birdthday"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Prime Birthday definition, we define a prime birthday as:&lt;/p&gt;
+&lt;h1 id="find-your-prime-and-double-prime-birthday"&gt;find your prime and double prime birthday&lt;a class="anchor-link" href="#find-your-prime-and-double-prime-birthday"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Prime Birthday definition, we define a prime birthday as:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;when your reach an age which is a prime number (2 year old,3 year old,5th birthday,7th,11th...)&lt;/li&gt;
 &lt;li&gt;when the year of your birthday is a prime.
@@ -1730,6 +1730,117 @@ So the difference depending on your age will be the birth year.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[17]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;no_double&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;years&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;yd&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[18]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#People born in those years will have no double prime birthday !!&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;no_double&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;[1789, 1791, 1793, 1795, 1797, 1801, 1803, 1805, 1807, 1811, 1813, 1815, 1817, 1819, 1823, 1825, 1827, 1831, 1833, 1835, 1837, 1839, 1841, 1843, 1847, 1849, 1851, 1853, 1855, 1857, 1861, 1863, 1867, 1873, 1879, 1881, 1883, 1885, 1889, 1891, 1893, 1895, 1897, 1901, 1903, 1907, 1909, 1913, 1915, 1917, 1919, 1921, 1923, 1925, 1927, 1933, 1935, 1937, 1939, 1941, 1943, 1945, 1951, 1953, 1955, 1957, 1959, 1961, 1963, 1965, 1967, 1969, 1973, 1975, 1979, 1981, 1983, 1987, 1989, 1993, 1999, 2003, 2005, 2007, 2011, 2013, 2017, 2019]
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[19]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="c1"&gt;# An &amp;quot;interface&amp;quot; to matplotlib.axes.Axes.hist() method&lt;/span&gt;
+&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bins&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;patches&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;yd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bins&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;auto&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#0504aa&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                            &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;rwidth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.85&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;grid&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;y&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.75&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Double Primes Birthday&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Frequency&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Histogram&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;maxfreq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="c1"&gt;# Set a clean upper y-axis limit.&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ymax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ceil&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;maxfreq&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;maxfreq&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="n"&gt;maxfreq&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt output_prompt"&gt;Out[19]:&lt;/div&gt;
+
+
+
+
+&lt;div class="output_text output_subarea output_execute_result"&gt;
+&lt;pre&gt;(0.0, 120.0)&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+
+
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAEWCAYAAAB8LwAVAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4zLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvIxREBQAAGplJREFUeJzt3X20HXV97/H3B6ICKgZFbAooYAGLXI16pBioomgvWoXYpRWrbbC0ufX5seDTFbq62oVXK+q1VVFQRC6CqQJ62yri08IlYMDIg8HCRYVIFKoiBhEMfO8fM8dsDpNkZ+fsMxvO+7XWWWfP7Jk933OSsz/79/vN/CZVhSRJM23TdwGSpMlkQEiSOhkQkqROBoQkqZMBIUnqZEBIkjoZEJrXklyZ5JC+65AmkQGh+7QkP0jyzBnrjkpyAUBVPbaqvrqZ19gjSSVZMMZSpYljQEg9M3g0qQwIzWuDLYwkByRZmeSWJD9J8p52s6+3329Osi7JU5Jsk+TtSX6Y5MYkn0jykIHX/Yv2uZ8m+Z8zjnN8khVJPpnkFuCo9tjfTHJzkrVJPpDk/gOvV0lekeTqJL9M8vdJHt3uc0uSswa3l2aDASFt8D7gfVW1I/Bo4Kx2/VPb7wur6kFV9U3gqPbr6cBewIOADwAk2Q/4F+AlwCLgIcCuM451BLACWAicDtwJvB7YGXgKcCjwihn7HAY8CTgQOAY4qT3G7sD+wIu34meX7sGA0HxwdvvJ/OYkN9O8eXf5DfB7SXauqnVVdeEmXvMlwHuq6tqqWge8BTiy7S56AfC5qrqgqu4A3gHMnPTsm1V1dlXdVVW3VdUlVXVhVa2vqh8AHwaeNmOfd1bVLVV1JXAF8MX2+L8A/h14wvC/EmnzDAjNB0urauH0F/f8ZD7taGAf4Kok30ry3E285u8CPxxY/iGwAHhE+9z1009U1a+An87Y//rBhST7JPl8kh+33U7/SNOaGPSTgce3dSw/aBP1SlvMgJBaVXV1Vb0Y2AV4J7AiyQO556d/gBuARw0sPxJYT/OmvRbYbfqJJNsDD5t5uBnLHwSuAvZuu7jeCmT0n0baegaE1Ery0iQPr6q7gJvb1XcCNwF30Yw1TDsDeH2SPZM8iOYT/5lVtZ5mbOF5SZa0A8d/x+bf7B8M3AKsS/IY4OWz9oNJIzIgpA0OA65Mso5mwPrIqvp120X0D8A32nGMA4FTgNNoznD6PvBr4NUA7RjBq4FP0bQmfgncCNy+iWO/CfizdtuPAGfO/o8nbZl4wyBpvNoWxs003Uff77seaVi2IKQxSPK8JDu0YxjvBi4HftBvVdKWGVtAJDmlvYDoioF170pyVZLLknw2ycKB596S5Jok30vy38dVlzRHjqAZyL4B2Jumu8rmuu5VxtbFlOSpwDrgE1W1f7vuj4AvV9X6JO8EqKpj2wuLzgAOoDlF8EvAPlV151iKkyRt1thaEFX1deBnM9Z9sT3LA+BCNpwKeATwqaq6ve2jvYYmLCRJPelzkrC/ZMOZGrvSBMa0NdxzagIAkiwHlgNsv/32T9pjjz3GWKIk3fesXr36v6rq4ZvbrpeASPI2mouKTp9e1bFZZ99XVZ1EMwcNU1NTtXLlyrHUKEn3VUl+uPmtegiIJMuA5wKHDgzaraGZcGzabjSDe5Kknszpaa5JDgOOBQ5vLz6adi7NRGcPSLInzVkfF89lbZKkuxtbCyLJGcAhwM5J1gDH0cx4+QDgvCQAF1bV31TVlUnOAr5L0/X0Ss9gkqR+3auvpHYMQpK2XJJLqmpqc9t5JbUkqZMBIUnqNG9vlr506QW9HPfssw/u5biStKVsQUiSOhkQkqROBoQkqZMBIUnqZEBIkjoZEJKkTgaEJKmTASFJ6mRASJI6GRCSpE4GhCSpkwEhSepkQEiSOhkQkqROBoQkqZMBIUnqZEBIkjoZEJKkTgaEJKmTASFJ6mRASJI6GRCSpE4GhCSpkwEhSeo0toBIckqSG5NcMbDuoUnOS3J1+32ndn2SvD/JNUkuS/LEcdUlSRrOOFsQHwcOm7HuzcD5VbU3cH67DPBsYO/2aznwwTHWJUkawtgCoqq+DvxsxuojgFPbx6cCSwfWf6IaFwILkywaV22SpM2b6zGIR1TVWoD2+y7t+l2B6we2W9OukyT1ZEHfBbTSsa46N0yW03RDsWjRIlatWjXSAZcsWTfSfltr1Holaa7NdUD8JMmiqlrbdiHd2K5fA+w+sN1uwA1dL1BVJwEnAUxNTdXixYtHKuT44y8Yab+tdcwxo9UrSXNtrruYzgWWtY+XAecMrP+L9mymA4FfTHdFSZL6MbYWRJIzgEOAnZOsAY4DTgDOSnI0cB3wwnbzfwOeA1wD/Ap42bjqkiQNZ2wBUVUv3shTh3ZsW8Arx1WLJGnLeSW1JKmTASFJ6mRASJI6GRCSpE4GhCSpkwEhSepkQEiSOhkQkqROBoQkqZMBIUnqZEBIkjoZEJKkTgaEJKmTASFJ6mRASJI6GRCSpE4GhCSpkwEhSepkQEiSOhkQkqROBoQkqZMBIUnqZEBIkjoZEJKkTgaEJKmTASFJ6mRASJI6GRCSpE69BESS1ye5MskVSc5Isl2SPZNclOTqJGcmuX8ftUmSGnMeEEl2BV4DTFXV/sC2wJHAO4ETq2pv4OfA0XNdmyRpg766mBYA2ydZAOwArAWeAaxonz8VWNpTbZIkmjfqOVVVP0rybuA64Dbgi8AlwM1Vtb7dbA2wa9f+SZYDywEWLVrEqlWrRqpjyZJ1I+23tUatV5Lm2pwHRJKdgCOAPYGbgU8Dz+7YtLr2r6qTgJMApqamavHixSPVcfzxF4y039Y65pjR6pWkudZHF9Mzge9X1U1V9RvgM8ASYGHb5QSwG3BDD7VJklp9BMR1wIFJdkgS4FDgu8BXgBe02ywDzumhNklSa84DoqouohmMvhS4vK3hJOBY4A1JrgEeBpw817VJkjaY8zEIgKo6DjhuxuprgQN6KEeS1MErqSVJnQwISVInA0KS1MmAkCR1MiAkSZ0MCElSp6ECIsn+4y5EkjRZhm1BfCjJxUlekWThWCuSJE2EoQKiqg4GXgLsDqxM8n+SPGuslUmSejX0GERVXQ28nWZKjKcB709yVZI/GVdxkqT+DDsG8bgkJwKraW7s87yq+v328YljrE+S1JNh52L6APAR4K1Vddv0yqq6Icnbx1KZJKlXwwbEc4DbqupOgCTbANtV1a+q6rSxVSdJ6s2wYxBfArYfWN6hXSdJuo8aNiC2q6rf3sS5fbzDeEqSJE2CYQPi1iRPnF5I8iTgtk1sL0m6lxt2DOJ1wKeTTN8nehHwovGUJEmaBEMFRFV9K8ljgH2BAFdV1W/GWpkkqVdbcsvRJwN7tPs8IQlV9YmxVCVJ6t1QAZHkNODRwCrgznZ1AQaEJN1HDduCmAL2q6oaZzGSpMkx7FlMVwC/M85CJEmTZdgWxM7Ad5NcDNw+vbKqDh9LVZKk3g0bEMePswhJ0uQZ9jTXryV5FLB3VX0pyQ7AtuMtTZLUp2Gn+/5rYAXw4XbVrsDZ4ypKktS/YQepXwkcBNwCv7150C7jKkqS1L9hA+L2qrpjeiHJAprrIEaSZGGSFe0d6VYneUqShyY5L8nV7fedRn19SdLWGzYgvpbkrcD27b2oPw18biuO+z7gP6rqMcDjae5U92bg/KraGzi/XZYk9WTYgHgzcBNwOfA/gH+juT/1FkuyI/BU4GSAqrqjqm4GjgBObTc7FVg6yutLkmbHsGcx3UVzy9GPzMIx96IJm48leTxwCfBa4BFVtbY93toknWMcSZYDywEWLVrEqlWrRipiyZJ1m99oDEatV5LmWoaZPSPJ9+kYc6iqvbb4gMkUcCFwUFVdlOR9NIPfr66qhQPb/byqNjkOMTU1VStXrtzSEgBYuvSCkfbbWmeffXAvx5WkaUkuqaqpzW23JXMxTdsOeCHw0FEKA9YAa6rqonZ5BU0X1k+SLGpbD4uAG0d8fUnSLBhqDKKqfjrw9aOqei/wjFEOWFU/Bq5Psm+76lDgu8C5wLJ23TLgnFFeX5I0O4ad7vuJA4vb0LQoHrwVx301cHqS+wPXAi9rX/esJEcD19G0UiRJPRm2i+mfBh6vB34A/OmoB62qVdy922raoaO+piRpdg17FtPTx12IJGmyDNvF9IZNPV9V75mdciRJk2JLzmJ6Ms1AMsDzgK8D14+jKElS/7bkhkFPrKpfAiQ5Hvh0Vf3VuAqTJPVr2Kk2HgncMbB8B7DHrFcjSZoYw7YgTgMuTvJZmiuqnw98YmxVSZJ6N+xZTP+Q5N+BP2xXvayqvj2+siRJfRu2iwlgB+CWqnofsCbJnmOqSZI0AYa95ehxwLHAW9pV9wM+Oa6iJEn9G7YF8XzgcOBWgKq6ga2bakOSNOGGDYg7qpkXvACSPHB8JUmSJsGwAXFWkg8DC5P8NfAlZufmQZKkCTXsWUzvbu9FfQuwL/COqjpvrJVJknq12YBIsi3whap6JmAoSNI8sdkupqq6E/hVkofMQT2SpAkx7JXUvwYuT3Ie7ZlMAFX1mrFUJUnq3bAB8X/bL0nSPLHJgEjyyKq6rqpOnauCJEmTYXNjEGdPP0jyr2OuRZI0QTYXEBl4vNc4C5EkTZbNBURt5LEk6T5uc4PUj09yC01LYvv2Me1yVdWOY61OktSbTQZEVW07V4VIkibLltwPQpI0jxgQkqROBoQkqZMBIUnq1FtAJNk2ybeTfL5d3jPJRUmuTnJmkvv3VZskqd8WxGuB1QPL7wROrKq9gZ8DR/dSlSQJ6CkgkuwG/DHw0XY5wDOAFe0mpwJL+6hNktQYdjbX2fZe4Bjgwe3yw4Cbq2p9u7wG2LVrxyTLgeUAixYtYtWqVSMVsGTJupH221qj1itJc23OAyLJc4Ebq+qSJIdMr+7YtHNqj6o6CTgJYGpqqhYvXjxSHccff8FI+22tY44ZrV5Jmmt9tCAOAg5P8hxgO2BHmhbFwiQL2lbEbsANPdQmSWrN+RhEVb2lqnarqj2AI4EvV9VLgK8AL2g3WwacM9e1SZI2mKTrII4F3pDkGpoxiZN7rkeS5rW+BqkBqKqvAl9tH18LHNBnPZKkDSapBSFJmiAGhCSpU69dTJosS5fO/am/Z5998JwfU9JwbEFIkjoZEJKkTgaEJKmTASFJ6mRASJI6GRCSpE4GhCSpkwEhSepkQEiSOhkQkqROBoQkqZMBIUnqZEBIkjoZEJKkTgaEJKmTASFJ6mRASJI6eUc5TSTvbif1zxaEJKmTASFJ6mRASJI6GRCSpE4GhCSpkwEhSeo05wGRZPckX0myOsmVSV7brn9okvOSXN1+32mua5MkbdBHC2I98Maq+n3gQOCVSfYD3gycX1V7A+e3y5Kknsx5QFTV2qq6tH38S2A1sCtwBHBqu9mpwNK5rk2StEGvYxBJ9gCeAFwEPKKq1kITIsAu/VUmSeptqo0kDwL+FXhdVd2SZNj9lgPLARYtWsSqVatGOv6SJetG2m9rjVrvXOjjd7Kx38ck1SLNV6mquT9ocj/g88AXquo97brvAYdU1doki4CvVtW+m3qdqampWrly5Ug19DHXD0z2fD+TNP/RJNUi3dckuaSqpja3XR9nMQU4GVg9HQ6tc4Fl7eNlwDlzXZskaYM+upgOAv4cuDzJdJv+rcAJwFlJjgauA17YQ22SpNacB0RVXQBsbMDh0LmsRZK0cV5JLUnqZEBIkjoZEJKkTgaEJKmTASFJ6tTbldSShueFneqDLQhJUidbEJK2iNOgzB+2ICRJnWxBSJvgp2XNZ7YgJEmdDAhJUicDQpLUyYCQJHUyICRJnQwISVInT3OVdK/kKcjjZwtCktTJgJAkdTIgJEmdDAhJUicDQpLUybOYJoBnY0iaRLYgJEmdDAhJUicDQpLUyYCQJHUyICRJnSYuIJIcluR7Sa5J8ua+65Gk+WqiTnNNsi3wz8CzgDXAt5KcW1Xf7bcySdq4++qp6pPWgjgAuKaqrq2qO4BPAUf0XJMkzUsT1YIAdgWuH1heA/zB4AZJlgPL28V1Sb63hcfYGfivkSvcSskmn56z2jZTx0xjq2sL6+gya7XNQi0zjVTbGOqYaei65qCWmTpr66GOLjsn/b13zDTwOxnl/9mjhtlo0gKi679B3W2h6iTgpJEPkKysqqlR9x+nSa1tUusCaxvFpNYF1jaKcdY1aV1Ma4DdB5Z3A27oqRZJmtcmLSC+BeydZM8k9weOBM7tuSZJmpcmqoupqtYneRXwBWBb4JSqunKWDzNy99QcmNTaJrUusLZRTGpdYG2jGFtdqarNbyVJmncmrYtJkjQhDAhJUqd5ExCTOoVHkt2TfCXJ6iRXJnlt3zXNlGTbJN9O8vm+a5mWZGGSFUmuan93T+m7pmlJXt/+W16R5Iwk2/VYyylJbkxyxcC6hyY5L8nV7fedJqi2d7X/ppcl+WyShZNQ18Bzb0pSSXae67o2VVuSV7fvb1cm+V+zdbx5ERADU3g8G9gPeHGS/fqt6rfWA2+sqt8HDgReOUG1TXstsLrvImZ4H/AfVfUY4PFMSH1JdgVeA0xV1f40J1sc2WNJHwcOm7HuzcD5VbU3cH673IePc8/azgP2r6rHAf8JvGWui6K7LpLsTjMN0HVzXdCAjzOjtiRPp5lx4nFV9Vjg3bN1sHkREEzwFB5VtbaqLm0f/5LmjW7XfqvaIMluwB8DH+27lmlJdgSeCpwMUFV3VNXN/VZ1NwuA7ZMsAHagx2t5qurrwM9mrD4COLV9fCqwdE6LanXVVlVfrKr17eKFNNdC9V5X60TgGGZcvDuXNlLby4ETqur2dpsbZ+t48yUguqbwmJg34WlJ9gCeAFzUbyV3816aP4q7+i5kwF7ATcDH2q6vjyZ5YN9FAVTVj2g+wV0HrAV+UVVf7Leqe3hEVa2F5gMKsEvP9WzMXwL/3ncRAEkOB35UVd/pu5YO+wB/mOSiJF9L8uTZeuH5EhCbncKjb0keBPwr8LqquqXvegCSPBe4saou6buWGRYATwQ+WFVPAG6lv26Su2n7848A9gR+F3hgkpf2W9W9T5K30XS/nj4BtewAvA14R9+1bMQCYCeaLuq/Bc5KZmf2qvkSEBM9hUeS+9GEw+lV9Zm+6xlwEHB4kh/QdMs9I8kn+y0JaP4911TVdEtrBU1gTIJnAt+vqpuq6jfAZ4AlPdc000+SLAJov89al8RsSLIMeC7wkpqMC7UeTRP432n/FnYDLk3yO71WtcEa4DPVuJimtT8rg+jzJSAmdgqPNulPBlZX1Xv6rmdQVb2lqnarqj1ofmdfrqrePw1X1Y+B65Ps2646FJiUe4ZcBxyYZIf23/ZQJmQAfcC5wLL28TLgnB5ruZskhwHHAodX1a/6rgegqi6vql2qao/2b2EN8MT2/+EkOBt4BkCSfYD7M0szHM+LgGgHvaan8FgNnDWGKTxGdRDw5zSfzle1X8/pu6h7gVcDpye5DFgM/GPP9QDQtmpWAJcCl9P8jfU2RUOSM4BvAvsmWZPkaOAE4FlJrqY5K+eECartA8CDgfPav4UPTUhdE2EjtZ0C7NWe+vopYNlstbycakOS1GletCAkSVvOgJAkdTIgJEmdDAhJUicDQpLUyYDQnEtyZ3sK45VJvpPkDUlG/r+YZN1G1n88yQu24HWOT/KjtrYr2ukVurY7fK5mBE5yVJKbBn5fK9ore0nyN0n+YiP7LR2c9DHJV5Ns9sb2w26n+cGAUB9uq6rF7cyTzwKeAxzXc03TTqyqxcALgVNmBleSBVV1blXN5bUDZw78vu4AXgRQVR+qqk/M3LidJHApzczF0sgMCPWqnXlyOfCqNLZL8rEkl7cT8T0dfvtJ+gPT+yX5fJJDBpb/KcmlSc5P8vCZx0nypHYis0uSfGF6qolN1LWaZi6gnduWyHuSfAV452At7XMfTHNPj2uTPC3NnP2rk3x84Ph/lOSbbY2fbufeIskJSb6b5v4Hm5ymuX3jfyDw83b5+CRvah9/Nck/Jvka7ZXIwLvalsej25d4YZKLk/xnkj9s99s+yafa458JbD9wvA8mWdm2XP6uXXdoks8ObPOsJJM0PYxm0YK+C5Cq6tr2k/ouwEvbdf8tyWOAL7bTB2zKA4FLq+qNSd5B0xp51fSTaea6+t/AEVV1U5IXAf9AM1topyR/QDOnzU3tqn2AZ1bVnUmOmrH5TjRTHRwOfI7m6vi/Ar6VZDHN1Axvb/e/NcmxwBvakHk+8Jiqqmz85jgvSnIwsIjmHgmf28h2C6vqaW39ewOfr6oV7TLAgqo6IM2V+sfRzBv1cuBXVfW4JI+juQJ82tuq6mdp7qdyfvv8l4F/TvLwqroJeBnwsY39HnXvZgtCk2J69smDgdMAquoq4Ic0b86bchdwZvv4k+1rDNoX2J92+gaaN+uN3Wfg9e027wZeNDBlwaer6s6N7PO5drvLgZ+0c/fcBVwJ7EEzy+Z+wDfa114GPAq4Bfg18NEkfwJsbO6hM9tur99pj/G3G9tuI+unTX/Sv6StC5r7anwSoKouAy4b2P5Pk1wKfBt4LLBf+3OeBry0DbSnMCFTcmv22YJQ75LsBdxJM6voxqYpXs/dP9Bs6jaeM+ePCXBlVQ1zW9ITq6qrq+fWTexze/v9roHH08sLaH6286rqxTN3THIAzYR+R9K0ep6xsYO0rYzP0cxD1TUGsqkaB+u8k7v/7d9jvp0kewJvAp5cVT9vu8umf+cfo2nF/JomONfP3F/3DbYg1Kt2vOBDwAfaT6dfB17SPrcP8Ejge8APgMVJtklz68cDBl5mG2D6bKU/Ay6YcZjvAQ9Pe9/qJPdL8tjx/ESdLgQOSvJ77fF3SLJPOw7xkKr6N+B1NJMObs7BwP8bYrtf0kx6tzmDv+/9gce163ekCZxfJHkEze16AaiqG2imy387zS0wdR9lC0J92L7tarkfTcvgNGB6qvN/AT6U5PL2uaOq6vYk3wC+T9PFcgV37yu/FXhskkuAX9Ce5TOtqu5Ic7rr+5M8hOb//XtpuoDGrh33OAo4I8kD2tVvp3kTPyfJdjStnNdv5CWmxyC2oRnPOGqIw34K+EiS17AhPLt8kObOfJcBq4CL25q/k+TbNL+ja4FvzNjvdODhVTUp06xrDJzNVdIWawfYv11VJ/ddi8bHgJC0RdqW2q3As6rq9s1tr3svA0KS1MlBaklSJwNCktTJgJAkdTIgJEmdDAhJUqf/DyJlqJ8psemAAAAAAElFTkSuQmCC
+"
+&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;So it turns out having double prime birthday in your lifetime is not usual.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
