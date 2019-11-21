@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website - misc</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2019-05-23T01:20:00+01:00</updated><entry><title>How I work</title><link href="https://tofguerrier.github.io/articles/how_i_work_2019.html" rel="alternate"></link><published>2019-05-23T01:20:00+01:00</published><updated>2019-05-23T01:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-05-23:/articles/how_i_work_2019.html</id><summary type="html">&lt;p&gt;How I work in may 2019&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; ‎Lead Physical Digital Implementation Engineer at Adesto/S3 semiconductors&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Sony Experia (Android 8.0)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current personal computer:&lt;/em&gt; MacBook Pro (old 2012)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Work Computer:&lt;/em&gt; Windows 10 laptop, No machine to unix workstation (vpn) and Grid engine to submit various tools jobs.&lt;/p&gt;
+&lt;p&gt;A little about my background and how I got to where I am today.
+Studied Physics in Clermont-Ferrand, France, followed on by a master in Microelectronics which I finished with a work placement in small company in Grenoble (Dolphin Integration). After that I decided to go abroad, and landed in Ireland on the west coast, there I transferred from Analog Layout to digital Physical Implementation. I work in Integrated Circuit design for a couple of companies, alternating between my two areas of expertise: analog and digital physical implementation, until I join my current employer.&lt;/p&gt;
+&lt;h2&gt;How do I organise my day&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Walk to work (Luas).&lt;/li&gt;
+&lt;li&gt;~~chat about goat/moon with my kid on the way to creche.~~&lt;/li&gt;
+&lt;li&gt;Read in the Luas, preferrably book.&lt;/li&gt;
+&lt;li&gt;Once at my desk:&lt;/li&gt;
+&lt;li&gt;List/review tasks and priorities for the day on my work notebook.&lt;/li&gt;
+&lt;li&gt;Check email/Jira tickets and email replies&lt;/li&gt;
+&lt;li&gt;Start on first task of the day and move on. Usually start with analysing results from overnight runs / review logs and reports&lt;ul&gt;
+&lt;li&gt;Loop over&lt;/li&gt;
+&lt;li&gt;Multiple breaks (lunch/coffee) so i don't spend all day sit at my desk, I actually need to stand up and move every so often.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;10 minutes before end of the day:&lt;ul&gt;
+&lt;li&gt;Review tasks status, write next day task in notebook.&lt;/li&gt;
+&lt;li&gt;Email progress and issues found.&lt;/li&gt;
+&lt;li&gt;List additional tasks for following day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Luas/Walk home:&lt;/li&gt;
+&lt;li&gt;~~pickup kid from creche on the way back.~~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Appps, software, or tools I use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook - draft paper.&lt;/li&gt;
+&lt;li&gt;Apps/Software: &lt;ul&gt;
+&lt;li&gt;Google Keep for quick capture on my phone. &lt;/li&gt;
+&lt;li&gt;vi/gvim still for me the best editor. NotePad++ on Windows, and been slowly converted to MS Visual Code on Mac.&lt;/li&gt;
+&lt;li&gt;Python whenever I can.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My workspace setup&lt;/h2&gt;
+&lt;p&gt;In the office i have dual screen, with one always on the linux workstation connection, and the other alternating between Chrome(online documentation),outlook(email) and Onenote. Beside this I have my earphone, and a notebook open.&lt;/p&gt;
+&lt;h2&gt;My best time-saving shortcut&lt;/h2&gt;
+&lt;p&gt;Reduce and Prioritize and focus on only one single task at a time for 10 minutes. Basically blocked focused session. Took me a long time to get it, and I still fall behind sometimes.
+Besides your phone and computer, what gadget or tool can’t you live without and why?
+A notebook and pen.&lt;/p&gt;
+&lt;h2&gt;Listening habits while at work&lt;/h2&gt;
+&lt;p&gt;Depending on the tasks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mostly podcasts (Freakonomics, Planet Money, Rationally Speaking, ....) &lt;/li&gt;
+&lt;li&gt;if needing more concentration: &lt;ul&gt;
+&lt;li&gt;Online Radio: BBC 6 recommends  especially Mary Ann Hobbes.&lt;/li&gt;
+&lt;li&gt;Jazz Playlist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My Key Strength&lt;/h2&gt;
+&lt;p&gt;Most other engineer are (much) better than me on very specific tasks/areas, but I have a broad array of knowledge in IC design, more fox than hedgehog.&lt;/p&gt;
+&lt;h2&gt;Relaxing and recharging&lt;/h2&gt;
+&lt;p&gt;Getting better at this through the years, I only need a simple walk in nature.
+What’s your sleep routine like? Are you a night owl or early-riser?
+Go to bed around 9PM-10PM and read a book. I am more of an early-riser, I feel much better when I can wake up and start the day early. I usually slump in the afternoon.&lt;/p&gt;
+&lt;h2&gt;Best advice I have ever received&lt;/h2&gt;
+&lt;p&gt;One received recently: voice your unhappiness about stuff at work, don't wait until you reach meltdown to ask for help or voice your concern and issues.&lt;/p&gt;</content><category term="system"></category><category term="work"></category></entry><entry><title>A simple way to draw for Christmas Kindle</title><link href="https://tofguerrier.github.io/articles/xmas_kindle_draw.html" rel="alternate"></link><published>2018-12-24T00:05:00+00:00</published><updated>2018-12-24T00:05:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2018-12-24:/articles/xmas_kindle_draw.html</id><summary type="html">&lt;p&gt;A much simpler Christmas kindle draw by simple permutation (sample).&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A simple way to draw for Christmas Kindle&lt;/h1&gt;
+&lt;p&gt;A much simpler Christmas kindle draw by simple permutation (sample).&lt;/p&gt;
+&lt;p&gt;Main Idea : Keep it simple&lt;/p&gt;
+&lt;h2&gt;R Code&lt;/h2&gt;
+&lt;p&gt;Using R this gives the following&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;simple_secret_santa&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt;&lt;span class="nf"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+   &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nf"&gt;length&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="nf"&gt;sample&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;replace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;FALSE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="n"&gt;final&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="nf"&gt;cbind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nf"&gt;rep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;give to&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="nf"&gt;c&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s[2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;n]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s[1]&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+   &lt;span class="n"&gt;final&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It guarantees that nobody gives to himself, and it also prevent circular gifting - ie A give to B and B give to A (except if there is only 2 persons).&lt;/p&gt;
+&lt;p&gt;And we can use it simply like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; &lt;span class="nf"&gt;c&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Robert&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Anna&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Louis&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Joseph&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Mary&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Antoine&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Alex&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nf"&gt;simple_secret_santa&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Person  'give to'   Person
+'Robert'    'give to'   'Louis'
+'Louis' 'give to'   'Joseph'
+'Joseph'    'give to'   'Anna'
+'Anna'  'give to'   'Antoine'
+'Antoine'   'give to'   'Mary'
+'Mary'  'give to'   'Robert'&lt;/p&gt;
+&lt;h2&gt;Python code&lt;/h2&gt;
+&lt;p&gt;The same code in python gives&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;simple_secret_santa&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+  &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sample&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+      &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;   &amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39; gives to &amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt;
+&lt;span class="n"&gt;names&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Robert&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Anna&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Louis&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Joseph&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Mary&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Antoine&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Alex&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;simple_secret_santa&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;names&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Which gives us:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;Giver&lt;/th&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;th&gt;Recipient&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Alex&lt;/td&gt;
+&lt;td&gt;gives to&lt;/td&gt;
+&lt;td&gt;Anna&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Anna&lt;/td&gt;
+&lt;td&gt;gives to&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;gives to&lt;/td&gt;
+&lt;td&gt;Robert&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Robert&lt;/td&gt;
+&lt;td&gt;gives to&lt;/td&gt;
+&lt;td&gt;Antoine&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Antoine&lt;/td&gt;
+&lt;td&gt;gives to&lt;/td&gt;
+&lt;td&gt;Louis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;Louis&lt;/td&gt;
+&lt;td&gt;gives to&lt;/td&gt;
+&lt;td&gt;Joseph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;Joseph&lt;/td&gt;
+&lt;td&gt;gives to&lt;/td&gt;
+&lt;td&gt;Alex&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://thepracticalr.wordpress.com/2016/12/07/secret-santa-picker-2-using-r/"&gt;SECRET SANTA PICKER USING R&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://thepracticalr.wordpress.com/2015/12/12/secret-santa-picker-using-r/"&gt;SECRET SANTA PICKER USING R 2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="random"></category><category term="python"></category><category term="R"></category></entry><entry><title>Random thoughts from Pycon Dublin 2014</title><link href="https://tofguerrier.github.io/articles/random-thoughts-from-pycon-dublin-2014.html" rel="alternate"></link><published>2014-10-13T00:05:00+01:00</published><updated>2014-10-13T00:05:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2014-10-13:/articles/random-thoughts-from-pycon-dublin-2014.html</id><summary type="html">&lt;p&gt;Pycon 2014&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over the weekend I attended my first Pycon in Dublin, Ireland. It is organised by the wonderful crowd of &lt;a href="https://python.ie/"&gt;Python Ireland&lt;/a&gt;, I would actually recommend that you go to one of their monthly meetups if you have any interest in the Python language. !day 2 Main stage&lt;/p&gt;
+&lt;p&gt;I was not sure what to expect, but the experience turned out to be truly enjoyable, and I finished up the weekend, my head full of ideas to investigate with python.&lt;/p&gt;
+&lt;p&gt;Here's my favourite highlights of the weekend, in no particular order.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ian Ozsvald &lt;a href="https://twitter.com/ianozsvald"&gt;@ianozsvald&lt;/a&gt;  with its talk titled: &lt;a href="http://ianozsvald.com/2014/10/11/my-keynote-at-pyconireland-2014-the-real-unsolved-problems-in-data-science/"&gt;The Real Unsolved Problems in Data Science&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A lightning talk by &lt;a href="https://twitter.com/saoili"&gt;@saoili&lt;/a&gt; about getting into python jobs, which comfort me in my current chosen path.  See her lightning talk &lt;a href="http://t.co/xTvf1Y2k4e"&gt;slides&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the same lightning talk show, a very entertaining demonstration of failing at data science (Homeless cloud by an engineer from rehabstudios, I sadly forgot the name), but also a silent presentation by &lt;a href="https://twitter.com/dontusethiscode"&gt;@dontusethiscode&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rachel Willmer &lt;a href="https://twitter.com/rwillmer"&gt;@rwillmer&lt;/a&gt; in her keynote: A Tech Person's Adventures in Startup, gave me some inspiration and food for thoughts on creating your own company.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I realize that Python was widely used in the financial industry (something I did not know before ) thanks to Dr. Yves J. Hilpisch &lt;a href="https://twitter.com/dyjh"&gt;@dyjh&lt;/a&gt; keynote : Python and the Financial Industry.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally a very cool demonstration, inside iPython notebook on how to build an earth centered universe by Brandon Rhodes &lt;a href="https://twitter.com/brandon_rhodes"&gt;@brandon_rhodes&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overall it was fun, exciting and energizing conference, I will probably be back next year, more engaged. &lt;/p&gt;
+&lt;p&gt;The conference happen every year, have a look on the python ireland &lt;a href="https://python.ie"&gt;website&lt;/a&gt; for more information on Pycon. Also they usually make the presentation available on youtube, see &lt;a href="https://www.youtube.com/channel/UCXlA9u2VPI9nIALNUBF0Nzw"&gt;Python Ireland channel&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;UPDATE 2019: Sadly I did not engage more nor attended since 2015.&lt;/p&gt;</content><category term="Python"></category><category term="Ireland"></category></entry></feed>
