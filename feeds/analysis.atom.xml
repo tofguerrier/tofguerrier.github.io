@@ -1641,7 +1641,7 @@ Recipients: 17:: names:17
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Python"></category></entry><entry><title>On prime birthdays.</title><link href="https://tofguerrier.github.io/articles/prime_birthday.html" rel="alternate"></link><published>2019-11-10T00:00:00+00:00</published><updated>2019-11-10T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-10:/articles/prime_birthday.html</id><summary type="html">&lt;p&gt;How many prime birthday will you have ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="analysis"></category><category term="Python"></category></entry><entry><title>On prime birthdays.</title><link href="https://tofguerrier.github.io/articles/prime_birthday.html" rel="alternate"></link><published>2019-11-10T00:00:00+00:00</published><updated>2019-11-10T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-10:/articles/prime_birthday.html</id><summary type="html">&lt;p&gt;How many prime birthday will you have ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -3556,7 +3556,7 @@ So the difference depending on your age will be the birth year.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Python"></category></entry><entry><title>Completing Panini albums.</title><link href="https://tofguerrier.github.io/articles/panini_album.html" rel="alternate"></link><published>2019-11-07T00:00:00+00:00</published><updated>2019-11-07T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-07:/articles/panini_album.html</id><summary type="html">&lt;p&gt;How many packet do you need to complete a panini stickers album ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="analysis"></category><category term="Python"></category></entry><entry><title>Completing Panini albums.</title><link href="https://tofguerrier.github.io/articles/panini_album.html" rel="alternate"></link><published>2019-11-07T00:00:00+00:00</published><updated>2019-11-07T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-07:/articles/panini_album.html</id><summary type="html">&lt;p&gt;How many packet do you need to complete a panini stickers album ?&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -5273,7 +5273,7 @@ That is about 320 packets in our example !!! It is true that after that the comp
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Python"></category></entry><entry><title>Tweets word-cloud</title><link href="https://tofguerrier.github.io/articles/tweet_word_cloud.html" rel="alternate"></link><published>2014-07-17T00:05:00+01:00</published><updated>2014-07-17T00:05:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2014-07-17:/articles/tweet_word_cloud.html</id><summary type="html">&lt;p&gt;How to draw a word cloud with R, from twitter archive.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have been interesting in looking at my own tweets, and see what kind of visualization and analyze I could run on it. First I used the archive feature on twitter to get a file copy of my tweets, then using the package wordcloud and tm I processed the archive.&lt;/p&gt;
+</content><category term="analysis"></category><category term="Python"></category></entry><entry><title>Tweets word-cloud</title><link href="https://tofguerrier.github.io/articles/tweet_word_cloud.html" rel="alternate"></link><published>2014-07-17T00:05:00+01:00</published><updated>2014-07-17T00:05:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2014-07-17:/articles/tweet_word_cloud.html</id><summary type="html">&lt;p&gt;How to draw a word cloud with R, from twitter archive.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have been interesting in looking at my own tweets, and see what kind of visualization and analyze I could run on it. First I used the archive feature on twitter to get a file copy of my tweets, then using the package wordcloud and tm I processed the archive.&lt;/p&gt;
 &lt;h2&gt;Getting a twitter snapshot&lt;/h2&gt;
 &lt;p&gt;There is way to query your twitter feed directly (using API and package like &lt;a href="http://cran.r-project.org/web/packages/twitteR/index.html"&gt;twitterR&lt;/a&gt;) , but the simplest way I found was to download an &lt;a href="https://blog.twitter.com/2012/your-twitter-archive"&gt;archive&lt;/a&gt;. 
 The process is quite simple, go to your Twitter account settings, there should be a Request your archive link you can click on.&lt;/p&gt;
@@ -5504,4 +5504,4 @@ Now we have a vector as input, so we use a different construct&lt;/p&gt;
 &lt;p&gt;So I have produced nice graphs ( well I think so), but i haven't told any story, so it's a bit pointless.&lt;/p&gt;
 &lt;p&gt;A couple of links which were very useful in writing the R code:&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://sites.google.com/site/miningtwitter/questions/talking-about/given-users"&gt;Mining twitter with R.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://sites.google.com/site/miningtwitter/basics/text-mining"&gt;Text mining with tm.&lt;/a&gt;&lt;/p&gt;</content><category term="R"></category><category term='"data visualisation"'></category></entry></feed>
+&lt;p&gt;&lt;a href="https://sites.google.com/site/miningtwitter/basics/text-mining"&gt;Text mining with tm.&lt;/a&gt;&lt;/p&gt;</content><category term="analysis"></category><category term="R"></category><category term='"data visualisation"'></category></entry></feed>
