@@ -18,21 +18,76 @@ You can nstall it through &lt;a href="https://brew.sh/"&gt;brew&lt;/a&gt;&lt;/p&
 
 &lt;h1&gt;Running a simulation&lt;/h1&gt;
 &lt;p&gt;First compile Verilog using iverilog:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;iverilog&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;example_3_1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt; &lt;span class="n"&gt;example_3_1_tb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;iverilog&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt; &lt;span class="n"&gt;test_tb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Then running the simulation:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt; &lt;span class="n"&gt;example_3_1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Which should result in the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;VCD&lt;/span&gt; &lt;span class="nv"&gt;info&lt;/span&gt;: &lt;span class="nv"&gt;dumpfile&lt;/span&gt; &lt;span class="nv"&gt;test&lt;/span&gt;.&lt;span class="nv"&gt;vcd&lt;/span&gt; &lt;span class="nv"&gt;opened&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;output&lt;/span&gt;.
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;4&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;6&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;7&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Finally, have a look at waveform:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;open&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;Scansion&lt;/span&gt; &lt;span class="n"&gt;example_3_1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vcd&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;open&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;Scansion&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vcd&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Waveform" src="/images/scanion-3-1-vcd.png" title="waveform vcd"&gt;&lt;/p&gt;</content><category term="eda"></category><category term="eda"></category><category term="work"></category><category term="verilog"></category></entry><entry><title>Revisiting xmas kindle draw</title><link href="https://tofguerrier.github.io/articles/xmas_kindle_2019.html" rel="alternate"></link><published>2019-11-18T00:00:00+00:00</published><updated>2019-11-18T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-18:/articles/xmas_kindle_2019.html</id><summary type="html">&lt;p&gt;Improving, revisiting and digging into xmas draws&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+&lt;p&gt;&lt;img alt="Waveform" src="/images/scanion-3-1-vcd.png" title="waveform vcd"&gt;&lt;/p&gt;
+&lt;p&gt;More test.v:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;module&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;(&lt;span class="n"&gt;A&lt;/span&gt;, &lt;span class="n"&gt;B&lt;/span&gt;, &lt;span class="n"&gt;C&lt;/span&gt;, &lt;span class="n"&gt;D&lt;/span&gt;, &lt;span class="n"&gt;E&lt;/span&gt;);
+
+   &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;, &lt;span class="n"&gt;E&lt;/span&gt;;
+   &lt;span class="n"&gt;input&lt;/span&gt;  &lt;span class="n"&gt;A&lt;/span&gt;, &lt;span class="n"&gt;B&lt;/span&gt;, &lt;span class="n"&gt;C&lt;/span&gt;;
+   &lt;span class="n"&gt;wire&lt;/span&gt;   &lt;span class="n"&gt;w1&lt;/span&gt;;
+
+   &lt;span class="o"&gt;and&lt;/span&gt; &lt;span class="n"&gt;GATE1&lt;/span&gt;(&lt;span class="n"&gt;w1&lt;/span&gt;, &lt;span class="n"&gt;A&lt;/span&gt;, &lt;span class="n"&gt;B&lt;/span&gt;);
+   &lt;span class="nb"&gt;not&lt;/span&gt; &lt;span class="n"&gt;GATE2&lt;/span&gt;(&lt;span class="n"&gt;E&lt;/span&gt;, &lt;span class="n"&gt;C&lt;/span&gt;);
+   &lt;span class="o"&gt;or&lt;/span&gt;  &lt;span class="n"&gt;GATE3&lt;/span&gt;(&lt;span class="n"&gt;D&lt;/span&gt;, &lt;span class="n"&gt;w1&lt;/span&gt;, &lt;span class="n"&gt;E&lt;/span&gt;);
+
+&lt;span class="n"&gt;endmodule&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And the testbench:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nv"&gt;Verilog&lt;/span&gt; &lt;span class="nv"&gt;test&lt;/span&gt; &lt;span class="nv"&gt;bench&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;test&lt;/span&gt;
+`&lt;span class="nv"&gt;timescale&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;ns&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="nv"&gt;ps&lt;/span&gt;
+`&lt;span class="k"&gt;include&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;test.v&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+
+&lt;span class="nv"&gt;module&lt;/span&gt; &lt;span class="nv"&gt;test_tb&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+
+&lt;span class="nv"&gt;wire&lt;/span&gt; &lt;span class="nv"&gt;A&lt;/span&gt;, &lt;span class="nv"&gt;B&lt;/span&gt;, &lt;span class="nv"&gt;C&lt;/span&gt;, &lt;span class="nv"&gt;D&lt;/span&gt;, &lt;span class="nv"&gt;E&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+&lt;span class="nv"&gt;integer&lt;/span&gt; &lt;span class="nv"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+
+&lt;span class="nv"&gt;assign&lt;/span&gt; {&lt;span class="nv"&gt;A&lt;/span&gt;,&lt;span class="nv"&gt;B&lt;/span&gt;,&lt;span class="nv"&gt;C&lt;/span&gt;} &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;k&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+&lt;span class="nv"&gt;test&lt;/span&gt; &lt;span class="nv"&gt;the_circuit&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;A&lt;/span&gt;, &lt;span class="nv"&gt;B&lt;/span&gt;, &lt;span class="nv"&gt;C&lt;/span&gt;, &lt;span class="nv"&gt;D&lt;/span&gt;, &lt;span class="nv"&gt;E&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+
+&lt;span class="nv"&gt;initial&lt;/span&gt; &lt;span class="nv"&gt;begin&lt;/span&gt;
+
+    &lt;span class="mh"&gt;$d&lt;/span&gt;&lt;span class="nv"&gt;umpfile&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;test.vcd&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+    &lt;span class="mh"&gt;$d&lt;/span&gt;&lt;span class="nv"&gt;umpvars&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;, &lt;span class="nv"&gt;test_tb&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="c1"&gt;; k&amp;lt;8; k=k+1)&lt;/span&gt;
+        &lt;span class="sc"&gt;#10&lt;/span&gt; &lt;span class="mh"&gt;$d&lt;/span&gt;&lt;span class="nv"&gt;isplay&lt;/span&gt;&lt;span class="ss"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;done testing case %d&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;, &lt;span class="nv"&gt;k&lt;/span&gt;&lt;span class="ss"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+
+    &lt;span class="mh"&gt;$f&lt;/span&gt;&lt;span class="nv"&gt;inish&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="nv"&gt;endmodule&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="eda"></category><category term="eda"></category><category term="work"></category><category term="verilog"></category></entry><entry><title>Revisiting xmas kindle draw</title><link href="https://tofguerrier.github.io/articles/xmas_kindle_2019.html" rel="alternate"></link><published>2019-11-18T00:00:00+00:00</published><updated>2019-11-18T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-18:/articles/xmas_kindle_2019.html</id><summary type="html">&lt;p&gt;Improving, revisiting and digging into xmas draws&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
