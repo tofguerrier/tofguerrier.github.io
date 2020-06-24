@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/all.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2019-11-18T00:00:00+00:00</updated><entry><title>Revisiting xmas kindle draw</title><link href="https://tofguerrier.github.io/articles/xmas_kindle_2019.html" rel="alternate"></link><published>2019-11-18T00:00:00+00:00</published><updated>2019-11-18T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-18:/articles/xmas_kindle_2019.html</id><summary type="html">&lt;p&gt;Improving, revisiting and digging into xmas draws&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/all.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2020-06-21T13:20:00+01:00</updated><entry><title>Open EDA iVerilog</title><link href="https://tofguerrier.github.io/articles/openeda_verilog.html" rel="alternate"></link><published>2020-06-21T13:20:00+01:00</published><updated>2020-06-21T13:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2020-06-21:/articles/openeda_verilog.html</id><summary type="html">&lt;p&gt;How to run Verilog on a Mac with Open Source Tools&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Tools (MacOSX):&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://iverilog.icarus.com/"&gt;Icarus iVerilog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.logicpoet.com/scansion/"&gt;Scansion to view the vaweforms&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;p&gt;iVerilog
+You can nstall it through &lt;a href="https://brew.sh/"&gt;brew&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;icarus&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;verilog&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or MacPorts:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;iverilog&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Running a simulation&lt;/h1&gt;
+&lt;p&gt;First compile Verilog using iverilog:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;iverilog&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;example_3_1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt; &lt;span class="n"&gt;example_3_1_tb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then running the simulation:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt; &lt;span class="n"&gt;example_3_1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vvp&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Finally, have a look at waveform:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;open&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;Scansion&lt;/span&gt; &lt;span class="n"&gt;example_3_1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;vcd&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Waveform" src="/images/scanion-3-1-vcd.png" title="waveform vcd"&gt;&lt;/p&gt;</content><category term="eda"></category><category term="eda"></category><category term="work"></category><category term="verilog"></category></entry><entry><title>Revisiting xmas kindle draw</title><link href="https://tofguerrier.github.io/articles/xmas_kindle_2019.html" rel="alternate"></link><published>2019-11-18T00:00:00+00:00</published><updated>2019-11-18T00:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-11-18:/articles/xmas_kindle_2019.html</id><summary type="html">&lt;p&gt;Improving, revisiting and digging into xmas draws&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
