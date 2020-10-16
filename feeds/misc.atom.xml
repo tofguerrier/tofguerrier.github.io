@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website - misc</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2019-05-23T01:20:00+01:00</updated><entry><title>How I work</title><link href="https://tofguerrier.github.io/articles/how_i_work_2019.html" rel="alternate"></link><published>2019-05-23T01:20:00+01:00</published><updated>2019-05-23T01:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-05-23:/articles/how_i_work_2019.html</id><summary type="html">&lt;p&gt;How I work in may 2019&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website - misc</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2020-10-16T14:00:00+01:00</updated><entry><title>Useful UNIX/Linux tips</title><link href="https://tofguerrier.github.io/articles/unix_top.html" rel="alternate"></link><published>2020-10-16T14:00:00+01:00</published><updated>2020-10-16T14:00:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2020-10-16:/articles/unix_top.html</id><summary type="html">&lt;p&gt;Useful unix commands&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Find&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Find all my directories not accessed in the last 30 days in tmp area.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find /tmp/ . -user &lt;span class="nv"&gt;$USER&lt;/span&gt; -type d -atime &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Sum the size of all gds found in a given directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find /directory/of/interest/. -type f -name &lt;span class="s1"&gt;&amp;#39;*.gds&amp;#39;&lt;/span&gt; -exec du -ch &lt;span class="o"&gt;{}&lt;/span&gt; + &lt;span class="p"&gt;|&lt;/span&gt; grep total$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Find broken links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find . -xtype l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Disk space&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sum available disk in human readable format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;df . -h
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Sum used disk in human readable format, in the current directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du . -sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Disk used summarized by first 3 level of hierarchy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du . -h --max-depth&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Vi (gvim)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to a file under the cursor in gvim:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;gf&lt;/strong&gt; open the highlighted fie in the same window.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;ctrl+w&gt;gf&lt;/strong&gt; open the highlighted fie in the same window.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Preference for vi: .vimrc  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;color pablo
+syntax on
+&lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;tabstop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt; autoindent
+&lt;span class="nb"&gt;set&lt;/span&gt; number
+&lt;span class="nb"&gt;set&lt;/span&gt; showmatch
+&lt;span class="nb"&gt;set&lt;/span&gt; ignorecase
+&lt;span class="nb"&gt;set&lt;/span&gt; smartcase
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Date&lt;/h2&gt;</content><category term="misc"></category><category term="system"></category><category term="work"></category><category term="unix"></category><category term="linux"></category></entry><entry><title>How I work</title><link href="https://tofguerrier.github.io/articles/how_i_work_2019.html" rel="alternate"></link><published>2019-05-23T01:20:00+01:00</published><updated>2019-05-23T01:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-05-23:/articles/how_i_work_2019.html</id><summary type="html">&lt;p&gt;How I work in may 2019&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; ‎Lead Physical Digital Implementation Engineer at Adesto/S3 semiconductors&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Sony Experia (Android 8.0)&lt;/p&gt;
