@@ -118,6 +118,7 @@ var yAxis = d3.svg.axis().scale(y)
 
 // Define the line
 var valueline = d3.svg.line()
+    .interpolate("step_after")
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.weight); });
 

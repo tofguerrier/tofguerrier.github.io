@@ -96,84 +96,84 @@
 <h1>Installation</h1>
 <p>iVerilog
 You can nstall it through <a href="https://brew.sh/">brew</a></p>
-<div class="highlight"><pre><span></span><code><span class="err">brew install icarus-verilog</span>
+<div class="highlight"><pre><span></span><code>brew install icarus-verilog
 </code></pre></div>
 
 
 <p>Or MacPorts:</p>
-<div class="highlight"><pre><span></span><code><span class="err">sudo port -v install iverilog</span>
+<div class="highlight"><pre><span></span><code>sudo port -v install iverilog
 </code></pre></div>
 
 
 <h1>Running a simulation</h1>
 <p>First compile Verilog using iverilog:</p>
-<div class="highlight"><pre><span></span><code><span class="err">iverilog -o test.vvp test_tb.v</span>
+<div class="highlight"><pre><span></span><code>iverilog -o test.vvp test_tb.v
 </code></pre></div>
 
 
 <p>Then running the simulation:</p>
-<div class="highlight"><pre><span></span><code><span class="err">vvp test.vvp</span>
+<div class="highlight"><pre><span></span><code>vvp test.vvp
 </code></pre></div>
 
 
 <p>Which should result in the following:</p>
-<div class="highlight"><pre><span></span><code><span class="err">VCD info: dumpfile test.vcd opened for output.</span>
-<span class="err">done testing case           0</span>
-<span class="err">done testing case           1</span>
-<span class="err">done testing case           2</span>
-<span class="err">done testing case           3</span>
-<span class="err">done testing case           4</span>
-<span class="err">done testing case           5</span>
-<span class="err">done testing case           6</span>
-<span class="err">done testing case           7</span>
+<div class="highlight"><pre><span></span><code><span class="nv">VCD</span> <span class="nv">info</span>: <span class="nv">dumpfile</span> <span class="nv">test</span>.<span class="nv">vcd</span> <span class="nv">opened</span> <span class="k">for</span> <span class="nv">output</span>.
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">0</span>
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">1</span>
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">2</span>
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">3</span>
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">4</span>
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">5</span>
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">6</span>
+<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">7</span>
 </code></pre></div>
 
 
 <p>Finally, have a look at waveform:</p>
-<div class="highlight"><pre><span></span><code><span class="err">open -a Scansion test.vcd</span>
+<div class="highlight"><pre><span></span><code>open -a Scansion test.vcd
 </code></pre></div>
 
 
 <p><img alt="Waveform" src="/images/scanion-3-1-vcd.png" title="waveform vcd"></p>
 <p>More test.v:</p>
-<div class="highlight"><pre><span></span><code><span class="k">module</span> <span class="n">test</span>(<span class="n">A</span>, <span class="n">B</span>, <span class="n">C</span>, <span class="n">D</span>, <span class="n">E</span>);
+<div class="highlight"><pre><span></span><code><span class="k">module</span> <span class="n">test</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">);</span>
 
-   <span class="n">output</span> <span class="n">D</span>, <span class="n">E</span>;
-   <span class="n">input</span>  <span class="n">A</span>, <span class="n">B</span>, <span class="n">C</span>;
-   <span class="n">wire</span>   <span class="n">w1</span>;
+   <span class="k">output</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">;</span>
+   <span class="k">input</span>  <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+   <span class="kt">wire</span>   <span class="n">w1</span><span class="p">;</span>
 
-   <span class="o">and</span> <span class="n">GATE1</span>(<span class="n">w1</span>, <span class="n">A</span>, <span class="n">B</span>);
-   <span class="nb">not</span> <span class="n">GATE2</span>(<span class="n">E</span>, <span class="n">C</span>);
-   <span class="o">or</span>  <span class="n">GATE3</span>(<span class="n">D</span>, <span class="n">w1</span>, <span class="n">E</span>);
+   <span class="k">and</span> <span class="n">GATE1</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+   <span class="k">not</span> <span class="n">GATE2</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+   <span class="k">or</span>  <span class="n">GATE3</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">E</span><span class="p">);</span>
 
-<span class="n">endmodule</span>
+<span class="k">endmodule</span>
 </code></pre></div>
 
 
 <p>And the testbench:</p>
 <div class="highlight"><pre><span></span><code><span class="o">//</span> <span class="n">Verilog</span> <span class="n">test</span> <span class="n">bench</span> <span class="k">for</span> <span class="n">test</span>
-<span class="o">`</span><span class="n">timescale</span> <span class="mi">1</span><span class="n">ns</span><span class="o">/</span><span class="mi">100</span><span class="n">ps</span>
-<span class="o">`</span><span class="n">include</span> <span class="ss">&quot;test.v&quot;</span>
+<span class="err">`</span><span class="n">timescale</span> <span class="mi">1</span><span class="n">ns</span><span class="o">/</span><span class="mi">100</span><span class="n">ps</span>
+<span class="err">`</span><span class="n">include</span> <span class="s2">&quot;test.v&quot;</span>
 
 <span class="n">module</span> <span class="n">test_tb</span><span class="p">;</span>
 
-<span class="n">wire</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="k">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">;</span>
-<span class="nb">integer</span> <span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="n">wire</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">;</span>
+<span class="n">integer</span> <span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
 
-<span class="n">assign</span> <span class="err">{</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="k">C</span><span class="err">}</span> <span class="o">=</span> <span class="n">k</span><span class="p">;</span>
-<span class="n">test</span> <span class="n">the_circuit</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="k">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">);</span>
+<span class="n">assign</span> <span class="p">{</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">}</span> <span class="o">=</span> <span class="n">k</span><span class="p">;</span>
+<span class="n">test</span> <span class="n">the_circuit</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">);</span>
 
-<span class="n">initial</span> <span class="k">begin</span>
+<span class="n">initial</span> <span class="n">begin</span>
 
-    <span class="err">$</span><span class="n">dumpfile</span><span class="p">(</span><span class="ss">&quot;test.vcd&quot;</span><span class="p">);</span>
-    <span class="err">$</span><span class="n">dumpvars</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">test_tb</span><span class="p">);</span>
+    <span class="o">$</span><span class="n">dumpfile</span><span class="p">(</span><span class="s2">&quot;test.vcd&quot;</span><span class="p">);</span>
+    <span class="o">$</span><span class="n">dumpvars</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">test_tb</span><span class="p">);</span>
 
     <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">k</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-        <span class="o">#</span><span class="mi">10</span> <span class="err">$</span><span class="n">display</span><span class="p">(</span><span class="ss">&quot;done testing case %d&quot;</span><span class="p">,</span> <span class="n">k</span><span class="p">);</span>
+        <span class="c1">#10 $display(&quot;done testing case %d&quot;, k);</span>
 
-    <span class="err">$</span><span class="n">finish</span><span class="p">;</span>
+    <span class="o">$</span><span class="n">finish</span><span class="p">;</span>
 
-<span class="k">end</span>
+<span class="n">end</span>
 
 <span class="n">endmodule</span>
 </code></pre></div>

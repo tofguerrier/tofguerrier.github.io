@@ -7,84 +7,84 @@
 &lt;h1&gt;Installation&lt;/h1&gt;
 &lt;p&gt;iVerilog
 You can nstall it through &lt;a href="https://brew.sh/"&gt;brew&lt;/a&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;brew install icarus-verilog&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;brew install icarus-verilog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Or MacPorts:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;sudo port -v install iverilog&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo port -v install iverilog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Running a simulation&lt;/h1&gt;
 &lt;p&gt;First compile Verilog using iverilog:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;iverilog -o test.vvp test_tb.v&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;iverilog -o test.vvp test_tb.v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Then running the simulation:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;vvp test.vvp&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vvp test.vvp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Which should result in the following:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;VCD info: dumpfile test.vcd opened for output.&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           0&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           1&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           2&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           3&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           4&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           5&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           6&lt;/span&gt;
-&lt;span class="err"&gt;done testing case           7&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;VCD&lt;/span&gt; &lt;span class="nv"&gt;info&lt;/span&gt;: &lt;span class="nv"&gt;dumpfile&lt;/span&gt; &lt;span class="nv"&gt;test&lt;/span&gt;.&lt;span class="nv"&gt;vcd&lt;/span&gt; &lt;span class="nv"&gt;opened&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;output&lt;/span&gt;.
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;4&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;6&lt;/span&gt;
+&lt;span class="nv"&gt;done&lt;/span&gt; &lt;span class="nv"&gt;testing&lt;/span&gt; &lt;span class="nv"&gt;case&lt;/span&gt;           &lt;span class="mi"&gt;7&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Finally, have a look at waveform:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;open -a Scansion test.vcd&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;open -a Scansion test.vcd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img alt="Waveform" src="/images/scanion-3-1-vcd.png" title="waveform vcd"&gt;&lt;/p&gt;
 &lt;p&gt;More test.v:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;module&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;(&lt;span class="n"&gt;A&lt;/span&gt;, &lt;span class="n"&gt;B&lt;/span&gt;, &lt;span class="n"&gt;C&lt;/span&gt;, &lt;span class="n"&gt;D&lt;/span&gt;, &lt;span class="n"&gt;E&lt;/span&gt;);
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;module&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
-   &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;, &lt;span class="n"&gt;E&lt;/span&gt;;
-   &lt;span class="n"&gt;input&lt;/span&gt;  &lt;span class="n"&gt;A&lt;/span&gt;, &lt;span class="n"&gt;B&lt;/span&gt;, &lt;span class="n"&gt;C&lt;/span&gt;;
-   &lt;span class="n"&gt;wire&lt;/span&gt;   &lt;span class="n"&gt;w1&lt;/span&gt;;
+   &lt;span class="k"&gt;output&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+   &lt;span class="k"&gt;input&lt;/span&gt;  &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+   &lt;span class="kt"&gt;wire&lt;/span&gt;   &lt;span class="n"&gt;w1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-   &lt;span class="o"&gt;and&lt;/span&gt; &lt;span class="n"&gt;GATE1&lt;/span&gt;(&lt;span class="n"&gt;w1&lt;/span&gt;, &lt;span class="n"&gt;A&lt;/span&gt;, &lt;span class="n"&gt;B&lt;/span&gt;);
-   &lt;span class="nb"&gt;not&lt;/span&gt; &lt;span class="n"&gt;GATE2&lt;/span&gt;(&lt;span class="n"&gt;E&lt;/span&gt;, &lt;span class="n"&gt;C&lt;/span&gt;);
-   &lt;span class="o"&gt;or&lt;/span&gt;  &lt;span class="n"&gt;GATE3&lt;/span&gt;(&lt;span class="n"&gt;D&lt;/span&gt;, &lt;span class="n"&gt;w1&lt;/span&gt;, &lt;span class="n"&gt;E&lt;/span&gt;);
+   &lt;span class="k"&gt;and&lt;/span&gt; &lt;span class="n"&gt;GATE1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;w1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+   &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;GATE2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+   &lt;span class="k"&gt;or&lt;/span&gt;  &lt;span class="n"&gt;GATE3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;w1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
-&lt;span class="n"&gt;endmodule&lt;/span&gt;
+&lt;span class="k"&gt;endmodule&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;And the testbench:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;Verilog&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;bench&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;
-&lt;span class="o"&gt;`&lt;/span&gt;&lt;span class="n"&gt;timescale&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;ns&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;ps&lt;/span&gt;
-&lt;span class="o"&gt;`&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;test.v&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;timescale&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;ns&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;ps&lt;/span&gt;
+&lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;test.v&amp;quot;&lt;/span&gt;
 
 &lt;span class="n"&gt;module&lt;/span&gt; &lt;span class="n"&gt;test_tb&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-&lt;span class="n"&gt;wire&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;C&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nb"&gt;integer&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;wire&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;integer&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-&lt;span class="n"&gt;assign&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;C&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;the_circuit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;C&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;assign&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;the_circuit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
-&lt;span class="n"&gt;initial&lt;/span&gt; &lt;span class="k"&gt;begin&lt;/span&gt;
+&lt;span class="n"&gt;initial&lt;/span&gt; &lt;span class="n"&gt;begin&lt;/span&gt;
 
-    &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;dumpfile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;test.vcd&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;dumpvars&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;test_tb&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;dumpfile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;test.vcd&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;dumpvars&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;test_tb&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
     &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;done testing case %d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="c1"&gt;#10 $display(&amp;quot;done testing case %d&amp;quot;, k);&lt;/span&gt;
 
-    &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;finish&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;finish&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="n"&gt;end&lt;/span&gt;
 
 &lt;span class="n"&gt;endmodule&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="eda"></category><category term="eda"></category><category term="work"></category><category term="verilog"></category></entry></feed>
