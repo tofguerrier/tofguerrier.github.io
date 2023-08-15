@@ -126,6 +126,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14649,12 +14650,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14693,9 +14694,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
             <span class="n">to</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">to</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="n">to</span><span class="p">)</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s1">'-'</span><span class="o">+</span><span class="n">to</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">printit</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;   &quot;</span><span class="o">+</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; gives to &#39;</span> <span class="o">+</span> <span class="n">to</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"   "</span><span class="o">+</span><span class="n">name</span> <span class="o">+</span> <span class="s1">' gives to '</span> <span class="o">+</span> <span class="n">to</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">out</span>
 </pre></div>
 
@@ -14712,13 +14713,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ro&#39;</span><span class="p">,</span><span class="s1">&#39;Pa&#39;</span><span class="p">,</span><span class="s1">&#39;Ao&#39;</span><span class="p">,</span><span class="s1">&#39;HaM&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Fi&#39;</span><span class="p">,</span> <span class="s1">&#39;Ci&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Te&#39;</span><span class="p">,</span><span class="s1">&#39;Ja&#39;</span><span class="p">,</span><span class="s1">&#39;Ch&#39;</span><span class="p">,</span><span class="s1">&#39;HaC&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Co&#39;</span><span class="p">,</span><span class="s1">&#39;An&#39;</span><span class="p">,</span><span class="s1">&#39;It&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;To&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Et&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Ro&#39;</span><span class="p">,</span> <span class="s1">&#39;Li&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Ro'</span><span class="p">,</span><span class="s1">'Pa'</span><span class="p">,</span><span class="s1">'Ao'</span><span class="p">,</span><span class="s1">'HaM'</span><span class="p">,</span>
+        <span class="s1">'Fi'</span><span class="p">,</span> <span class="s1">'Ci'</span><span class="p">,</span>
+        <span class="s1">'Te'</span><span class="p">,</span><span class="s1">'Ja'</span><span class="p">,</span><span class="s1">'Ch'</span><span class="p">,</span><span class="s1">'HaC'</span><span class="p">,</span>
+        <span class="s1">'Co'</span><span class="p">,</span><span class="s1">'An'</span><span class="p">,</span><span class="s1">'It'</span><span class="p">,</span>
+        <span class="s1">'To'</span><span class="p">,</span>
+        <span class="s1">'Et'</span><span class="p">,</span>
+        <span class="s1">'Ro'</span><span class="p">,</span> <span class="s1">'Li'</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14822,16 +14823,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">monte_carlo</span><span class="p">(</span><span class="n">names</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
-    <span class="n">comb</span> <span class="o">=</span> <span class="p">{</span><span class="n">name1</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="n">name2</span><span class="p">:</span><span class="mi">0</span> <span class="k">for</span> <span class="n">name1</span><span class="p">,</span><span class="n">name2</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">names</span><span class="p">,</span><span class="mi">2</span><span class="p">)}</span>
+    <span class="n">comb</span> <span class="o">=</span> <span class="p">{</span><span class="n">name1</span><span class="o">+</span><span class="s1">'-'</span><span class="o">+</span><span class="n">name2</span><span class="p">:</span><span class="mi">0</span> <span class="k">for</span> <span class="n">name1</span><span class="p">,</span><span class="n">name2</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">names</span><span class="p">,</span><span class="mi">2</span><span class="p">)}</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">couple</span> <span class="ow">in</span> <span class="n">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
             <span class="n">comb</span><span class="p">[</span><span class="n">couple</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="n">fig1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">comb</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">comb</span><span class="o">.</span><span class="n">keys</span><span class="p">()])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Iterations&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count each combo&#39;</span><span class="p">)</span>
-    <span class="c1">#plt.axhline(y=n, color=&#39;r&#39;, linestyle=&#39;-&#39;)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Xmas Kindle&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Iterations'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Count each combo'</span><span class="p">)</span>
+    <span class="c1">#plt.axhline(y=n, color='r', linestyle='-')</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Xmas Kindle'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">comb</span>
 </pre></div>
@@ -14907,9 +14908,9 @@ jp-needs-light-background
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Jolene&#39;</span><span class="p">,</span><span class="s1">&#39;Niamh&#39;</span><span class="p">,</span><span class="s1">&#39;Sophie&#39;</span><span class="p">,</span><span class="s1">&#39;Lorraine&#39;</span><span class="p">,</span><span class="s1">&#39;Paschal&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Jolene'</span><span class="p">,</span><span class="s1">'Niamh'</span><span class="p">,</span><span class="s1">'Sophie'</span><span class="p">,</span><span class="s1">'Lorraine'</span><span class="p">,</span><span class="s1">'Paschal'</span><span class="p">]</span>
 <span class="c1">#only 5 people in the draw, which should make 20 possible donor combinations</span>
-<span class="n">comb2</span> <span class="o">=</span> <span class="p">{</span><span class="n">name1</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="n">name2</span><span class="p">:</span><span class="mi">0</span> <span class="k">for</span> <span class="n">name1</span><span class="p">,</span><span class="n">name2</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">names2</span><span class="p">,</span><span class="mi">2</span><span class="p">)}</span>
+<span class="n">comb2</span> <span class="o">=</span> <span class="p">{</span><span class="n">name1</span><span class="o">+</span><span class="s1">'-'</span><span class="o">+</span><span class="n">name2</span><span class="p">:</span><span class="mi">0</span> <span class="k">for</span> <span class="n">name1</span><span class="p">,</span><span class="n">name2</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">names2</span><span class="p">,</span><span class="mi">2</span><span class="p">)}</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">comb2</span><span class="p">))</span>
 </pre></div>
 
@@ -15106,9 +15107,9 @@ jp-needs-light-background
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Replicating the issue with duplicate names</span>
-<span class="n">names3</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Jolene&#39;</span><span class="p">,</span><span class="s1">&#39;Niamh&#39;</span><span class="p">,</span><span class="s1">&#39;Sophie&#39;</span><span class="p">,</span><span class="s1">&#39;Lorraine&#39;</span><span class="p">,</span><span class="s1">&#39;Jolene&#39;</span><span class="p">]</span>
+<span class="n">names3</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Jolene'</span><span class="p">,</span><span class="s1">'Niamh'</span><span class="p">,</span><span class="s1">'Sophie'</span><span class="p">,</span><span class="s1">'Lorraine'</span><span class="p">,</span><span class="s1">'Jolene'</span><span class="p">]</span>
 <span class="c1">#only 5 people in the draw, which should make 20 possible donor combinations, with a duplicate</span>
-<span class="n">comb3</span> <span class="o">=</span> <span class="p">{</span><span class="n">name1</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="n">name2</span><span class="p">:</span><span class="mi">0</span> <span class="k">for</span> <span class="n">name1</span><span class="p">,</span><span class="n">name2</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">names3</span><span class="p">,</span><span class="mi">2</span><span class="p">)}</span>
+<span class="n">comb3</span> <span class="o">=</span> <span class="p">{</span><span class="n">name1</span><span class="o">+</span><span class="s1">'-'</span><span class="o">+</span><span class="n">name2</span><span class="p">:</span><span class="mi">0</span> <span class="k">for</span> <span class="n">name1</span><span class="p">,</span><span class="n">name2</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">permutations</span><span class="p">(</span><span class="n">names3</span><span class="p">,</span><span class="mi">2</span><span class="p">)}</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">comb2</span><span class="p">))</span>
 <span class="n">c3</span> <span class="o">=</span> <span class="n">monte_carlo</span><span class="p">(</span><span class="n">names3</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">50000</span><span class="p">)</span>
 </pre></div>
@@ -15172,7 +15173,7 @@ jp-needs-light-background
 <span class="k">def</span> <span class="nf">isThereDuplicates</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
     <span class="n">dups</span> <span class="o">=</span> <span class="p">[</span><span class="n">names</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">names</span><span class="p">]</span>
     <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">dups</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Duplicate names&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Duplicate names"</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">dups</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="kc">True</span><span class="p">)])</span>
         <span class="k">return</span> <span class="kc">True</span>
     <span class="k">else</span><span class="p">:</span>
@@ -15244,9 +15245,9 @@ Ro
                 <span class="n">to</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">to</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="n">to</span><span class="p">)</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s1">'-'</span><span class="o">+</span><span class="n">to</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">printit</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;   &quot;</span><span class="o">+</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; gives to &#39;</span> <span class="o">+</span> <span class="n">to</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"   "</span><span class="o">+</span><span class="n">name</span> <span class="o">+</span> <span class="s1">' gives to '</span> <span class="o">+</span> <span class="n">to</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">out</span>
 </pre></div>
 
@@ -15285,10 +15286,10 @@ Ro
             <span class="n">possible</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">names</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">!=</span> <span class="n">names</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="ow">and</span> <span class="n">r</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">recipients</span><span class="p">)]</span>
             <span class="n">recipient</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">possible</span><span class="p">,</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
             <span class="n">recipients</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">recipient</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;: &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; gives to &#39;</span> <span class="o">+</span> <span class="n">recipient</span> <span class="o">+</span> <span class="s1">&#39; ::: &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recipients</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">possible</span><span class="p">)))</span>
-            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="n">recipient</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">': '</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">' gives to '</span> <span class="o">+</span> <span class="n">recipient</span> <span class="o">+</span> <span class="s1">' ::: '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recipients</span><span class="p">))</span><span class="o">+</span><span class="s1">':'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">possible</span><span class="p">)))</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s1">'-'</span><span class="o">+</span><span class="n">recipient</span><span class="p">)</span>
         <span class="c1">#Check</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Recipients: &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recipients</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;:: names:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">keys</span><span class="p">())))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Recipients: '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">recipients</span><span class="p">))</span><span class="o">+</span><span class="s1">':: names:'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">keys</span><span class="p">())))</span>
 </pre></div>
 
      </div>
@@ -15304,13 +15305,13 @@ Ro
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names_siblings</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Child1&#39;</span><span class="p">:</span><span class="s1">&#39;Parent1&#39;</span><span class="p">,</span><span class="s1">&#39;Child2&#39;</span><span class="p">:</span><span class="s1">&#39;Parent1&#39;</span><span class="p">,</span><span class="s1">&#39;Child3&#39;</span><span class="p">:</span><span class="s1">&#39;Parent1&#39;</span><span class="p">,</span><span class="s1">&#39;Child4&#39;</span><span class="p">:</span><span class="s1">&#39;Parent1&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Child5&#39;</span><span class="p">:</span><span class="s1">&#39;Parent2&#39;</span><span class="p">,</span> <span class="s1">&#39;Child6&#39;</span><span class="p">:</span><span class="s1">&#39;Parent2&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Child7&#39;</span><span class="p">:</span><span class="s1">&#39;Parent3&#39;</span><span class="p">,</span><span class="s1">&#39;Child8&#39;</span><span class="p">:</span><span class="s1">&#39;Parent3&#39;</span><span class="p">,</span><span class="s1">&#39;Child9&#39;</span><span class="p">:</span><span class="s1">&#39;Parent3&#39;</span><span class="p">,</span><span class="s1">&#39;Child10&#39;</span><span class="p">:</span><span class="s1">&#39;Parent3&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Child11&#39;</span><span class="p">:</span><span class="s1">&#39;Parent4&#39;</span><span class="p">,</span><span class="s1">&#39;Child12&#39;</span><span class="p">:</span><span class="s1">&#39;Parent4&#39;</span><span class="p">,</span><span class="s1">&#39;Child13&#39;</span><span class="p">:</span><span class="s1">&#39;Parent4&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Child14&#39;</span><span class="p">:</span><span class="s1">&#39;Parent5&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Child15&#39;</span><span class="p">:</span><span class="s1">&#39;Parent6&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Child16&#39;</span><span class="p">:</span><span class="s1">&#39;Parent7&#39;</span><span class="p">,</span> <span class="s1">&#39;Child17&#39;</span><span class="p">:</span><span class="s1">&#39;Parent7&#39;</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names_siblings</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Child1'</span><span class="p">:</span><span class="s1">'Parent1'</span><span class="p">,</span><span class="s1">'Child2'</span><span class="p">:</span><span class="s1">'Parent1'</span><span class="p">,</span><span class="s1">'Child3'</span><span class="p">:</span><span class="s1">'Parent1'</span><span class="p">,</span><span class="s1">'Child4'</span><span class="p">:</span><span class="s1">'Parent1'</span><span class="p">,</span>
+        <span class="s1">'Child5'</span><span class="p">:</span><span class="s1">'Parent2'</span><span class="p">,</span> <span class="s1">'Child6'</span><span class="p">:</span><span class="s1">'Parent2'</span><span class="p">,</span>
+        <span class="s1">'Child7'</span><span class="p">:</span><span class="s1">'Parent3'</span><span class="p">,</span><span class="s1">'Child8'</span><span class="p">:</span><span class="s1">'Parent3'</span><span class="p">,</span><span class="s1">'Child9'</span><span class="p">:</span><span class="s1">'Parent3'</span><span class="p">,</span><span class="s1">'Child10'</span><span class="p">:</span><span class="s1">'Parent3'</span><span class="p">,</span>
+        <span class="s1">'Child11'</span><span class="p">:</span><span class="s1">'Parent4'</span><span class="p">,</span><span class="s1">'Child12'</span><span class="p">:</span><span class="s1">'Parent4'</span><span class="p">,</span><span class="s1">'Child13'</span><span class="p">:</span><span class="s1">'Parent4'</span><span class="p">,</span>
+        <span class="s1">'Child14'</span><span class="p">:</span><span class="s1">'Parent5'</span><span class="p">,</span>
+        <span class="s1">'Child15'</span><span class="p">:</span><span class="s1">'Parent6'</span><span class="p">,</span>
+        <span class="s1">'Child16'</span><span class="p">:</span><span class="s1">'Parent7'</span><span class="p">,</span> <span class="s1">'Child17'</span><span class="p">:</span><span class="s1">'Parent7'</span><span class="p">}</span>
 </pre></div>
 
      </div>

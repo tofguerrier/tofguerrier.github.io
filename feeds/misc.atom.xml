@@ -3,21 +3,21 @@
 &lt;ul&gt;
 &lt;li&gt;Find all my directories not accessed in the last 30 days in tmp area.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find /tmp/ . -user &lt;span class="nv"&gt;$USER&lt;/span&gt; -type d -atime &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find&lt;span class="w"&gt; &lt;/span&gt;/tmp/&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-user&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$USER&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-type&lt;span class="w"&gt; &lt;/span&gt;d&lt;span class="w"&gt; &lt;/span&gt;-atime&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;30&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Sum the size of all gds found in a given directory&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find /directory/of/interest/. -type f -name &lt;span class="s1"&gt;&amp;#39;*.gds&amp;#39;&lt;/span&gt; -exec du -ch &lt;span class="o"&gt;{}&lt;/span&gt; + &lt;span class="p"&gt;|&lt;/span&gt; grep total$
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find&lt;span class="w"&gt; &lt;/span&gt;/directory/of/interest/.&lt;span class="w"&gt; &lt;/span&gt;-type&lt;span class="w"&gt; &lt;/span&gt;f&lt;span class="w"&gt; &lt;/span&gt;-name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;*.gds&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-exec&lt;span class="w"&gt; &lt;/span&gt;du&lt;span class="w"&gt; &lt;/span&gt;-ch&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;grep&lt;span class="w"&gt; &lt;/span&gt;total$
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Find broken links&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find . -xtype l
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-xtype&lt;span class="w"&gt; &lt;/span&gt;l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -25,21 +25,21 @@
 &lt;ul&gt;
 &lt;li&gt;Sum available disk in human readable format&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;df . -h
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;df&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-h
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Sum used disk in human readable format, in the current directory&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du . -sh
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Disk used summarized by first 3 level of hierarchy&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du . -h --max-depth&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-h&lt;span class="w"&gt; &lt;/span&gt;--max-depth&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -52,14 +52,14 @@
 &lt;ul&gt;
 &lt;li&gt;Preference for vi: .vimrc  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;color pablo
-syntax on
-&lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;tabstop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;
-&lt;span class="nb"&gt;set&lt;/span&gt; autoindent
-&lt;span class="nb"&gt;set&lt;/span&gt; number
-&lt;span class="nb"&gt;set&lt;/span&gt; showmatch
-&lt;span class="nb"&gt;set&lt;/span&gt; ignorecase
-&lt;span class="nb"&gt;set&lt;/span&gt; smartcase
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;color&lt;span class="w"&gt; &lt;/span&gt;pablo
+syntax&lt;span class="w"&gt; &lt;/span&gt;on
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tabstop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;autoindent
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;number
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;showmatch
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;ignorecase
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;smartcase
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 

@@ -126,6 +126,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14649,12 +14650,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14711,7 +14712,7 @@ Off course now as a parent the number of packet needed to purchase reveals the s
         <span class="k">if</span> <span class="n">sticker_number</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__Nstickers</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">__album</span><span class="p">[</span><span class="n">sticker_number</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not a valid number.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Not a valid number."</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">isAlbumFull</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">all</span><span class="p">([</span><span class="n">v</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__album</span><span class="o">.</span><span class="n">values</span><span class="p">()])</span>
     <span class="k">def</span> <span class="nf">countGot</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -14720,8 +14721,8 @@ Off course now as a parent the number of packet needed to purchase reveals the s
         <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">v</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__album</span><span class="o">.</span><span class="n">values</span><span class="p">()])</span>
     <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">__album</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__album</span><span class="o">.</span><span class="n">keys</span><span class="p">()])</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Sticker Count&#39;</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Sticker Number&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Sticker Count'</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Sticker Number'</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -14820,7 +14821,7 @@ Off course now as a parent the number of packet needed to purchase reveals the s
             <span class="n">album</span><span class="o">.</span><span class="n">addSticker</span><span class="p">(</span><span class="n">card</span><span class="p">)</span>
         <span class="n">tracker</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">album</span><span class="o">.</span><span class="n">countGot</span><span class="p">(),</span><span class="n">album</span><span class="o">.</span><span class="n">duplicates</span><span class="p">(),</span><span class="n">album</span><span class="o">.</span><span class="n">isAlbumFull</span><span class="p">()])</span>
         <span class="k">if</span> <span class="n">album</span><span class="o">.</span><span class="n">countGot</span><span class="p">()</span> <span class="o">-</span> <span class="n">N</span> <span class="o">&lt;</span> <span class="n">limit</span><span class="p">:</span>
-            <span class="c1">#print(&#39;INFO can buy the remaining&#39;,packet_bought)</span>
+            <span class="c1">#print('INFO can buy the remaining',packet_bought)</span>
             <span class="k">if</span> <span class="n">packet_bought</span> <span class="o">&gt;</span> <span class="n">N</span><span class="o">*</span><span class="mi">10</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">tracker</span>
     <span class="k">return</span> <span class="n">tracker</span>
@@ -14900,26 +14901,26 @@ Off course now as a parent the number of packet needed to purchase reveals the s
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tracker</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">N</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Sticker filled&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;number of packet bought&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">N</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'r'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Sticker filled'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'number of packet bought'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tracker</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Duplicates&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;number of packet bought&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Duplicates'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'number of packet bought'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="k">def</span> <span class="nf">plot_filled</span><span class="p">(</span><span class="n">tracker</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tracker</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">N</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Sticker filled&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;number of packet bought&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">N</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'r'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Sticker filled'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'number of packet bought'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     
 <span class="k">def</span> <span class="nf">plot_duplicate</span><span class="p">(</span><span class="n">tracker</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tracker</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Duplicates&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;number of packet bought&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Duplicates'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'number of packet bought'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -15144,8 +15145,8 @@ jp-needs-light-background
     <span class="n">y2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
     
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;how many bought&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;MONTE Carlo runs&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'how many bought'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'MONTE Carlo runs'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -15192,7 +15193,7 @@ jp-needs-light-background
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average&quot;</span><span class="p">,</span><span class="nb">sum</span><span class="p">(</span><span class="n">y1</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y1</span><span class="p">),</span><span class="s2">&quot;Max&quot;</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">y1</span><span class="p">),</span><span class="s2">&quot;Min&quot;</span><span class="p">,</span><span class="nb">min</span><span class="p">(</span><span class="n">y1</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Average"</span><span class="p">,</span><span class="nb">sum</span><span class="p">(</span><span class="n">y1</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y1</span><span class="p">),</span><span class="s2">"Max"</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">y1</span><span class="p">),</span><span class="s2">"Min"</span><span class="p">,</span><span class="nb">min</span><span class="p">(</span><span class="n">y1</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15232,7 +15233,7 @@ jp-needs-light-background
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_dup</span> <span class="o">=</span> <span class="p">[</span><span class="n">yy</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">yy</span> <span class="ow">in</span> <span class="n">y2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean&quot;</span><span class="p">,</span><span class="nb">sum</span><span class="p">(</span><span class="n">y_dup</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_dup</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Mean"</span><span class="p">,</span><span class="nb">sum</span><span class="p">(</span><span class="n">y_dup</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_dup</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15271,7 +15272,7 @@ jp-needs-light-background
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max duplicates&quot;</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">y_dup</span><span class="p">),</span><span class="s2">&quot;Min duplicates&quot;</span><span class="p">,</span><span class="nb">min</span><span class="p">(</span><span class="n">y_dup</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Max duplicates"</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">y_dup</span><span class="p">),</span><span class="s2">"Min duplicates"</span><span class="p">,</span><span class="nb">min</span><span class="p">(</span><span class="n">y_dup</span><span class="p">))</span>
 </pre></div>
 
      </div>

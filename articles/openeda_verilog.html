@@ -117,15 +117,15 @@ You can nstall it through <a href="https://brew.sh/">brew</a></p>
 
 
 <p>Which should result in the following:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">VCD</span> <span class="nv">info</span>: <span class="nv">dumpfile</span> <span class="nv">test</span>.<span class="nv">vcd</span> <span class="nv">opened</span> <span class="k">for</span> <span class="nv">output</span>.
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">0</span>
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">1</span>
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">2</span>
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">3</span>
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">4</span>
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">5</span>
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">6</span>
-<span class="nv">done</span> <span class="nv">testing</span> <span class="nv">case</span>           <span class="mi">7</span>
+<div class="highlight"><pre><span></span><code><span class="nv">VCD</span><span class="w"> </span><span class="nv">info</span>:<span class="w"> </span><span class="nv">dumpfile</span><span class="w"> </span><span class="nv">test</span>.<span class="nv">vcd</span><span class="w"> </span><span class="nv">opened</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">output</span>.
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">0</span>
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">1</span>
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">2</span>
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">3</span>
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">4</span>
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">5</span>
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">6</span>
+<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">7</span>
 </code></pre></div>
 
 
@@ -136,46 +136,46 @@ You can nstall it through <a href="https://brew.sh/">brew</a></p>
 
 <p><img alt="Waveform" src="/images/scanion-3-1-vcd.png" title="waveform vcd"></p>
 <p>More test.v:</p>
-<div class="highlight"><pre><span></span><code><span class="k">module</span><span class="w"> </span><span class="n">test</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">module</span><span class="w"> </span><span class="n">test</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span>
 
-<span class="w">   </span><span class="k">output</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">;</span><span class="w"></span>
-<span class="w">   </span><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">;</span><span class="w"></span>
-<span class="w">   </span><span class="kt">wire</span><span class="w">   </span><span class="n">w1</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">output</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">;</span>
+<span class="w">   </span><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">;</span>
+<span class="w">   </span><span class="kt">wire</span><span class="w">   </span><span class="n">w1</span><span class="p">;</span>
 
-<span class="w">   </span><span class="k">and</span><span class="w"> </span><span class="n">GATE1</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">);</span><span class="w"></span>
-<span class="w">   </span><span class="k">not</span><span class="w"> </span><span class="n">GATE2</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">);</span><span class="w"></span>
-<span class="w">   </span><span class="k">or</span><span class="w">  </span><span class="n">GATE3</span><span class="p">(</span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="k">and</span><span class="w"> </span><span class="n">GATE1</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">);</span>
+<span class="w">   </span><span class="k">not</span><span class="w"> </span><span class="n">GATE2</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">);</span>
+<span class="w">   </span><span class="k">or</span><span class="w">  </span><span class="n">GATE3</span><span class="p">(</span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span>
 
-<span class="k">endmodule</span><span class="w"></span>
+<span class="k">endmodule</span>
 </code></pre></div>
 
 
 <p>And the testbench:</p>
-<div class="highlight"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Verilog</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="n">bench</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">test</span><span class="w"></span>
-<span class="err">`</span><span class="n">timescale</span><span class="w"> </span><span class="mi">1</span><span class="n">ns</span><span class="o">/</span><span class="mi">100</span><span class="n">ps</span><span class="w"></span>
-<span class="err">`</span><span class="n">include</span><span class="w"> </span><span class="s2">&quot;test.v&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Verilog</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="n">bench</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">test</span>
+<span class="err">`</span><span class="n">timescale</span><span class="w"> </span><span class="mi">1</span><span class="n">ns</span><span class="o">/</span><span class="mi">100</span><span class="n">ps</span>
+<span class="err">`</span><span class="n">include</span><span class="w"> </span><span class="s2">&quot;test.v&quot;</span>
 
-<span class="n">module</span><span class="w"> </span><span class="n">test_tb</span><span class="p">;</span><span class="w"></span>
+<span class="n">module</span><span class="w"> </span><span class="n">test_tb</span><span class="p">;</span>
 
-<span class="n">wire</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">;</span><span class="w"></span>
-<span class="n">integer</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="n">wire</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">;</span>
+<span class="n">integer</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
 
-<span class="n">assign</span><span class="w"> </span><span class="p">{</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">;</span><span class="w"></span>
-<span class="n">test</span><span class="w"> </span><span class="n">the_circuit</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span><span class="w"></span>
+<span class="n">assign</span><span class="w"> </span><span class="p">{</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">;</span>
+<span class="n">test</span><span class="w"> </span><span class="n">the_circuit</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span>
 
-<span class="n">initial</span><span class="w"> </span><span class="n">begin</span><span class="w"></span>
+<span class="n">initial</span><span class="w"> </span><span class="n">begin</span>
 
-<span class="w">    </span><span class="o">$</span><span class="n">dumpfile</span><span class="p">(</span><span class="s2">&quot;test.vcd&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="o">$</span><span class="n">dumpvars</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">test_tb</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="o">$</span><span class="n">dumpfile</span><span class="p">(</span><span class="s2">&quot;test.vcd&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="o">$</span><span class="n">dumpvars</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">test_tb</span><span class="p">);</span>
 
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="c1">#10 $display(&quot;done testing case %d&quot;, k);</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">#10 $display(&quot;done testing case %d&quot;, k);</span>
 
-<span class="w">    </span><span class="o">$</span><span class="n">finish</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="o">$</span><span class="n">finish</span><span class="p">;</span>
 
-<span class="n">end</span><span class="w"></span>
+<span class="n">end</span>
 
-<span class="n">endmodule</span><span class="w"></span>
+<span class="n">endmodule</span>
 </code></pre></div>
     </div>
   </article>
