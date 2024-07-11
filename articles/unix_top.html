@@ -95,20 +95,17 @@
 <div class="highlight"><pre><span></span><code>find<span class="w"> </span>/tmp/<span class="w"> </span>.<span class="w"> </span>-user<span class="w"> </span><span class="nv">$USER</span><span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-atime<span class="w"> </span><span class="m">30</span>
 </code></pre></div>
 
-
 <ul>
 <li>Sum the size of all gds found in a given directory</li>
 </ul>
 <div class="highlight"><pre><span></span><code>find<span class="w"> </span>/directory/of/interest/.<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s1">&#39;*.gds&#39;</span><span class="w"> </span>-exec<span class="w"> </span>du<span class="w"> </span>-ch<span class="w"> </span><span class="o">{}</span><span class="w"> </span>+<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>total$
 </code></pre></div>
 
-
 <ul>
 <li>Find broken links</li>
 </ul>
 <div class="highlight"><pre><span></span><code>find<span class="w"> </span>.<span class="w"> </span>-xtype<span class="w"> </span>l
 </code></pre></div>
-
 
 <h2>Disk space</h2>
 <ul>
@@ -117,20 +114,17 @@
 <div class="highlight"><pre><span></span><code>df<span class="w"> </span>.<span class="w"> </span>-h
 </code></pre></div>
 
-
 <ul>
 <li>Sum used disk in human readable format, in the current directory</li>
 </ul>
 <div class="highlight"><pre><span></span><code>du<span class="w"> </span>.<span class="w"> </span>-sh
 </code></pre></div>
 
-
 <ul>
 <li>Disk used summarized by first 3 level of hierarchy</li>
 </ul>
 <div class="highlight"><pre><span></span><code>du<span class="w"> </span>.<span class="w"> </span>-h<span class="w"> </span>--max-depth<span class="o">=</span><span class="m">3</span>
 </code></pre></div>
-
 
 <h2>Vi (gvim)</h2>
 <ul>
@@ -150,7 +144,6 @@ syntax<span class="w"> </span>on
 <span class="nb">set</span><span class="w"> </span>ignorecase
 <span class="nb">set</span><span class="w"> </span>smartcase
 </code></pre></div>
-
 
 <h2>Date</h2>
     </div>

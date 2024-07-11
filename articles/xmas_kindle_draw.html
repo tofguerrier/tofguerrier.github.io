@@ -101,14 +101,12 @@
 <span class="p">}</span>
 </code></pre></div>
 
-
 <p>It guarantees that nobody gives to himself, and it also prevent circular gifting - ie A give to B and B give to A (except if there is only 2 persons).</p>
 <p>And we can use it simply like this:</p>
 <div class="highlight"><pre><span></span><code><span class="n">names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&#39;Robert&#39;</span><span class="p">,</span><span class="s">&#39;Anna&#39;</span><span class="p">,</span><span class="s">&#39;Louis&#39;</span><span class="p">,</span><span class="s">&#39;Joseph&#39;</span><span class="p">,</span><span class="s">&#39;Mary&#39;</span><span class="p">,</span><span class="s">&#39;Antoine&#39;</span><span class="p">,</span><span class="s">&#39;Alex&#39;</span><span class="p">)</span>
 
 <span class="nf">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span>
 </code></pre></div>
-
 
 <p>Person  'give to'   Person
 'Robert'    'give to'   'Louis'
@@ -133,7 +131,6 @@
 <span class="n">names</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Robert&#39;</span><span class="p">,</span><span class="s1">&#39;Anna&#39;</span><span class="p">,</span><span class="s1">&#39;Louis&#39;</span><span class="p">,</span><span class="s1">&#39;Joseph&#39;</span><span class="p">,</span><span class="s1">&#39;Mary&#39;</span><span class="p">,</span><span class="s1">&#39;Antoine&#39;</span><span class="p">,</span><span class="s1">&#39;Alex&#39;</span><span class="p">)</span>
 <span class="n">simple_secret_santa</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
 </code></pre></div>
-
 
 <p>Which gives us:</p>
 <table>
