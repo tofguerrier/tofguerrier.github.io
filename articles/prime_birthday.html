@@ -7901,7 +7901,7 @@ So the difference depending on your age will be the birth year.</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Using french revolution and current year as window</span>
-<span class="n">pbday_by_birth_year</span> <span class="o">=</span><span class="p">[</span><span class="n">SumPrimeBday</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1789</span><span class="p">,</span><span class="mi">2020</span><span class="p">)]</span>
+<span class="n">pbday_by_birth_year</span> <span class="o">=</span><span class="p">[</span><span class="n">SumPrimeBday</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1789</span><span class="p">,</span><span class="mi">2020</span><span class="p">)]</span>    
 </pre></div>
 </div>
 </div>
@@ -7917,7 +7917,7 @@ So the difference depending on your age will be the birth year.</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Plot</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">year</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1789</span><span class="p">,</span><span class="mi">2020</span><span class="p">)]</span>
 <span class="n">yp</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="p">[</span><span class="s1">'Prime Years'</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">pbday_by_birth_year</span><span class="p">]</span>

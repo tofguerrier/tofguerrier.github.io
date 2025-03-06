@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/all.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2024-07-08T20:00:00+01:00</updated><entry><title>Random thoughts on AI - July 2024</title><link href="https://tofguerrier.github.io/articles/random-thoughts-on-ai-july-2024.html" rel="alternate"></link><published>2024-07-08T20:00:00+01:00</published><updated>2024-07-08T20:00:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2024-07-08:/articles/random-thoughts-on-ai-july-2024.html</id><summary type="html">&lt;p&gt;My thoughts on AI in July 2024&lt;/p&gt;</summary><content type="html">&lt;p&gt;So everyone is talking about AI, either panicking or fantazing about the rise of AI, once again the future is both arriving fast and very slowly at the same time. Here is a capture of my current thought on the subject of AI, actually more questions than answers.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Website</title><link href="https://tofguerrier.github.io/" rel="alternate"></link><link href="https://tofguerrier.github.io/feeds/all.atom.xml" rel="self"></link><id>https://tofguerrier.github.io/</id><updated>2024-11-14T16:00:00+00:00</updated><entry><title>Analog Layout</title><link href="https://tofguerrier.github.io/articles/analog-layout.html" rel="alternate"></link><published>2024-11-14T16:00:00+00:00</published><updated>2024-11-14T16:00:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2024-11-14:/articles/analog-layout.html</id><summary type="html">&lt;p&gt;Thoughts on Analog physical design in the IC industry.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Analog Layout&lt;/h1&gt;
+&lt;h2&gt;As a profession&lt;/h2&gt;
+&lt;p&gt;I have started my career in the semi-conductor industry as an analog physical designer. I wrote about &lt;a href="https://kindredspiritus.blogspot.com/2012/08/work-what-feck-do-i-do.html"&gt;it on my personal blog&lt;/a&gt; back in 2012 when I thought about leaving both the profession and Ireland.
+Although Analog layout is no longer direct part of my work, as I moved to digital physical implementation, I am still keeping an interest on the subject. &lt;/p&gt;
+&lt;h2&gt;Analog Layout and AI&lt;/h2&gt;
+&lt;p&gt;This video talking about the potential of the much talked AI/LLM use in analog layout.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lNypq1XuZRo?si=aE5SJ8xeQQ_5_VnH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;Automation&lt;/h2&gt;
+&lt;p&gt;From the very beginning, I started my career, I thought for sure this analog layout can be automated, and yet it is resisting it.
+Sure the digital part of IC layout is automated, yet human engineer still have to direct, correct and repair the automation.&lt;/p&gt;</content><category term="IC"></category><category term="AI"></category><category term="IC"></category></entry><entry><title>Random thoughts on AI - July 2024</title><link href="https://tofguerrier.github.io/articles/random-thoughts-on-ai-july-2024.html" rel="alternate"></link><published>2024-07-08T20:00:00+01:00</published><updated>2024-07-08T20:00:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2024-07-08:/articles/random-thoughts-on-ai-july-2024.html</id><summary type="html">&lt;p&gt;My thoughts on AI in July 2024&lt;/p&gt;</summary><content type="html">&lt;p&gt;So everyone is talking about AI, either panicking or fantazing about the rise of AI, once again the future is both arriving fast and very slowly at the same time. Here is a capture of my current thought on the subject of AI, actually more questions than answers.
 Personally I think this is another bubble like the crypto one, but with a bit more substance. However there is some inherent limitations.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -7632,7 +7641,7 @@ a.anchor-link {
         &lt;span class="k"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;gain&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
             &lt;span class="c1"&gt;#Compensating when one player is ruined and cannot bet any more moeny&lt;/span&gt;
             &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gamesplayed&lt;/span&gt; &lt;span class="o"&gt;-=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max_bet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max_bet_ratio&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wealth&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max_bet&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;round&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max_bet_ratio&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wealth&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;       
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7666,7 +7675,7 @@ a.anchor-link {
         &lt;span class="n"&gt;player2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gain&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="n"&gt;player2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gain&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="n"&gt;player1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gain&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;player1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gain&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bet&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7787,6 +7796,7 @@ dave	(Wealth:1998)	Win Ratio:0.48135593220338985	Games Played:295
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
 &lt;div class="cm-editor cm-s-jupyter"&gt;
 &lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;players&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Person&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+    
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7880,7 +7890,7 @@ dave	(Wealth:1998)	Win Ratio:0.48135593220338985	Games Played:295
 &lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In [ ]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
 &lt;div class="cm-editor cm-s-jupyter"&gt;
-&lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -15660,7 +15670,7 @@ a.anchor-link {
 &lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In [4]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
 &lt;div class="cm-editor cm-s-jupyter"&gt;
-&lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
+&lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt; 
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.gridspec&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;gridspec&lt;/span&gt; 
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -16090,7 +16100,7 @@ Recipients: 17:: names:17
 &lt;div class="jp-InputPrompt jp-InputArea-prompt"&gt;In [ ]:&lt;/div&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
 &lt;div class="cm-editor cm-s-jupyter"&gt;
-&lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -23912,7 +23922,7 @@ So the difference depending on your age will be the birth year.&lt;/p&gt;
 &lt;div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline"&gt;
 &lt;div class="cm-editor cm-s-jupyter"&gt;
 &lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Using french revolution and current year as window&lt;/span&gt;
-&lt;span class="n"&gt;pbday_by_birth_year&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SumPrimeBday&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1789&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2020&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+&lt;span class="n"&gt;pbday_by_birth_year&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SumPrimeBday&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1789&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2020&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;    
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -23928,7 +23938,7 @@ So the difference depending on your age will be the birth year.&lt;/p&gt;
 &lt;div class="cm-editor cm-s-jupyter"&gt;
 &lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Plot&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
-&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
+&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
 
 &lt;span class="n"&gt;years&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1789&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2020&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
 &lt;span class="n"&gt;yp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'Prime Years'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;pbday_by_birth_year&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -32460,7 +32470,181 @@ Do not hesiate to voice your unhappiness about stuff at work, don't wait until y
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://thepracticalr.wordpress.com/2015/12/12/secret-santa-picker-using-r/"&gt;SECRET SANTA PICKER USING R 2&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="python"></category><category term="random"></category><category term="python"></category><category term="R"></category></entry><entry><title>Random thoughts from Pycon Dublin 2014</title><link href="https://tofguerrier.github.io/articles/random-thoughts-from-pycon-dublin-2014.html" rel="alternate"></link><published>2014-10-13T00:05:00+01:00</published><updated>2014-10-13T00:05:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2014-10-13:/articles/random-thoughts-from-pycon-dublin-2014.html</id><summary type="html">&lt;p&gt;Pycon 2014&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over the weekend I attended my first Pycon in Dublin, Ireland. It is organised by the wonderful crowd of &lt;a href="https://python.ie/"&gt;Python Ireland&lt;/a&gt;, I would actually recommend that you go to one of their monthly meetups if you have any interest in the Python language. !day 2 Main stage&lt;/p&gt;
+&lt;/ul&gt;</content><category term="python"></category><category term="random"></category><category term="python"></category><category term="R"></category></entry><entry><title>Life in Weeks</title><link href="https://tofguerrier.github.io/articles/life.html" rel="alternate"></link><published>2018-10-20T16:20:00+01:00</published><updated>2019-05-23T22:20:00+01:00</updated><author><name>Christophe Guerrier</name></author><id>tag:tofguerrier.github.io,2018-10-20:/articles/life.html</id><summary type="html">&lt;h1&gt;What is that ?&lt;/h1&gt;
+&lt;p&gt;A box for every week of 120-year life - probably too ambitious.
+Each row of weeks makes up one year. That’s how many weeks it takes to turn a newborn into a 120-year-old, and how far I have gone through, color changes by decade...&lt;/p&gt;
+&lt;p&gt;This is the …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;What is that ?&lt;/h1&gt;
+&lt;p&gt;A box for every week of 120-year life - probably too ambitious.
+Each row of weeks makes up one year. That’s how many weeks it takes to turn a newborn into a 120-year-old, and how far I have gone through, color changes by decade...&lt;/p&gt;
+&lt;p&gt;This is the first version....&lt;/p&gt;
+&lt;style&gt;
+    .calendar {
+      margin: 50px 0;
+      position: relative; }
+      .calendar:before {
+        content: 'Week of the year -&gt;';
+        position: relative;
+        right: 15px; }
+      .calendar:after {
+        content: '&lt;- Age';
+        position: absolute;
+        top: 40px;
+        left: -50px;
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg); }
+
+    .case {
+      width: calc( 100% / 52 - 5px);
+      height: calc( 100% / 52 - 5px);
+      display: inline-block;
+      border: 1.5px solid rgba(0, 0, 0, 0.31);
+      vertical-align: baseline;
+      border-radius: 25%;
+      float: left;
+      background: white;
+      margin: 2.5px; }
+      .case.checked0 {
+        background: #2196f4; }
+      .case.checked1 {
+        background: #21f492; }
+      .case.checked2 {
+        background: #64f421; }
+      .case.checked3 {
+        background: #f4e621; }
+      .case.checked4 {
+        background: #f4b121; }
+      .case.checked5 {
+        background: #f46421; }
+      .case.checked6 {
+        background: #f42821; }
+      .case.checked7 {
+        background: #c321f4; }
+        .case.checked8 {
+        background: #f421d1; }
+      .case.checked9 {
+        background: #f42183; }
+      .case.checked100 {
+        background: #2196f4; }
+
+    /*@include grandient-grid(4680);*/
+    .date {
+      margin: 15px 0;
+      padding: 15px 0 35px 0;
+      border-top: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey; }
+      .date input {
+        min-width: 100px; }
+&lt;/style&gt;
+
+&lt;div class="container"&gt;
+  &lt;div class="calendar"&gt;
+    &lt;div class="row"&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;!-- should not be using moment --&gt;
+
+&lt;script&gt;
+    var $ = {
+        id: function (id) {
+            return document.getElementById(id);
+        },
+        el: function (el) {
+            return document.querySelector(el);
+        },
+        class: function (el) {
+            return document.getElementsByClassName(elClass);
+        },
+        tag: function (el) {
+            return document.getElementsByTagName(tag);
+        },
+        all: function (el) {
+            return document.querySelectorAll(el);
+        },
+    };
+
+    var calendar = {};
+    calendar.$ = {};
+    calendar.$.container =  $.el('.calendar .row');
+    calendar.get_container_width = function() {
+      var width = parseInt(window.getComputedStyle(calendar.$.container).getPropertyValue('width').match(/\d+/));
+      return width;
+    };
+
+
+    calendar.set_grid = function () {
+       // hard coded
+      var birth_date = new Date(1976,3,20,16,30,0,0);
+      var today = new Date();
+
+      var weeks= 0;
+
+      var diffTime = today - birth_date;
+      var weeksbetween = Math.round((today - birth_date) / (7 * 24 * 60 * 60 * 1000));
+      return weeksbetween;
+    };
+
+    calendar.create_grid = function (limit) {
+      calendar.$.container.innerHTML = null;
+    var grid= document.createDocumentFragment();
+
+      for (var i = 0; i &lt; (52*120); i++){
+       var week = document.createElement('div');
+    //    var opacity = (-1 / i) *-200;
+        week.className = "case";
+        if (i &lt;= limit){
+          if (i &lt;= (52*10)) {
+            week.className += " checked0";  
+          } else if (i &lt;= (52*20)) {
+            week.className += " checked1";
+          } else if (i &lt;= (52*20)) {
+            week.className += " checked1";
+          } else if (i &lt;= (52*30)) {
+            week.className += " checked2";
+          } else if (i &lt;= (52*40)) {
+            week.className += " checked3";
+          } else if (i &lt;= (52*50)) {
+            week.className += " checked4";
+          } else if (i &lt;= (52*60)) {
+            week.className += " checked5";
+          } else if (i &lt;= (52*70)) {
+            week.className += " checked6";
+          } else if (i &lt;= (52*80)) {
+            week.className += " checked7";
+          } else if (i &lt;= (52*90)) {
+            week.className += " checked8";
+          } else if (i &lt;= (52*100)) {
+            week.className += " checked9";
+          } else {
+            week.className += " checked100";
+          }
+        //  week.style.background= 'rgba(255,0,0,'+ opacity +')';
+        }
+        week.id = i+1;
+        week.style.height = calendar.get_container_width()/52 - 5  + "px";
+        grid.appendChild(week);
+      }
+      calendar.$.container.appendChild(grid);
+      calendar.$.grid = $.all('.case');
+    };
+
+    calendar.resize_grid= function(){
+      [].forEach.call(calendar.$.grid, function (elem, index) {
+        elem.style.height = calendar.get_container_width()/52 - 5   + "px";
+      });
+    };
+
+    //document.body.onresize = calendar.resize_grid;
+    window.onload = function() {
+      calendar.create_grid(calendar.set_grid());
+    };
+
+    &lt;/script&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;The original inpiration can be found &lt;a href="http://waitbutwhy.com/2014/05/life-weeks.html"&gt;here on Wait But Why website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The HTML and javascript was adapted from this &lt;a href="https://codepen.io/adri_zag/pen/xVXNRm"&gt;codepen.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Additionally I really like this &lt;a href="https://busterbenson.com/the-life-of/buster/"&gt;page&lt;/a&gt;, and I intend to implement something similar.&lt;/p&gt;</content><category term="articles"></category></entry><entry><title>Random thoughts from Pycon Dublin 2014</title><link href="https://tofguerrier.github.io/articles/random-thoughts-from-pycon-dublin-2014.html" rel="alternate"></link><published>2014-10-13T00:05:00+01:00</published><updated>2014-10-13T00:05:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2014-10-13:/articles/random-thoughts-from-pycon-dublin-2014.html</id><summary type="html">&lt;p&gt;Pycon 2014&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over the weekend I attended my first Pycon in Dublin, Ireland. It is organised by the wonderful crowd of &lt;a href="https://python.ie/"&gt;Python Ireland&lt;/a&gt;, I would actually recommend that you go to one of their monthly meetups if you have any interest in the Python language. !day 2 Main stage&lt;/p&gt;
 &lt;p&gt;I was not sure what to expect, but the experience turned out to be truly enjoyable, and I finished up the weekend, my head full of ideas to investigate with python.&lt;/p&gt;
 &lt;p&gt;Here's my favourite highlights of the weekend, in no particular order.&lt;/p&gt;
 &lt;ul&gt;
