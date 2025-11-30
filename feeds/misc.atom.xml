@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Somewhat Techy Website - misc</title><link href="https://tofguerrier.github.io/" rel="alternate"/><link href="https://tofguerrier.github.io/feeds/misc.atom.xml" rel="self"/><id>https://tofguerrier.github.io/</id><updated>2020-10-16T14:00:00+01:00</updated><entry><title>Useful UNIX/Linux tips</title><link href="https://tofguerrier.github.io/articles/unix_top.html" rel="alternate"/><published>2020-10-16T14:00:00+01:00</published><updated>2020-10-16T14:00:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2020-10-16:/articles/unix_top.html</id><summary type="html">&lt;p&gt;Useful unix commands&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Find&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Find all my directories not accessed in the last 30 days in tmp area.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find&lt;span class="w"&gt; &lt;/span&gt;/tmp/&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-user&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$USER&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-type&lt;span class="w"&gt; &lt;/span&gt;d&lt;span class="w"&gt; &lt;/span&gt;-atime&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;30&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sum the size of all gds found in a given directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find&lt;span class="w"&gt; &lt;/span&gt;/directory/of/interest/.&lt;span class="w"&gt; &lt;/span&gt;-type&lt;span class="w"&gt; &lt;/span&gt;f&lt;span class="w"&gt; &lt;/span&gt;-name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;*.gds&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-exec&lt;span class="w"&gt; &lt;/span&gt;du&lt;span class="w"&gt; &lt;/span&gt;-ch&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;grep&lt;span class="w"&gt; &lt;/span&gt;total$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Find broken links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-xtype&lt;span class="w"&gt; &lt;/span&gt;l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Disk space&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sum available disk in human readable format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;df&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-h
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sum used disk in human readable format, in the current directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Disk used summarized by first 3 level of hierarchy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;du&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;-h&lt;span class="w"&gt; &lt;/span&gt;--max-depth&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Vi (gvim)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to a file under the cursor in gvim:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;gf&lt;/strong&gt; open the highlighted fie in the same window.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;ctrl+w&gt;gf&lt;/strong&gt; open the highlighted fie in the same window.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Preference for vi: .vimrc  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;color&lt;span class="w"&gt; &lt;/span&gt;pablo
+syntax&lt;span class="w"&gt; &lt;/span&gt;on
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tabstop&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;autoindent
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;number
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;showmatch
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;ignorecase
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;smartcase
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Date&lt;/h2&gt;</content><category term="misc"/><category term="system"/><category term="work"/><category term="unix"/><category term="linux"/></entry><entry><title>How I work</title><link href="https://tofguerrier.github.io/articles/how_i_work_2019.html" rel="alternate"/><published>2019-05-23T01:20:00+01:00</published><updated>2019-05-23T01:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-05-23:/articles/how_i_work_2019.html</id><summary type="html">&lt;p&gt;How I work in may 2019&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; ‎Lead Physical Digital Implementation Engineer at Adesto/S3 semiconductors&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Sony Experia (Android 8.0)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current personal computer:&lt;/em&gt; MacBook Pro (old 2012)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Work Computer:&lt;/em&gt; Windows 10 laptop, No machine to unix workstation (vpn) and Grid engine to submit various tools jobs.&lt;/p&gt;
+&lt;p&gt;A little about my background and how I got to where I am today.
+Studied Physics in Clermont-Ferrand, France, followed on by a master in Microelectronics which I finished with a work placement in small company in Grenoble (Dolphin Integration). After that I decided to go abroad, and landed in Ireland on the west coast, there I transferred from Analog Layout to digital Physical Implementation. I work in Integrated Circuit design for a couple of companies, alternating between my two areas of expertise: analog and digital physical implementation, until I join my current employer.&lt;/p&gt;
+&lt;h2&gt;On a Typical Work Day&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Wake up at 7:00AM:&lt;/li&gt;
+&lt;li&gt;get myself dressed.&lt;/li&gt;
+&lt;li&gt;wake up kid, get them dressed and let have them breakfast.&lt;/li&gt;
+&lt;li&gt;prepare lunch box for the kid.&lt;/li&gt;
+&lt;li&gt;Bring kid to school by car, walk in the park (unless my wife does it).&lt;/li&gt;
+&lt;li&gt;Due to covid lockdown, working from home, so setup and start logging in from my kitchen.&lt;/li&gt;
+&lt;li&gt;Once at my desk:&lt;ul&gt;
+&lt;li&gt;List/review tasks and priorities for the day on my work notebook.&lt;/li&gt;
+&lt;li&gt;Check email/Jira tickets and email replies&lt;/li&gt;
+&lt;li&gt;Start on first task of the day and move on. Usually start with analysing results from overnight runs / review logs and reports&lt;/li&gt;
+&lt;li&gt;Loop over&lt;/li&gt;
+&lt;li&gt;Multiple breaks (lunch/coffee) so i don't spend all day sit at my desk, I actually need to stand up and move every so often.&lt;/li&gt;
+&lt;li&gt;10 minutes before end of the day:&lt;/li&gt;
+&lt;li&gt;Review tasks status, write next day task in notebook.&lt;/li&gt;
+&lt;li&gt;Email progress and issues found.&lt;/li&gt;
+&lt;li&gt;List additional tasks for following day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;My wife usually does the after-school pickup, but I might do it.&lt;/li&gt;
+&lt;li&gt;Coloring with the kid&lt;/li&gt;
+&lt;li&gt;Prepare dinner, family time, dinner all together.&lt;/li&gt;
+&lt;li&gt;19:00 to 20:00 kid bedtime routine (brushing teeth, wash face, story time, quiet time).&lt;/li&gt;
+&lt;li&gt;Reading after that for me.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Appps, software, or tools I use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook - draft paper.&lt;/li&gt;
+&lt;li&gt;Apps/Software: &lt;ul&gt;
+&lt;li&gt;Google Keep for quick capture on my phone. &lt;/li&gt;
+&lt;li&gt;vi/gvim still for me the best editor. NotePad++ on Windows, and been slowly converted to MS Visual Code on Mac.&lt;/li&gt;
+&lt;li&gt;Python whenever I can.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My workspace setup&lt;/h2&gt;
+&lt;p&gt;In the office i have dual screen, with one always on the linux workstation connection, and the other alternating between Chrome(online documentation),outlook(email) and Onenote. Beside this I have my earphone, and a notebook open.
+Reduced to single external screen at home ( dual with the laptop one )&lt;/p&gt;
+&lt;h2&gt;My best time-saving shortcut&lt;/h2&gt;
+&lt;p&gt;Reduce and Prioritize and focus on only one single task at a time for 10 minutes. Basically blocked focused session.
+Be intentional with my time and the time of others.
+Took me a long time to get it, and I still fall behind sometimes.
+Besides my phone and computer, I could not live without a notebook and pen.&lt;/p&gt;
+&lt;h2&gt;On good meetings&lt;/h2&gt;
+&lt;p&gt;Good meetings are rare those days, I am missing a clear outcome announced ahead of the meeting, however meetings do not tend to last too long.&lt;/p&gt;
+&lt;h2&gt;Listening habits while at work&lt;/h2&gt;
+&lt;p&gt;Depending on the tasks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mostly podcasts (Freakonomics, Planet Money, Rationally Speaking, ....) &lt;/li&gt;
+&lt;li&gt;if needing more concentration:&lt;ul&gt;
+&lt;li&gt;Online Radio: BBC 6 recommends  especially Mary Ann Hobbes.&lt;/li&gt;
+&lt;li&gt;Jazz Playlist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My Key Strength&lt;/h2&gt;
+&lt;p&gt;Most other engineer are (much) better than me on very specific tasks/areas, but I have a broad array of knowledge in IC design, more fox than hedgehog.&lt;/p&gt;
+&lt;h2&gt;Relaxing and recharging&lt;/h2&gt;
+&lt;p&gt;Getting better at this through the years, I only need a simple walk in nature.
+What’s your sleep routine like? Are you a night owl or early-riser?
+Go to bed around 9PM-10PM and read a book. I am more of an early-riser, I feel much better when I can wake up and start the day early. I usually slump in the afternoon.&lt;/p&gt;
+&lt;h2&gt;Best advice I have ever received&lt;/h2&gt;
+&lt;p&gt;One received recently: 
+Do not hesiate to voice your unhappiness about stuff at work, don't wait until you reach meltdown to ask for help or voice your concern and issues.&lt;/p&gt;</content><category term="misc"/><category term="system"/><category term="work"/></entry></feed>

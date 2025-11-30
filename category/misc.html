@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Christophe Somewhat Techy Website - misc</title>
+                        <link rel="stylesheet" href="../theme/css/main.css" />
+                                <link href="https://tofguerrier.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Christophe Somewhat Techy Website Atom Feed" />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="../">Christophe Somewhat Techy Website</a></h1>
+                        <nav><ul>
+                                                <li><a href="../pages/about-me.html">About me</a></li>
+                                                <li><a href="../pages/now.html">Now</a></li>
+                                                <li><a href="../pages/resume.html">Online Resume</a></li>
+                                                <li><a href="../category/ai.html">AI</a></li>
+                                                <li><a href="../category/eda.html">eda</a></li>
+                                                <li><a href="../category/ic.html">IC</a></li>
+                                                <li class="active"><a href="../category/misc.html">misc</a></li>
+                                                <li><a href="../category/python.html">python</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+
+                <aside id="featured" class="body">
+                    <article>
+                        <h1 class="entry-title"><a href="../articles/unix_top.html">Useful UNIX/Linux tips</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2020-10-16T14:00:00+01:00">
+                Published: Fri 16 October 2020
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="../author/christophe.html">Christophe</a>
+                </address>
+        <p>In <a href="../category/misc.html">misc</a>.</p>
+<p>tags: <a href="../tag/system.html">system</a> <a href="../tag/work.html">work</a> <a href="../tag/unix.html">unix</a> <a href="../tag/linux.html">linux</a> </p>        
+</footer><!-- /.post-info --><h2>Find</h2>
+<ul>
+<li>Find all my directories not accessed in the last 30 days in tmp area.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/tmp/<span class="w"> </span>.<span class="w"> </span>-user<span class="w"> </span><span class="nv">$USER</span><span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-atime<span class="w"> </span><span class="m">30</span>
+</code></pre></div>
+
+<ul>
+<li>Sum the size of all gds found in a given directory</li>
+</ul>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/directory/of/interest/.<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s1">&#39;*.gds&#39;</span><span class="w"> </span>-exec<span class="w"> </span>du<span class="w"> </span>-ch<span class="w"> </span><span class="o">{}</span><span class="w"> </span>+<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>total$
+</code></pre></div>
+
+<ul>
+<li>Find broken links</li>
+</ul>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>.<span class="w"> </span>-xtype<span class="w"> </span>l
+</code></pre></div>
+
+<h2>Disk space</h2>
+<ul>
+<li>Sum available disk in human readable format</li>
+</ul>
+<div class="highlight"><pre><span></span><code>df<span class="w"> </span>.<span class="w"> </span>-h
+</code></pre></div>
+
+<ul>
+<li>Sum used disk in human readable format, in the current directory</li>
+</ul>
+<div class="highlight"><pre><span></span><code>du<span class="w"> </span>.<span class="w"> </span>-sh
+</code></pre></div>
+
+<ul>
+<li>Disk used summarized by first 3 level of hierarchy</li>
+</ul>
+<div class="highlight"><pre><span></span><code>du<span class="w"> </span>.<span class="w"> </span>-h<span class="w"> </span>--max-depth<span class="o">=</span><span class="m">3</span>
+</code></pre></div>
+
+<h2>Vi (gvim)</h2>
+<ul>
+<li>Go to a file under the cursor in gvim:</li>
+</ul>
+<p><strong>gf</strong> open the highlighted fie in the same window.</p>
+<p><strong><ctrl+w>gf</strong> open the highlighted fie in the same window.</p>
+<ul>
+<li>Preference for vi: .vimrc  </li>
+</ul>
+<div class="highlight"><pre><span></span><code>color<span class="w"> </span>pablo
+syntax<span class="w"> </span>on
+<span class="nb">set</span><span class="w"> </span><span class="nv">tabstop</span><span class="o">=</span><span class="m">4</span>
+<span class="nb">set</span><span class="w"> </span>autoindent
+<span class="nb">set</span><span class="w"> </span>number
+<span class="nb">set</span><span class="w"> </span>showmatch
+<span class="nb">set</span><span class="w"> </span>ignorecase
+<span class="nb">set</span><span class="w"> </span>smartcase
+</code></pre></div>
+
+<h2>Date</h2>                    </article>
+                </aside><!-- /#featured -->
+                    <section id="content" class="body">
+                        <h1>Other articles</h1>
+                        <hr />
+                        <ol id="posts-list" class="hfeed">
+
+                <li><article class="hentry">
+                    <header>
+                        <h1><a href="../articles/how_i_work_2019.html" rel="bookmark"
+                               title="Permalink to How I work">How I work</a></h1>
+                    </header>
+
+                    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-05-23T01:20:00+01:00">
+                Published: Thu 23 May 2019
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="../author/christophe.html">Christophe</a>
+                </address>
+        <p>In <a href="../category/misc.html">misc</a>.</p>
+<p>tags: <a href="../tag/system.html">system</a> <a href="../tag/work.html">work</a> </p>        
+</footer><!-- /.post-info -->                        <p>How I work in may 2019</p>
+                        <a class="readmore" href="../articles/how_i_work_2019.html">read more</a>
+                    </div><!-- /.entry-content -->
+                </article></li>
+                    </ol><!-- /#posts-list -->
+                    </section><!-- /#content -->
+                <section id="extras" class="body">
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+                                                        <li><a href="https://tofguerrier.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                                                        <li><a href="#">You can add links in your config file</a></li>
+                                                        <li><a href="#">Another social link</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>
