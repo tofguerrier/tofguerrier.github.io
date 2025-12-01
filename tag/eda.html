@@ -1,144 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                        <meta charset="utf-8" />
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                        <meta name="generator" content="Pelican" />
-                        <title>Christophe Somewhat Techy Website - eda</title>
-                        <link rel="stylesheet" href="../theme/css/main.css" />
-                                <link href="https://tofguerrier.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Christophe Somewhat Techy Website Atom Feed" />
-        </head>
+  <head>
+      <title>Christophe Somewhat Techy Website - eda tag</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://tofguerrier.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Christophe Somewhat Techy Website Full Atom Feed" />
+  </head>
 
-        <body id="index" class="home">
-                <header id="banner" class="body">
-                        <h1><a href="../">Christophe Somewhat Techy Website</a></h1>
-                        <nav><ul>
-                                                <li><a href="../pages/about-me.html">About me</a></li>
-                                                <li><a href="../pages/now.html">Now</a></li>
-                                                <li><a href="../pages/resume.html">Online Resume</a></li>
-                                                <li><a href="../category/ai.html">AI</a></li>
-                                                <li><a href="../category/eda.html">eda</a></li>
-                                                <li><a href="../category/ic.html">IC</a></li>
-                                                <li><a href="../category/misc.html">misc</a></li>
-                                                <li><a href="../category/python.html">python</a></li>
-                        </ul></nav>
-                </header><!-- /#banner -->
+  <body>
+      <header>
+          <hgroup><h1><a href="../">Christophe Somewhat Techy Website</a></h1></hgroup>
+          <nav><ul>
+                <li><a href="../pages/about-me.html" >About me</a></li>
+                <li><a href="../pages/now.html" >Now</a></li>
+                <li><a href="../pages/resume.html" >Online Resume</a></li>
+                <li><a href="../category/ai.html" >AI</a></li>
+                <li><a href="../category/eda.html" >eda</a></li>
+                <li><a href="../category/ic.html" >IC</a></li>
+                <li><a href="../category/misc.html" >misc</a></li>
+                <li><a href="../category/python.html" >python</a></li>
+          </ul></nav>
+      </header>
+      <main>
+    <h2>Articles tagged with eda</h2>
 
-                <aside id="featured" class="body">
-                    <article>
-                        <h1 class="entry-title"><a href="../articles/openeda_verilog.html">Open EDA iVerilog</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2020-06-21T13:20:00+01:00">
-                Published: Sun 21 June 2020
-        </abbr>
 
-                <address class="vcard author">
-                        By                                 <a class="url fn" href="../author/christophe.html">Christophe</a>
+        <article>
+            <header> <h2><a href="../articles/openeda_verilog.html" rel="bookmark" title="Permalink to Open EDA iVerilog">Open EDA iVerilog</a></h2> </header>
+            <section><p>How to run Verilog on a Mac with Open Source Tools</p></section>
+            <footer>
+                <p>Published: <time datetime="2020-06-21T13:20:00+01:00"> Sun 21 June 2020 </time></p>
+                <address>By
+                        <a href="../author/christophe.html">Christophe</a>
                 </address>
-        <p>In <a href="../category/eda.html">eda</a>.</p>
-<p>tags: <a href="../tag/eda.html">eda</a> <a href="../tag/work.html">work</a> <a href="../tag/verilog.html">verilog</a> </p>        
-</footer><!-- /.post-info --><h1>Tools (MacOSX):</h1>
-<ul>
-<li><a href="http://iverilog.icarus.com/">Icarus iVerilog</a></li>
-<li><a href="http://www.logicpoet.com/scansion/">Scansion to view the vaweforms</a>.</li>
-</ul>
-<h1>Installation</h1>
-<p>iVerilog
-You can nstall it through <a href="https://brew.sh/">brew</a></p>
-<div class="highlight"><pre><span></span><code>brew install icarus-verilog
-</code></pre></div>
+            </footer>
+        </article>
 
-<p>Or MacPorts:</p>
-<div class="highlight"><pre><span></span><code>sudo port -v install iverilog
-</code></pre></div>
 
-<h1>Running a simulation</h1>
-<p>First compile Verilog using iverilog:</p>
-<div class="highlight"><pre><span></span><code>iverilog -o test.vvp test_tb.v
-</code></pre></div>
-
-<p>Then running the simulation:</p>
-<div class="highlight"><pre><span></span><code>vvp test.vvp
-</code></pre></div>
-
-<p>Which should result in the following:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">VCD</span><span class="w"> </span><span class="nv">info</span>:<span class="w"> </span><span class="nv">dumpfile</span><span class="w"> </span><span class="nv">test</span>.<span class="nv">vcd</span><span class="w"> </span><span class="nv">opened</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">output</span>.
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">0</span>
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">1</span>
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">2</span>
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">3</span>
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">4</span>
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">5</span>
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">6</span>
-<span class="nv">done</span><span class="w"> </span><span class="nv">testing</span><span class="w"> </span><span class="nv">case</span><span class="w">           </span><span class="mi">7</span>
-</code></pre></div>
-
-<p>Finally, have a look at waveform:</p>
-<div class="highlight"><pre><span></span><code>open -a Scansion test.vcd
-</code></pre></div>
-
-<p><img alt="Waveform" src="/images/scanion-3-1-vcd.png" title="waveform vcd"></p>
-<p>More test.v:</p>
-<div class="highlight"><pre><span></span><code><span class="k">module</span><span class="w"> </span><span class="n">test</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span>
-
-<span class="w">   </span><span class="k">output</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">;</span>
-<span class="w">   </span><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">;</span>
-<span class="w">   </span><span class="kt">wire</span><span class="w">   </span><span class="n">w1</span><span class="p">;</span>
-
-<span class="w">   </span><span class="k">and</span><span class="w"> </span><span class="n">GATE1</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">);</span>
-<span class="w">   </span><span class="k">not</span><span class="w"> </span><span class="n">GATE2</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">);</span>
-<span class="w">   </span><span class="k">or</span><span class="w">  </span><span class="n">GATE3</span><span class="p">(</span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span>
-
-<span class="k">endmodule</span>
-</code></pre></div>
-
-<p>And the testbench:</p>
-<div class="highlight"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">Verilog</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="n">bench</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">test</span>
-<span class="err">`</span><span class="n">timescale</span><span class="w"> </span><span class="mi">1</span><span class="n">ns</span><span class="o">/</span><span class="mi">100</span><span class="n">ps</span>
-<span class="err">`</span><span class="n">include</span><span class="w"> </span><span class="s2">&quot;test.v&quot;</span>
-
-<span class="n">module</span><span class="w"> </span><span class="n">test_tb</span><span class="p">;</span>
-
-<span class="n">wire</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">;</span>
-<span class="n">integer</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-
-<span class="n">assign</span><span class="w"> </span><span class="p">{</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="p">;</span>
-<span class="n">test</span><span class="w"> </span><span class="n">the_circuit</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">D</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">);</span>
-
-<span class="n">initial</span><span class="w"> </span><span class="n">begin</span>
-
-<span class="w">    </span><span class="o">$</span><span class="n">dumpfile</span><span class="p">(</span><span class="s2">&quot;test.vcd&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="o">$</span><span class="n">dumpvars</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">test_tb</span><span class="p">);</span>
-
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-<span class="w">        </span><span class="c1">#10 $display(&quot;done testing case %d&quot;, k);</span>
-
-<span class="w">    </span><span class="o">$</span><span class="n">finish</span><span class="p">;</span>
-
-<span class="n">end</span>
-
-<span class="n">endmodule</span>
-</code></pre></div>                    </article>
-                </aside><!-- /#featured -->
-                <section id="extras" class="body">
-                                <div class="social">
-                                        <h2>social</h2>
-                                        <ul>
-                                                        <li><a href="https://tofguerrier.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                                                        <li><a href="#">You can add links in your config file</a></li>
-                                                        <li><a href="#">Another social link</a></li>
-                                        </ul>
-                                </div><!-- /.social -->
-                </section><!-- /#extras -->
-
-                <footer id="contentinfo" class="body">
-                        <address id="about" class="vcard body">
-                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                        </address><!-- /#about -->
-
-                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-                </footer><!-- /#contentinfo -->
-
-        </body>
+      </main>
+      <footer>
+          <address>
+            Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+          </address>
+      </footer>
+  </body>
 </html>
