@@ -5,7 +5,7 @@
 Although Analog layout is no longer direct part of my work, as I moved to digital physical implementation, I am still keeping an interest on the subject. &lt;/p&gt;
 &lt;h2&gt;Analog Layout and AI&lt;/h2&gt;
 &lt;p&gt;This video talking about the potential of the much talked AI/LLM use in analog layout.&lt;/p&gt;
-&lt;p&gt;{% include '_analog_layout_youtube.html' %}&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lNypq1XuZRo?si=aE5SJ8xeQQ_5_VnH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;h2&gt;Automation&lt;/h2&gt;
 &lt;p&gt;From the very beginning, I started my career, I thought for sure this analog layout can be automated, and yet it is resisting it.
 Sure the digital part of IC layout is automated, yet human engineer still have to direct, correct and repair the automation.&lt;/p&gt;</content><category term="IC"/><category term="AI"/><category term="IC"/></entry></feed>
