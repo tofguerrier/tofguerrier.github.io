@@ -1,5 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Somewhat Techy Website - misc</title><link href="https://tofguerrier.github.io/" rel="alternate"/><link href="https://tofguerrier.github.io/feeds/misc.atom.xml" rel="self"/><id>https://tofguerrier.github.io/</id><updated>2020-10-16T14:00:00+01:00</updated><entry><title>Useful UNIX/Linux tips</title><link href="https://tofguerrier.github.io/articles/unix_top.html" rel="alternate"/><published>2020-10-16T14:00:00+01:00</published><updated>2020-10-16T14:00:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2020-10-16:/articles/unix_top.html</id><summary type="html">&lt;p&gt;Useful unix commands&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Find&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Christophe Somewhat Techy Website - misc</title><link href="https://tofguerrier.github.io/" rel="alternate"/><link href="https://tofguerrier.github.io/feeds/misc.atom.xml" rel="self"/><id>https://tofguerrier.github.io/</id><updated>2025-12-05T01:20:00+00:00</updated><entry><title>How I work (2025)</title><link href="https://tofguerrier.github.io/articles/how_i_work_2025.html" rel="alternate"/><published>2025-12-05T01:20:00+00:00</published><updated>2025-12-05T01:20:00+00:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2025-12-05:/articles/how_i_work_2025.html</id><summary type="html">&lt;p&gt;How I work in December 2025&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; Physical Digital Implementation Engineer at Synopsys.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Pixel 9 &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current personal computer:&lt;/em&gt; MacBook Air&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Work Computer:&lt;/em&gt; Windows 11 laptop, No machine to unix workstation (vpn) and Grid engine to submit various tools jobs. &lt;/p&gt;
+&lt;p&gt;Updating from previous article &lt;a href="how_i_work_2019.html"&gt;2019&lt;/a&gt;.
+Same job different company, different vibe. &lt;/p&gt;
+&lt;p&gt;I have now 2 type of working day:
+- Working from home
+- Office&lt;/p&gt;
+&lt;h2&gt;On a Typical Work Day in the office&lt;/h2&gt;
+&lt;p&gt;The big change from 2019, is the commute which is now a lot longer.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wake up at 6:00AM:&lt;/li&gt;
+&lt;li&gt;get myself dressed.&lt;/li&gt;
+&lt;li&gt;prepare lunch box for the kid.&lt;/li&gt;
+&lt;li&gt;Take the bus 11 to city centre then 40D about 1 hour commute, up to 1h30 if bus do not link properly.&lt;ul&gt;
+&lt;li&gt;During the trip, I would be either listening to podcast/music or reading a book&lt;/li&gt;
+&lt;li&gt;Also check Work Email/Teams message and start replying/sorting.&lt;/li&gt;
+&lt;li&gt;List/review tasks and priorities for the day on my work notebook.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Once I arrive in the office:&lt;ul&gt;
+&lt;li&gt;Start on first task of the day and move on. Usually start with analysing results from overnight runs / review logs and reports.&lt;/li&gt;
+&lt;li&gt;Loop over&lt;/li&gt;
+&lt;li&gt;Multiple breaks (lunch/coffee) so i don't spend all day sit at my desk, I actually need to stand up and move every so often.&lt;/li&gt;
+&lt;li&gt;10 minutes before end of the day:&lt;/li&gt;
+&lt;li&gt;Review tasks status, write next day task in notebook.&lt;/li&gt;
+&lt;li&gt;Email progress and issues found.&lt;/li&gt;
+&lt;li&gt;List additional tasks for following day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On the way home, I may take the luas and pick up the kid from school. I also tend to leave early in the afternoon, in order to be at home for the first evening meeting.&lt;/li&gt;
+&lt;li&gt;Prepare dinner, family time, dinner all together.&lt;/li&gt;
+&lt;li&gt;3 days a week I have late meeting.&lt;/li&gt;
+&lt;li&gt;19:00 to 20:00 kid bedtime routine (brushing teeth, wash face, story time, quiet time).&lt;/li&gt;
+&lt;li&gt;Reading after that for me.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Appps, software, or tools I use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Notebook - draft paper.&lt;/li&gt;
+&lt;li&gt;Apps/Software: &lt;ul&gt;
+&lt;li&gt;Google Keep for quick capture on my phone. &lt;/li&gt;
+&lt;li&gt;vi/gvim still for me the best editor. NotePad++ on Windows, and been slowly converted to VScodium on Mac.&lt;/li&gt;
+&lt;li&gt;Python whenever I can.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My workspace setup&lt;/h2&gt;
+&lt;p&gt;In the office i have triple screen, with one always on the linux workstation connection, and the other alternating between Explorer (online documentation),outloo/Teams(email) and Onenote. Beside this I have my earphone, and a notebook open.
+Reduced to single external screen at home ( dual with the laptop one ).&lt;/p&gt;
+&lt;h2&gt;My best time-saving shortcut&lt;/h2&gt;
+&lt;p&gt;Reduce and Prioritize and focus on only one single task at a time for 10 minutes. Basically blocked focused session.&lt;/p&gt;
+&lt;p&gt;Be intentional with my time and the time of others.&lt;/p&gt;
+&lt;p&gt;Took me a long time to get it, and I still fall behind sometimes.&lt;/p&gt;
+&lt;p&gt;Besides my phone and computer, I could not live without a notebook and pen.&lt;/p&gt;
+&lt;h2&gt;On good meetings&lt;/h2&gt;
+&lt;p&gt;Good meetings are late those days, I am missing a clear outcome announced ahead of the meeting, however meetings do  tend to last too long.&lt;/p&gt;
+&lt;h2&gt;Listening habits while at work&lt;/h2&gt;
+&lt;p&gt;Depending on the tasks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mostly podcasts (Freakonomics, Planet Money, Rationally Speaking, ....) &lt;/li&gt;
+&lt;li&gt;if needing more concentration:&lt;ul&gt;
+&lt;li&gt;Online Radio: BBC 6 recommends  especially Mary Ann Hobbes.&lt;/li&gt;
+&lt;li&gt;Jazz Playlist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My Key Strength&lt;/h2&gt;
+&lt;p&gt;Most other engineer are (much) better than me on very specific tasks/areas, but I have a broad array of knowledge in IC design, more fox than hedgehog.&lt;/p&gt;
+&lt;h2&gt;Relaxing and recharging&lt;/h2&gt;
+&lt;p&gt;Getting better at this through the years, I only need a simple walk in nature.
+What’s your sleep routine like? Are you a night owl or early-riser?
+Go to bed around 9PM-10PM and read a book. I am more of an early-riser, I feel much better when I can wake up and start the day early. I usually slump in the afternoon.&lt;/p&gt;
+&lt;h2&gt;Best advice I have ever received&lt;/h2&gt;
+&lt;p&gt;One received recently: 
+Do not hesitate to voice your unhappiness about stuff at work, don't wait until you reach meltdown to ask for help or voice your concern and issues.&lt;/p&gt;</content><category term="misc"/><category term="system"/><category term="work"/></entry><entry><title>Useful UNIX/Linux tips</title><link href="https://tofguerrier.github.io/articles/unix_top.html" rel="alternate"/><published>2020-10-16T14:00:00+01:00</published><updated>2020-10-16T14:00:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2020-10-16:/articles/unix_top.html</id><summary type="html">&lt;p&gt;Useful unix commands&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Find&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Find all my directories not accessed in the last 30 days in tmp area.&lt;/li&gt;
 &lt;/ul&gt;
@@ -56,8 +133,8 @@ syntax&lt;span class="w"&gt; &lt;/span&gt;on
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;smartcase
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2&gt;Date&lt;/h2&gt;</content><category term="misc"/><category term="system"/><category term="work"/><category term="unix"/><category term="linux"/></entry><entry><title>How I work</title><link href="https://tofguerrier.github.io/articles/how_i_work_2019.html" rel="alternate"/><published>2019-05-23T01:20:00+01:00</published><updated>2019-05-23T01:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-05-23:/articles/how_i_work_2019.html</id><summary type="html">&lt;p&gt;How I work in may 2019&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; ‎Lead Physical Digital Implementation Engineer at Adesto/S3 semiconductors&lt;/p&gt;
+&lt;h2&gt;Date&lt;/h2&gt;</content><category term="misc"/><category term="system"/><category term="work"/><category term="unix"/><category term="linux"/></entry><entry><title>How I work (2019)</title><link href="https://tofguerrier.github.io/articles/how_i_work_2019.html" rel="alternate"/><published>2019-05-23T01:20:00+01:00</published><updated>2019-05-23T01:20:00+01:00</updated><author><name>Christophe</name></author><id>tag:tofguerrier.github.io,2019-05-23:/articles/how_i_work_2019.html</id><summary type="html">&lt;p&gt;How I work in may 2019&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Location:&lt;/em&gt; Dublin, Ireland&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Current Gig:&lt;/em&gt; Lead Physical Digital Implementation Engineer at Adesto/S3 semiconductors&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;One word that best describes how you work:&lt;/em&gt; juggling&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Current mobile device:&lt;/em&gt; Sony Experia (Android 8.0)&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Current personal computer:&lt;/em&gt; MacBook Pro (old 2012)&lt;/p&gt;
